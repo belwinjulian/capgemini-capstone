@@ -51,9 +51,7 @@ pnpm-debug.log*
 next-env.d.ts
 
 # Build artifacts / data
-*.pkl
-*.pickle
-data/
+# data/ and graph pickle ARE checked in so the deploy zip is self-contained.
 corpus/
 *.log
 

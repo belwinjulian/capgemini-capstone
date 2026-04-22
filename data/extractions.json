@@ -1,0 +1,7368 @@
+[
+  {
+    "doc_id": "AER-001",
+    "entities": [
+      {
+        "name": "warfarin",
+        "type": "medication"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "medication_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "adverse_event",
+        "type": "incident_type"
+      },
+      {
+        "name": "respiratory_therapist",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "universal_protocol_time_out_steps",
+        "type": "protocol"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "medication_error",
+        "target": "icu",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "respiratory_therapist",
+        "target": "adverse_event",
+        "relation": "performed_by"
+      },
+      {
+        "source": "warfarin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "respiratory_therapist",
+        "target": "medication_error",
+        "relation": "performed_by"
+      },
+      {
+        "source": "medication_error",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "warfarin",
+        "target": "icu",
+        "relation": "administered_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-008",
+    "entities": [
+      {
+        "name": "adverse_event",
+        "type": "incident_type"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "dosage_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "cefazolin",
+        "type": "medication"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "fall_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "incomplete_documentation",
+        "type": "root_cause"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "adverse_event",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "dosage_error",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "cefazolin",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "dosage_error",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "dosage_error",
+        "target": "incomplete_documentation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "dosage_error",
+        "target": "standing_order",
+        "relation": "violates"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "standing_order",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-007",
+    "entities": [
+      {
+        "name": "morphine",
+        "type": "medication"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "diagnostic_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "anesthesiologist",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_steps",
+        "type": "protocol"
+      },
+      {
+        "name": "morphine_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "diagnostic_error",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "morphine",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "anesthesiologist",
+        "target": "diagnostic_error",
+        "relation": "performed_by"
+      },
+      {
+        "source": "inadequate_staffing",
+        "target": "diagnostic_error",
+        "relation": "caused_by"
+      },
+      {
+        "source": "miscommunication_handoff",
+        "target": "diagnostic_error",
+        "relation": "caused_by"
+      },
+      {
+        "source": "diagnostic_error",
+        "target": "standing_order",
+        "relation": "violates"
+      },
+      {
+        "source": "diagnostic_error",
+        "target": "medication_reconciliation_steps",
+        "relation": "violates"
+      },
+      {
+        "source": "morphine_administration_workflow",
+        "target": "er",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-009",
+    "entities": [
+      {
+        "name": "insulin",
+        "type": "medication"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "diagnostic_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "pharmacist",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "incomplete_documentation",
+        "type": "root_cause"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "fall_prevention_bundle",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "diagnostic_error",
+        "target": "icu",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "pharmacist",
+        "target": "diagnostic_error",
+        "relation": "performed_by"
+      },
+      {
+        "source": "insulin",
+        "target": "icu",
+        "relation": "administered_in"
+      },
+      {
+        "source": "insulin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "diagnostic_error",
+        "target": "incomplete_documentation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "diagnostic_error",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-002",
+    "entities": [
+      {
+        "name": "metformin",
+        "type": "medication"
+      },
+      {
+        "name": "pediatrics",
+        "type": "department"
+      },
+      {
+        "name": "dosage_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "anesthesiologist",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_steps",
+        "type": "protocol"
+      },
+      {
+        "name": "metformin_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "dosage_error",
+        "target": "pediatrics",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "metformin",
+        "target": "pediatrics",
+        "relation": "administered_in"
+      },
+      {
+        "source": "dosage_error",
+        "target": "anesthesiologist",
+        "relation": "performed_by"
+      },
+      {
+        "source": "dosage_error",
+        "target": "standing_order",
+        "relation": "violates"
+      },
+      {
+        "source": "dosage_error",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "dosage_error",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "metformin_administration_workflow",
+        "target": "metformin",
+        "relation": "documented_in"
+      },
+      {
+        "source": "metformin_administration_workflow",
+        "target": "pediatrics",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-005",
+    "entities": [
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "heparin",
+        "type": "medication"
+      },
+      {
+        "name": "registered_nurse",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "diagnostic_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_administration_record",
+        "type": "protocol"
+      },
+      {
+        "name": "heparin_administration_workflow",
+        "type": "protocol"
+      },
+      {
+        "name": "rca_review",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "diagnostic_error",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "registered_nurse",
+        "target": "diagnostic_error",
+        "relation": "performed_by"
+      },
+      {
+        "source": "heparin",
+        "target": "standing_order",
+        "relation": "administered_in"
+      },
+      {
+        "source": "miscommunication_handoff",
+        "target": "diagnostic_error",
+        "relation": "caused_by"
+      },
+      {
+        "source": "heparin_administration_workflow",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "diagnostic_error",
+        "target": "rca_review",
+        "relation": "documented_in"
+      },
+      {
+        "source": "diagnostic_error",
+        "target": "medication_administration_record",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-004",
+    "entities": [
+      {
+        "name": "adverse_event",
+        "type": "incident_type"
+      },
+      {
+        "name": "hospital_acquired_infection",
+        "type": "incident_type"
+      },
+      {
+        "name": "pediatrics",
+        "type": "department"
+      },
+      {
+        "name": "vancomycin",
+        "type": "medication"
+      },
+      {
+        "name": "registered_nurse",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "infection_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "rca_review",
+        "type": "protocol"
+      },
+      {
+        "name": "vancomycin_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "hospital_acquired_infection",
+        "target": "pediatrics",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "vancomycin",
+        "target": "hospital_acquired_infection",
+        "relation": "administered_in"
+      },
+      {
+        "source": "registered_nurse",
+        "target": "hospital_acquired_infection",
+        "relation": "performed_by"
+      },
+      {
+        "source": "vancomycin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "registered_nurse",
+        "target": "adverse_event",
+        "relation": "performed_by"
+      },
+      {
+        "source": "attending_physician",
+        "target": "adverse_event",
+        "relation": "performed_by"
+      },
+      {
+        "source": "miscommunication_handoff",
+        "target": "adverse_event",
+        "relation": "caused_by"
+      },
+      {
+        "source": "miscommunication_handoff",
+        "target": "hospital_acquired_infection",
+        "relation": "caused_by"
+      },
+      {
+        "source": "adverse_event",
+        "target": "rca_review",
+        "relation": "documented_in"
+      },
+      {
+        "source": "vancomycin_administration_workflow",
+        "target": "pediatrics",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-006",
+    "entities": [
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "medication_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "warfarin",
+        "type": "medication"
+      },
+      {
+        "name": "respiratory_therapist",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "adverse_event_report",
+        "type": "incident_type"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "medication_error",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "warfarin",
+        "target": "standing_order",
+        "relation": "administered_in"
+      },
+      {
+        "source": "medication_error",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "medication_error",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "medication_error",
+        "target": "adverse_event_report",
+        "relation": "documented_in"
+      },
+      {
+        "source": "medication_error",
+        "target": "standing_order",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-011",
+    "entities": [
+      {
+        "name": "warfarin",
+        "type": "medication"
+      },
+      {
+        "name": "radiology",
+        "type": "department"
+      },
+      {
+        "name": "pressure_injury",
+        "type": "incident_type"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "universal_protocol_time_out",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "pressure_injury",
+        "target": "radiology",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "pressure_injury",
+        "target": "warfarin",
+        "relation": "caused_by"
+      },
+      {
+        "source": "pressure_injury",
+        "target": "attending_physician",
+        "relation": "performed_by"
+      },
+      {
+        "source": "warfarin",
+        "target": "radiology",
+        "relation": "administered_in"
+      },
+      {
+        "source": "inadequate_staffing",
+        "target": "pressure_injury",
+        "relation": "caused_by"
+      },
+      {
+        "source": "miscommunication_handoff",
+        "target": "pressure_injury",
+        "relation": "caused_by"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-013",
+    "entities": [
+      {
+        "name": "adverse_event_report",
+        "type": "incident_type"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "hospital_acquired_infection",
+        "type": "incident_type"
+      },
+      {
+        "name": "vancomycin",
+        "type": "medication"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "equipment_failure",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "sbar_steps",
+        "type": "protocol"
+      },
+      {
+        "name": "rca_review",
+        "type": "protocol"
+      },
+      {
+        "name": "vancomycin_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "hospital_acquired_infection",
+        "target": "icu",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "vancomycin",
+        "target": "icu",
+        "relation": "administered_in"
+      },
+      {
+        "source": "hospital_acquired_infection",
+        "target": "attending_physician",
+        "relation": "performed_by"
+      },
+      {
+        "source": "hospital_acquired_infection",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "hospital_acquired_infection",
+        "target": "equipment_failure",
+        "relation": "caused_by"
+      },
+      {
+        "source": "adverse_event_report",
+        "target": "rca_review",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-012",
+    "entities": [
+      {
+        "name": "vancomycin",
+        "type": "medication"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "dosage_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "incomplete_documentation",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "infection_prevention_bundle",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "dosage_error",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "vancomycin",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "dosage_error",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "dosage_error",
+        "target": "incomplete_documentation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "standing_order",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-017",
+    "entities": [
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "cefazolin",
+        "type": "medication"
+      },
+      {
+        "name": "diagnostic_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "registered_nurse",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "universal_protocol_time_out_steps",
+        "type": "protocol"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "diagnostic_error",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "cefazolin",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "cefazolin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "diagnostic_error",
+        "target": "registered_nurse",
+        "relation": "performed_by"
+      },
+      {
+        "source": "diagnostic_error",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "diagnostic_error",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "universal_protocol_time_out_steps",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-014",
+    "entities": [
+      {
+        "name": "vancomycin",
+        "type": "medication"
+      },
+      {
+        "name": "pediatrics",
+        "type": "department"
+      },
+      {
+        "name": "delayed_treatment",
+        "type": "incident_type"
+      },
+      {
+        "name": "pharmacist",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "sbar",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "delayed_treatment",
+        "target": "pediatrics",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "vancomycin",
+        "target": "pediatrics",
+        "relation": "administered_in"
+      },
+      {
+        "source": "pharmacist",
+        "target": "delayed_treatment",
+        "relation": "performed_by"
+      },
+      {
+        "source": "attending_physician",
+        "target": "delayed_treatment",
+        "relation": "performed_by"
+      },
+      {
+        "source": "vancomycin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "delayed_treatment",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "delayed_treatment",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "standing_order",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-015",
+    "entities": [
+      {
+        "name": "dosage_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "cefazolin",
+        "type": "medication"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "alarm_fatigue",
+        "type": "root_cause"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "standard_infection_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "cefazolin_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "dosage_error",
+        "target": "icu",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "cefazolin",
+        "target": "icu",
+        "relation": "administered_in"
+      },
+      {
+        "source": "attending_physician",
+        "target": "dosage_error",
+        "relation": "performed_by"
+      },
+      {
+        "source": "dosage_error",
+        "target": "alarm_fatigue",
+        "relation": "caused_by"
+      },
+      {
+        "source": "dosage_error",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "cefazolin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "cefazolin",
+        "target": "cefazolin_administration_workflow",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-016",
+    "entities": [
+      {
+        "name": "or",
+        "type": "department"
+      },
+      {
+        "name": "specimen_mislabeling",
+        "type": "incident_type"
+      },
+      {
+        "name": "vancomycin",
+        "type": "medication"
+      },
+      {
+        "name": "anesthesiologist",
+        "type": "staff_role"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "mar",
+        "type": "protocol"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "medication_reconciliation_steps",
+        "type": "protocol"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "knowledge_gap",
+        "type": "root_cause"
+      },
+      {
+        "name": "rca_review",
+        "type": "protocol"
+      },
+      {
+        "name": "vancomycin_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "specimen_mislabeling",
+        "target": "or",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "vancomycin",
+        "target": "or",
+        "relation": "administered_in"
+      },
+      {
+        "source": "specimen_mislabeling",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "specimen_mislabeling",
+        "target": "knowledge_gap",
+        "relation": "caused_by"
+      },
+      {
+        "source": "vancomycin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "vancomycin",
+        "target": "mar",
+        "relation": "documented_in"
+      },
+      {
+        "source": "specimen_mislabeling",
+        "target": "standing_order",
+        "relation": "violates"
+      },
+      {
+        "source": "specimen_mislabeling",
+        "target": "mar",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-019",
+    "entities": [
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "wrong_site_surgery",
+        "type": "incident_type"
+      },
+      {
+        "name": "warfarin",
+        "type": "medication"
+      },
+      {
+        "name": "pharmacist",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "sbar",
+        "type": "protocol"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "alarm_fatigue",
+        "type": "root_cause"
+      },
+      {
+        "name": "rca_review",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "wrong_site_surgery",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "warfarin",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "warfarin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "wrong_site_surgery",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "wrong_site_surgery",
+        "target": "alarm_fatigue",
+        "relation": "caused_by"
+      },
+      {
+        "source": "wrong_site_surgery",
+        "target": "rca_review",
+        "relation": "documented_in"
+      },
+      {
+        "source": "wrong_site_surgery",
+        "target": "standing_order",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-018",
+    "entities": [
+      {
+        "name": "lisinopril",
+        "type": "medication"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "pressure_injury",
+        "type": "incident_type"
+      },
+      {
+        "name": "adverse_event",
+        "type": "incident_type"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_discrepancy",
+        "type": "incident_type"
+      },
+      {
+        "name": "incomplete_documentation",
+        "type": "root_cause"
+      },
+      {
+        "name": "knowledge_gap",
+        "type": "root_cause"
+      },
+      {
+        "name": "fall_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "lisinopril_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "pressure_injury",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "adverse_event",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "adverse_event",
+        "target": "attending_physician",
+        "relation": "performed_by"
+      },
+      {
+        "source": "medication_discrepancy",
+        "target": "attending_physician",
+        "relation": "performed_by"
+      },
+      {
+        "source": "lisinopril",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "medication_discrepancy",
+        "target": "incomplete_documentation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "medication_discrepancy",
+        "target": "knowledge_gap",
+        "relation": "caused_by"
+      },
+      {
+        "source": "lisinopril_administration_workflow",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "pressure_injury",
+        "target": "medication_discrepancy",
+        "relation": "caused_by"
+      },
+      {
+        "source": "lisinopril",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "medication_discrepancy",
+        "target": "er",
+        "relation": "occurred_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-020",
+    "entities": [
+      {
+        "name": "insulin",
+        "type": "medication"
+      },
+      {
+        "name": "medical_surgical",
+        "type": "department"
+      },
+      {
+        "name": "medication_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "registered_nurse",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "universal_protocol_time_out",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "medication_error",
+        "target": "medical_surgical",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "insulin",
+        "target": "medical_surgical",
+        "relation": "administered_in"
+      },
+      {
+        "source": "registered_nurse",
+        "target": "medication_error",
+        "relation": "performed_by"
+      },
+      {
+        "source": "medication_error",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "medication_error",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "medication_error",
+        "target": "standing_order",
+        "relation": "violates"
+      },
+      {
+        "source": "medication_error",
+        "target": "universal_protocol_time_out",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-021",
+    "entities": [
+      {
+        "name": "warfarin",
+        "type": "medication"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "dosage_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "sentinel_event",
+        "type": "incident_type"
+      },
+      {
+        "name": "respiratory_therapist",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "handoff_sbar_steps",
+        "type": "protocol"
+      },
+      {
+        "name": "warfarin_administration_workflow",
+        "type": "protocol"
+      },
+      {
+        "name": "rca_review",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "dosage_error",
+        "target": "icu",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "dosage_error",
+        "target": "warfarin",
+        "relation": "administered_in"
+      },
+      {
+        "source": "dosage_error",
+        "target": "respiratory_therapist",
+        "relation": "performed_by"
+      },
+      {
+        "source": "dosage_error",
+        "target": "sentinel_event",
+        "relation": "documented_in"
+      },
+      {
+        "source": "warfarin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "dosage_error",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "dosage_error",
+        "target": "rca_review",
+        "relation": "documented_in"
+      },
+      {
+        "source": "warfarin_administration_workflow",
+        "target": "icu",
+        "relation": "administered_in"
+      },
+      {
+        "source": "warfarin_administration_workflow",
+        "target": "dosage_error",
+        "relation": "documented_in"
+      },
+      {
+        "source": "handoff_sbar_steps",
+        "target": "dosage_error",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-010",
+    "entities": [
+      {
+        "name": "warfarin",
+        "type": "medication"
+      },
+      {
+        "name": "cardiology",
+        "type": "department"
+      },
+      {
+        "name": "wrong_site_surgery",
+        "type": "incident_type"
+      },
+      {
+        "name": "adverse_event",
+        "type": "incident_type"
+      },
+      {
+        "name": "anesthesiologist",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "infection_prevention_bundle",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "wrong_site_surgery",
+        "target": "cardiology",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "adverse_event",
+        "target": "cardiology",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "warfarin",
+        "target": "cardiology",
+        "relation": "administered_in"
+      },
+      {
+        "source": "wrong_site_surgery",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "wrong_site_surgery",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "standing_order",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-024",
+    "entities": [
+      {
+        "name": "vancomycin",
+        "type": "medication"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "patient_fall",
+        "type": "incident_type"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "equipment_failure",
+        "type": "root_cause"
+      },
+      {
+        "name": "knowledge_gap",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_steps",
+        "type": "protocol"
+      },
+      {
+        "name": "vancomycin_administration_workflow",
+        "type": "protocol"
+      },
+      {
+        "name": "rca_review",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "patient_fall",
+        "target": "icu",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "vancomycin",
+        "target": "patient_fall",
+        "relation": "administered_in"
+      },
+      {
+        "source": "attending_physician",
+        "target": "patient_fall",
+        "relation": "performed_by"
+      },
+      {
+        "source": "vancomycin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "attending_physician",
+        "target": "medication_reconciliation_steps",
+        "relation": "performed_by"
+      },
+      {
+        "source": "equipment_failure",
+        "target": "patient_fall",
+        "relation": "caused_by"
+      },
+      {
+        "source": "knowledge_gap",
+        "target": "patient_fall",
+        "relation": "caused_by"
+      },
+      {
+        "source": "patient_fall",
+        "target": "rca_review",
+        "relation": "documented_in"
+      },
+      {
+        "source": "vancomycin_administration_workflow",
+        "target": "icu",
+        "relation": "documented_in"
+      },
+      {
+        "source": "vancomycin_administration_workflow",
+        "target": "vancomycin",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-003",
+    "entities": [
+      {
+        "name": "insulin",
+        "type": "medication"
+      },
+      {
+        "name": "medical_surgical",
+        "type": "department"
+      },
+      {
+        "name": "medication_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "anesthesiologist",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "handoff_sbar_steps",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "medication_error",
+        "target": "medical_surgical",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "insulin",
+        "target": "medical_surgical",
+        "relation": "administered_in"
+      },
+      {
+        "source": "insulin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "medication_error",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "medication_error",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "handoff_sbar_steps",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-022",
+    "entities": [
+      {
+        "name": "metformin",
+        "type": "medication"
+      },
+      {
+        "name": "medical_surgical",
+        "type": "department"
+      },
+      {
+        "name": "pressure_injury",
+        "type": "incident_type"
+      },
+      {
+        "name": "medication_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "handoff_sbar_steps",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "pressure_injury",
+        "target": "medical_surgical",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "medication_error",
+        "target": "medical_surgical",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "metformin",
+        "target": "medical_surgical",
+        "relation": "administered_in"
+      },
+      {
+        "source": "metformin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "attending_physician",
+        "target": "medication_error",
+        "relation": "performed_by"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "medication_error",
+        "relation": "caused_by"
+      },
+      {
+        "source": "miscommunication_handoff",
+        "target": "medication_error",
+        "relation": "caused_by"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "handoff_sbar_steps",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-031",
+    "entities": [
+      {
+        "name": "vancomycin",
+        "type": "medication"
+      },
+      {
+        "name": "pediatrics",
+        "type": "department"
+      },
+      {
+        "name": "dosage_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "rn",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "universal_protocol_time_out",
+        "type": "protocol"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "rca_review",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "dosage_error",
+        "target": "pediatrics",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "dosage_error",
+        "target": "vancomycin",
+        "relation": "administered_in"
+      },
+      {
+        "source": "dosage_error",
+        "target": "rn",
+        "relation": "performed_by"
+      },
+      {
+        "source": "inadequate_staffing",
+        "target": "dosage_error",
+        "relation": "caused_by"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "dosage_error",
+        "relation": "caused_by"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "universal_protocol_time_out",
+        "relation": "violates"
+      },
+      {
+        "source": "dosage_error",
+        "target": "universal_protocol_time_out",
+        "relation": "documented_in"
+      },
+      {
+        "source": "dosage_error",
+        "target": "rca_review",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-032",
+    "entities": [
+      {
+        "name": "patient_fall",
+        "type": "incident_type"
+      },
+      {
+        "name": "medical_surgical",
+        "type": "department"
+      },
+      {
+        "name": "morphine",
+        "type": "medication"
+      },
+      {
+        "name": "resident",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "infection_prevention_bundle",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "patient_fall",
+        "target": "medical_surgical",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "morphine",
+        "target": "patient_fall",
+        "relation": "administered_in"
+      },
+      {
+        "source": "resident",
+        "target": "patient_fall",
+        "relation": "performed_by"
+      },
+      {
+        "source": "inadequate_staffing",
+        "target": "patient_fall",
+        "relation": "caused_by"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "patient_fall",
+        "relation": "caused_by"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-025",
+    "entities": [
+      {
+        "name": "insulin",
+        "type": "medication"
+      },
+      {
+        "name": "pediatrics",
+        "type": "department"
+      },
+      {
+        "name": "patient_fall",
+        "type": "incident_type"
+      },
+      {
+        "name": "rn",
+        "type": "staff_role"
+      },
+      {
+        "name": "medication_discrepancy",
+        "type": "incident_type"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_administration_record",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_protocol",
+        "type": "protocol"
+      },
+      {
+        "name": "insulin_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "patient_fall",
+        "target": "pediatrics",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "insulin",
+        "target": "pediatrics",
+        "relation": "administered_in"
+      },
+      {
+        "source": "medication_discrepancy",
+        "target": "rn",
+        "relation": "performed_by"
+      },
+      {
+        "source": "insulin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "medication_discrepancy",
+        "target": "medication_administration_record",
+        "relation": "violates"
+      },
+      {
+        "source": "medication_discrepancy",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "medication_discrepancy",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "insulin_administration_workflow",
+        "target": "pediatrics",
+        "relation": "administered_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-028",
+    "entities": [
+      {
+        "name": "metformin",
+        "type": "medication"
+      },
+      {
+        "name": "or",
+        "type": "department"
+      },
+      {
+        "name": "diagnostic_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "resident",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "incomplete_documentation",
+        "type": "root_cause"
+      },
+      {
+        "name": "metformin_administration_workflow",
+        "type": "protocol"
+      },
+      {
+        "name": "sentinel_event",
+        "type": "incident_type"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "diagnostic_error",
+        "target": "or",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "metformin",
+        "target": "or",
+        "relation": "administered_in"
+      },
+      {
+        "source": "resident",
+        "target": "diagnostic_error",
+        "relation": "performed_by"
+      },
+      {
+        "source": "metformin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "incomplete_documentation",
+        "target": "diagnostic_error",
+        "relation": "caused_by"
+      },
+      {
+        "source": "metformin_administration_workflow",
+        "target": "or",
+        "relation": "administered_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-029",
+    "entities": [
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "heparin",
+        "type": "medication"
+      },
+      {
+        "name": "delayed_treatment",
+        "type": "incident_type"
+      },
+      {
+        "name": "respiratory_therapist",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "universal_protocol_time_out",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_administration_discrepancy",
+        "type": "incident_type"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "delayed_treatment",
+        "target": "icu",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "delayed_treatment",
+        "target": "heparin",
+        "relation": "administered_in"
+      },
+      {
+        "source": "delayed_treatment",
+        "target": "respiratory_therapist",
+        "relation": "performed_by"
+      },
+      {
+        "source": "medication_administration_discrepancy",
+        "target": "icu",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "medication_administration_discrepancy",
+        "target": "heparin",
+        "relation": "administered_in"
+      },
+      {
+        "source": "medication_administration_discrepancy",
+        "target": "respiratory_therapist",
+        "relation": "performed_by"
+      },
+      {
+        "source": "heparin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "delayed_treatment",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "medication_administration_discrepancy",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-030",
+    "entities": [
+      {
+        "name": "or",
+        "type": "department"
+      },
+      {
+        "name": "wrong_site_surgery",
+        "type": "incident_type"
+      },
+      {
+        "name": "morphine",
+        "type": "medication"
+      },
+      {
+        "name": "resident",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "infection_prevention_bundle_steps",
+        "type": "protocol"
+      },
+      {
+        "name": "rca_review",
+        "type": "protocol"
+      },
+      {
+        "name": "morphine_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "wrong_site_surgery",
+        "target": "or",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "morphine",
+        "target": "or",
+        "relation": "administered_in"
+      },
+      {
+        "source": "resident",
+        "target": "wrong_site_surgery",
+        "relation": "performed_by"
+      },
+      {
+        "source": "morphine",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "miscommunication_handoff",
+        "target": "wrong_site_surgery",
+        "relation": "caused_by"
+      },
+      {
+        "source": "inadequate_staffing",
+        "target": "wrong_site_surgery",
+        "relation": "caused_by"
+      },
+      {
+        "source": "wrong_site_surgery",
+        "target": "rca_review",
+        "relation": "documented_in"
+      },
+      {
+        "source": "infection_prevention_bundle_steps",
+        "target": "wrong_site_surgery",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-034",
+    "entities": [
+      {
+        "name": "pediatrics",
+        "type": "department"
+      },
+      {
+        "name": "heparin",
+        "type": "medication"
+      },
+      {
+        "name": "pressure_injury",
+        "type": "incident_type"
+      },
+      {
+        "name": "registered_nurse",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "equipment_failure",
+        "type": "root_cause"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_administration_record",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_steps",
+        "type": "protocol"
+      },
+      {
+        "name": "heparin_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "pressure_injury",
+        "target": "pediatrics",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "pressure_injury",
+        "target": "heparin",
+        "relation": "caused_by"
+      },
+      {
+        "source": "pressure_injury",
+        "target": "registered_nurse",
+        "relation": "performed_by"
+      },
+      {
+        "source": "heparin",
+        "target": "standing_order",
+        "relation": "administered_in"
+      },
+      {
+        "source": "pressure_injury",
+        "target": "equipment_failure",
+        "relation": "caused_by"
+      },
+      {
+        "source": "pressure_injury",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "medication_administration_record",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-026",
+    "entities": [
+      {
+        "name": "adverse_event_report_aer_026",
+        "type": "incident_type"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "heparin",
+        "type": "medication"
+      },
+      {
+        "name": "anesthesiologist",
+        "type": "staff_role"
+      },
+      {
+        "name": "dosage_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "standard_infection_prevention_bundle_steps",
+        "type": "protocol"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "knowledge_gap",
+        "type": "root_cause"
+      },
+      {
+        "name": "rca_review",
+        "type": "protocol"
+      },
+      {
+        "name": "heparin_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "dosage_error",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "heparin",
+        "target": "dosage_error",
+        "relation": "administered_in"
+      },
+      {
+        "source": "dosage_error",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "dosage_error",
+        "target": "knowledge_gap",
+        "relation": "caused_by"
+      },
+      {
+        "source": "adverse_event_report_aer_026",
+        "target": "er",
+        "relation": "documented_in"
+      },
+      {
+        "source": "adverse_event_report_aer_026",
+        "target": "dosage_error",
+        "relation": "documented_in"
+      },
+      {
+        "source": "adverse_event_report_aer_026",
+        "target": "rca_review",
+        "relation": "documented_in"
+      },
+      {
+        "source": "heparin_administration_workflow",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "dosage_error",
+        "target": "heparin_administration_workflow",
+        "relation": "violates"
+      },
+      {
+        "source": "standard_infection_prevention_bundle_steps",
+        "target": "adverse_event_report_aer_026",
+        "relation": "documented_in"
+      },
+      {
+        "source": "anesthesiologist",
+        "target": "adverse_event_report_aer_026",
+        "relation": "documented_in"
+      },
+      {
+        "source": "attending_physician",
+        "target": "adverse_event_report_aer_026",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-036",
+    "entities": [
+      {
+        "name": "metformin",
+        "type": "medication"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "delayed_treatment",
+        "type": "incident_type"
+      },
+      {
+        "name": "medication_dose_discrepancy",
+        "type": "incident_type"
+      },
+      {
+        "name": "registered_nurse",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "alarm_fatigue",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "handoff_sbar",
+        "type": "protocol"
+      },
+      {
+        "name": "metformin_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "delayed_treatment",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "medication_dose_discrepancy",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "metformin",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "medication_dose_discrepancy",
+        "target": "registered_nurse",
+        "relation": "performed_by"
+      },
+      {
+        "source": "delayed_treatment",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "delayed_treatment",
+        "target": "alarm_fatigue",
+        "relation": "caused_by"
+      },
+      {
+        "source": "medication_dose_discrepancy",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "medication_dose_discrepancy",
+        "target": "alarm_fatigue",
+        "relation": "caused_by"
+      },
+      {
+        "source": "metformin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "medication_dose_discrepancy",
+        "target": "standing_order",
+        "relation": "violates"
+      },
+      {
+        "source": "metformin",
+        "target": "metformin_administration_workflow",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-038",
+    "entities": [
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "vancomycin",
+        "type": "medication"
+      },
+      {
+        "name": "hospital_acquired_infection",
+        "type": "incident_type"
+      },
+      {
+        "name": "resident",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "alarm_fatigue",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_administration_record",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_steps",
+        "type": "protocol"
+      },
+      {
+        "name": "rca_review",
+        "type": "protocol"
+      },
+      {
+        "name": "vancomycin_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "hospital_acquired_infection",
+        "target": "icu",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "vancomycin",
+        "target": "hospital_acquired_infection",
+        "relation": "administered_in"
+      },
+      {
+        "source": "resident",
+        "target": "hospital_acquired_infection",
+        "relation": "performed_by"
+      },
+      {
+        "source": "vancomycin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "hospital_acquired_infection",
+        "target": "medication_administration_record",
+        "relation": "violates"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "hospital_acquired_infection",
+        "relation": "caused_by"
+      },
+      {
+        "source": "alarm_fatigue",
+        "target": "hospital_acquired_infection",
+        "relation": "caused_by"
+      },
+      {
+        "source": "hospital_acquired_infection",
+        "target": "rca_review",
+        "relation": "documented_in"
+      },
+      {
+        "source": "vancomycin_administration_workflow",
+        "target": "icu",
+        "relation": "documented_in"
+      },
+      {
+        "source": "vancomycin_administration_workflow",
+        "target": "vancomycin",
+        "relation": "documented_in"
+      },
+      {
+        "source": "medication_reconciliation_steps",
+        "target": "hospital_acquired_infection",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-023",
+    "entities": [
+      {
+        "name": "radiology",
+        "type": "department"
+      },
+      {
+        "name": "patient_fall",
+        "type": "incident_type"
+      },
+      {
+        "name": "morphine",
+        "type": "medication"
+      },
+      {
+        "name": "respiratory_therapist",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "knowledge_gap",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "fall_prevention_bundle",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "patient_fall",
+        "target": "radiology",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "morphine",
+        "target": "radiology",
+        "relation": "administered_in"
+      },
+      {
+        "source": "morphine",
+        "target": "patient_fall",
+        "relation": "caused_by"
+      },
+      {
+        "source": "respiratory_therapist",
+        "target": "patient_fall",
+        "relation": "performed_by"
+      },
+      {
+        "source": "morphine",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "patient_fall",
+        "relation": "caused_by"
+      },
+      {
+        "source": "knowledge_gap",
+        "target": "patient_fall",
+        "relation": "caused_by"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-033",
+    "entities": [
+      {
+        "name": "aer_033",
+        "type": "incident_type"
+      },
+      {
+        "name": "or",
+        "type": "department"
+      },
+      {
+        "name": "hospital_acquired_infection",
+        "type": "incident_type"
+      },
+      {
+        "name": "insulin",
+        "type": "medication"
+      },
+      {
+        "name": "resident",
+        "type": "staff_role"
+      },
+      {
+        "name": "sentinel",
+        "type": "incident_type"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "universal_protocol_time_out_steps",
+        "type": "protocol"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "insulin_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "hospital_acquired_infection",
+        "target": "or",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "insulin",
+        "target": "or",
+        "relation": "administered_in"
+      },
+      {
+        "source": "hospital_acquired_infection",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "hospital_acquired_infection",
+        "target": "aer_033",
+        "relation": "documented_in"
+      },
+      {
+        "source": "sentinel",
+        "target": "aer_033",
+        "relation": "documented_in"
+      },
+      {
+        "source": "resident",
+        "target": "universal_protocol_time_out_steps",
+        "relation": "performed_by"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-040",
+    "entities": [
+      {
+        "name": "heparin",
+        "type": "medication"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "diagnostic_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "pharmacist",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "alarm_fatigue",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "handoff_sbar_steps",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "diagnostic_error",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "heparin",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "diagnostic_error",
+        "target": "pharmacist",
+        "relation": "performed_by"
+      },
+      {
+        "source": "diagnostic_error",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "diagnostic_error",
+        "target": "alarm_fatigue",
+        "relation": "caused_by"
+      },
+      {
+        "source": "diagnostic_error",
+        "target": "standing_order",
+        "relation": "violates"
+      },
+      {
+        "source": "diagnostic_error",
+        "target": "handoff_sbar_steps",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-035",
+    "entities": [
+      {
+        "name": "medical_surgical",
+        "type": "department"
+      },
+      {
+        "name": "wrong_site_surgery",
+        "type": "incident_type"
+      },
+      {
+        "name": "morphine",
+        "type": "medication"
+      },
+      {
+        "name": "registered_nurse",
+        "type": "staff_role"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "medication_reconciliation_steps",
+        "type": "protocol"
+      },
+      {
+        "name": "alarm_fatigue",
+        "type": "root_cause"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "rca_review",
+        "type": "protocol"
+      },
+      {
+        "name": "morphine_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "wrong_site_surgery",
+        "target": "medical_surgical",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "wrong_site_surgery",
+        "target": "alarm_fatigue",
+        "relation": "caused_by"
+      },
+      {
+        "source": "wrong_site_surgery",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "morphine",
+        "target": "medical_surgical",
+        "relation": "administered_in"
+      },
+      {
+        "source": "registered_nurse",
+        "target": "medication_reconciliation_steps",
+        "relation": "performed_by"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-045",
+    "entities": [
+      {
+        "name": "morphine",
+        "type": "medication"
+      },
+      {
+        "name": "radiology",
+        "type": "department"
+      },
+      {
+        "name": "delayed_treatment",
+        "type": "incident_type"
+      },
+      {
+        "name": "anesthesiologist",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "knowledge_gap",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_administration_record",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_steps",
+        "type": "protocol"
+      },
+      {
+        "name": "morphine_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "delayed_treatment",
+        "target": "radiology",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "morphine",
+        "target": "radiology",
+        "relation": "administered_in"
+      },
+      {
+        "source": "anesthesiologist",
+        "target": "delayed_treatment",
+        "relation": "performed_by"
+      },
+      {
+        "source": "morphine",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "morphine",
+        "target": "medication_administration_record",
+        "relation": "documented_in"
+      },
+      {
+        "source": "delayed_treatment",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "delayed_treatment",
+        "target": "knowledge_gap",
+        "relation": "caused_by"
+      },
+      {
+        "source": "morphine_administration_workflow",
+        "target": "radiology",
+        "relation": "administered_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-039",
+    "entities": [
+      {
+        "name": "warfarin",
+        "type": "medication"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "dosage_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "anesthesiologist",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "fall_prevention_bundle",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "dosage_error",
+        "target": "icu",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "warfarin",
+        "target": "icu",
+        "relation": "administered_in"
+      },
+      {
+        "source": "anesthesiologist",
+        "target": "dosage_error",
+        "relation": "performed_by"
+      },
+      {
+        "source": "dosage_error",
+        "target": "standing_order",
+        "relation": "violates"
+      },
+      {
+        "source": "inadequate_staffing",
+        "target": "dosage_error",
+        "relation": "caused_by"
+      },
+      {
+        "source": "miscommunication_handoff",
+        "target": "dosage_error",
+        "relation": "caused_by"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-041",
+    "entities": [
+      {
+        "name": "oxycodone",
+        "type": "medication"
+      },
+      {
+        "name": "cardiology",
+        "type": "department"
+      },
+      {
+        "name": "pressure_injury",
+        "type": "incident_type"
+      },
+      {
+        "name": "medication_discrepancy",
+        "type": "incident_type"
+      },
+      {
+        "name": "registered_nurse",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_administration_record",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_steps",
+        "type": "protocol"
+      },
+      {
+        "name": "oxycodone_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "pressure_injury",
+        "target": "cardiology",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "medication_discrepancy",
+        "target": "cardiology",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "oxycodone",
+        "target": "cardiology",
+        "relation": "administered_in"
+      },
+      {
+        "source": "medication_discrepancy",
+        "target": "registered_nurse",
+        "relation": "performed_by"
+      },
+      {
+        "source": "oxycodone",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "medication_discrepancy",
+        "target": "medication_administration_record",
+        "relation": "violates"
+      },
+      {
+        "source": "medication_discrepancy",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "medication_discrepancy",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "oxycodone",
+        "target": "oxycodone_administration_workflow",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-050",
+    "entities": [
+      {
+        "name": "adverse_event_report",
+        "type": "incident_type"
+      },
+      {
+        "name": "medical_surgical",
+        "type": "department"
+      },
+      {
+        "name": "patient_fall",
+        "type": "incident_type"
+      },
+      {
+        "name": "heparin",
+        "type": "medication"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "rca_review",
+        "type": "protocol"
+      },
+      {
+        "name": "heparin_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "patient_fall",
+        "target": "medical_surgical",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "heparin",
+        "target": "medical_surgical",
+        "relation": "administered_in"
+      },
+      {
+        "source": "attending_physician",
+        "target": "patient_fall",
+        "relation": "performed_by"
+      },
+      {
+        "source": "miscommunication_handoff",
+        "target": "patient_fall",
+        "relation": "caused_by"
+      },
+      {
+        "source": "patient_fall",
+        "target": "adverse_event_report",
+        "relation": "documented_in"
+      },
+      {
+        "source": "heparin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "patient_fall",
+        "target": "rca_review",
+        "relation": "documented_in"
+      },
+      {
+        "source": "heparin_administration_workflow",
+        "target": "medical_surgical",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-048",
+    "entities": [
+      {
+        "name": "vancomycin",
+        "type": "medication"
+      },
+      {
+        "name": "cardiology",
+        "type": "department"
+      },
+      {
+        "name": "wrong_site_surgery",
+        "type": "incident_type"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "vancomycin_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "wrong_site_surgery",
+        "target": "cardiology",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "vancomycin",
+        "target": "wrong_site_surgery",
+        "relation": "administered_in"
+      },
+      {
+        "source": "attending_physician",
+        "target": "wrong_site_surgery",
+        "relation": "performed_by"
+      },
+      {
+        "source": "vancomycin",
+        "target": "standing_order",
+        "relation": "administered_in"
+      },
+      {
+        "source": "inadequate_staffing",
+        "target": "wrong_site_surgery",
+        "relation": "caused_by"
+      },
+      {
+        "source": "vancomycin_administration_workflow",
+        "target": "cardiology",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-046",
+    "entities": [
+      {
+        "name": "heparin",
+        "type": "medication"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "pressure_injury",
+        "type": "incident_type"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "sentinel",
+        "type": "incident_type"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "rca_review",
+        "type": "protocol"
+      },
+      {
+        "name": "heparin_administration_workflow",
+        "type": "protocol"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_administration_record",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_steps",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "pressure_injury",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "pressure_injury",
+        "target": "heparin",
+        "relation": "caused_by"
+      },
+      {
+        "source": "attending_physician",
+        "target": "pressure_injury",
+        "relation": "performed_by"
+      },
+      {
+        "source": "heparin",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "heparin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "pressure_injury",
+        "target": "sentinel",
+        "relation": "documented_in"
+      },
+      {
+        "source": "miscommunication_handoff",
+        "target": "pressure_injury",
+        "relation": "caused_by"
+      },
+      {
+        "source": "pressure_injury",
+        "target": "rca_review",
+        "relation": "documented_in"
+      },
+      {
+        "source": "heparin_administration_workflow",
+        "target": "er",
+        "relation": "administered_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-037",
+    "entities": [
+      {
+        "name": "heparin",
+        "type": "medication"
+      },
+      {
+        "name": "or",
+        "type": "department"
+      },
+      {
+        "name": "pressure_injury",
+        "type": "incident_type"
+      },
+      {
+        "name": "pharmacist",
+        "type": "staff_role"
+      },
+      {
+        "name": "medication_administration_discrepancy",
+        "type": "incident_type"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "fall_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "heparin_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "pressure_injury",
+        "target": "or",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "pressure_injury",
+        "target": "heparin",
+        "relation": "caused_by"
+      },
+      {
+        "source": "pressure_injury",
+        "target": "pharmacist",
+        "relation": "performed_by"
+      },
+      {
+        "source": "heparin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "medication_administration_discrepancy",
+        "target": "pharmacist",
+        "relation": "performed_by"
+      },
+      {
+        "source": "medication_administration_discrepancy",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "heparin_administration_workflow",
+        "target": "or",
+        "relation": "administered_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-049",
+    "entities": [
+      {
+        "name": "lisinopril",
+        "type": "medication"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "delayed_treatment",
+        "type": "incident_type"
+      },
+      {
+        "name": "respiratory_therapist",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "universal_protocol_time_out_steps",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "delayed_treatment",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "lisinopril",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "delayed_treatment",
+        "target": "respiratory_therapist",
+        "relation": "performed_by"
+      },
+      {
+        "source": "lisinopril",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "delayed_treatment",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "delayed_treatment",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "standing_order",
+        "relation": "violates"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "universal_protocol_time_out_steps",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-052",
+    "entities": [
+      {
+        "name": "warfarin",
+        "type": "medication"
+      },
+      {
+        "name": "medical_surgical",
+        "type": "department"
+      },
+      {
+        "name": "delayed_treatment",
+        "type": "incident_type"
+      },
+      {
+        "name": "respiratory_therapist",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_steps",
+        "type": "protocol"
+      },
+      {
+        "name": "warfarin_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "delayed_treatment",
+        "target": "medical_surgical",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "warfarin",
+        "target": "delayed_treatment",
+        "relation": "administered_in"
+      },
+      {
+        "source": "respiratory_therapist",
+        "target": "delayed_treatment",
+        "relation": "performed_by"
+      },
+      {
+        "source": "warfarin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "miscommunication_handoff",
+        "target": "delayed_treatment",
+        "relation": "caused_by"
+      },
+      {
+        "source": "inadequate_staffing",
+        "target": "delayed_treatment",
+        "relation": "caused_by"
+      },
+      {
+        "source": "warfarin_administration_workflow",
+        "target": "medical_surgical",
+        "relation": "occurred_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-051",
+    "entities": [
+      {
+        "name": "heparin",
+        "type": "medication"
+      },
+      {
+        "name": "oncology",
+        "type": "department"
+      },
+      {
+        "name": "patient_fall",
+        "type": "incident_type"
+      },
+      {
+        "name": "resident",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_administration_record",
+        "type": "protocol"
+      },
+      {
+        "name": "standard_medication_reconciliation_steps",
+        "type": "protocol"
+      },
+      {
+        "name": "heparin_administration_workflow",
+        "type": "protocol"
+      },
+      {
+        "name": "rca_review",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "patient_fall",
+        "target": "oncology",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "heparin",
+        "target": "oncology",
+        "relation": "administered_in"
+      },
+      {
+        "source": "patient_fall",
+        "target": "resident",
+        "relation": "performed_by"
+      },
+      {
+        "source": "heparin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "patient_fall",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "heparin_administration_workflow",
+        "target": "oncology",
+        "relation": "documented_in"
+      },
+      {
+        "source": "patient_fall",
+        "target": "rca_review",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-053",
+    "entities": [
+      {
+        "name": "warfarin",
+        "type": "medication"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "medication_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "registered_nurse",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "fall_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "alarm_fatigue",
+        "type": "root_cause"
+      },
+      {
+        "name": "adverse_event",
+        "type": "incident_type"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "medication_error",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "warfarin",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "registered_nurse",
+        "target": "medication_error",
+        "relation": "performed_by"
+      },
+      {
+        "source": "medication_error",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "medication_error",
+        "target": "alarm_fatigue",
+        "relation": "caused_by"
+      },
+      {
+        "source": "warfarin",
+        "target": "standing_order",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "FORM-001",
+    "entities": [
+      {
+        "name": "heparin",
+        "type": "medication"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "handoff_sbar",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "heparin",
+        "target": "icu",
+        "relation": "administered_in"
+      },
+      {
+        "source": "heparin",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "heparin",
+        "target": "handoff_sbar",
+        "relation": "documented_in"
+      },
+      {
+        "source": "heparin",
+        "target": "medication_reconciliation",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-054",
+    "entities": [
+      {
+        "name": "morphine",
+        "type": "medication"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "delayed_treatment",
+        "type": "incident_type"
+      },
+      {
+        "name": "anesthesiologist",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_steps",
+        "type": "protocol"
+      },
+      {
+        "name": "morphine_administration_workflow",
+        "type": "protocol"
+      },
+      {
+        "name": "adverse_event",
+        "type": "incident_type"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "delayed_treatment",
+        "target": "icu",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "morphine",
+        "target": "icu",
+        "relation": "administered_in"
+      },
+      {
+        "source": "anesthesiologist",
+        "target": "delayed_treatment",
+        "relation": "performed_by"
+      },
+      {
+        "source": "attending_physician",
+        "target": "delayed_treatment",
+        "relation": "performed_by"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "delayed_treatment",
+        "relation": "caused_by"
+      },
+      {
+        "source": "inadequate_staffing",
+        "target": "delayed_treatment",
+        "relation": "caused_by"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "standing_order",
+        "relation": "violates"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "morphine_administration_workflow",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-055",
+    "entities": [
+      {
+        "name": "morphine",
+        "type": "medication"
+      },
+      {
+        "name": "pediatrics",
+        "type": "department"
+      },
+      {
+        "name": "patient_fall",
+        "type": "incident_type"
+      },
+      {
+        "name": "sentinel",
+        "type": "incident_type"
+      },
+      {
+        "name": "adverse_event_report",
+        "type": "incident_type"
+      },
+      {
+        "name": "pharmacist",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "alarm_fatigue",
+        "type": "root_cause"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "fall_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "morphine_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "patient_fall",
+        "target": "pediatrics",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "patient_fall",
+        "target": "adverse_event_report",
+        "relation": "documented_in"
+      },
+      {
+        "source": "patient_fall",
+        "target": "morphine",
+        "relation": "caused_by"
+      },
+      {
+        "source": "pharmacist",
+        "target": "patient_fall",
+        "relation": "performed_by"
+      },
+      {
+        "source": "morphine",
+        "target": "pediatrics",
+        "relation": "administered_in"
+      },
+      {
+        "source": "morphine",
+        "target": "standing_order",
+        "relation": "violates"
+      },
+      {
+        "source": "patient_fall",
+        "target": "alarm_fatigue",
+        "relation": "caused_by"
+      },
+      {
+        "source": "patient_fall",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "morphine_administration_workflow",
+        "target": "pediatrics",
+        "relation": "documented_in"
+      },
+      {
+        "source": "fall_prevention_bundle",
+        "target": "pediatrics",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-042",
+    "entities": [
+      {
+        "name": "heparin",
+        "type": "medication"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "pressure_injury",
+        "type": "incident_type"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "handoff_sbar_steps",
+        "type": "protocol"
+      },
+      {
+        "name": "heparin_administration_workflow",
+        "type": "protocol"
+      },
+      {
+        "name": "rca_review",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "pressure_injury",
+        "target": "icu",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "pressure_injury",
+        "target": "attending_physician",
+        "relation": "performed_by"
+      },
+      {
+        "source": "heparin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "pressure_injury",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "heparin",
+        "target": "icu",
+        "relation": "administered_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-043",
+    "entities": [
+      {
+        "name": "adverse_event",
+        "type": "incident_type"
+      },
+      {
+        "name": "hospital_acquired_infection",
+        "type": "incident_type"
+      },
+      {
+        "name": "sentinel_event",
+        "type": "incident_type"
+      },
+      {
+        "name": "oncology",
+        "type": "department"
+      },
+      {
+        "name": "insulin",
+        "type": "medication"
+      },
+      {
+        "name": "anesthesiologist",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_steps",
+        "type": "protocol"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "incomplete_documentation",
+        "type": "root_cause"
+      },
+      {
+        "name": "insulin_administration_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "adverse_event",
+        "target": "oncology",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "hospital_acquired_infection",
+        "target": "oncology",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "insulin",
+        "target": "hospital_acquired_infection",
+        "relation": "administered_in"
+      },
+      {
+        "source": "anesthesiologist",
+        "target": "adverse_event",
+        "relation": "performed_by"
+      },
+      {
+        "source": "insulin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "medication_reconciliation_steps",
+        "target": "adverse_event",
+        "relation": "documented_in"
+      },
+      {
+        "source": "inadequate_staffing",
+        "target": "hospital_acquired_infection",
+        "relation": "caused_by"
+      },
+      {
+        "source": "incomplete_documentation",
+        "target": "hospital_acquired_infection",
+        "relation": "caused_by"
+      },
+      {
+        "source": "insulin_administration_workflow",
+        "target": "oncology",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "FORM-003",
+    "entities": [
+      {
+        "name": "vancomycin",
+        "type": "medication"
+      },
+      {
+        "name": "formulary_entry_form_003",
+        "type": "protocol"
+      },
+      {
+        "name": "hospital_pharmacopeia",
+        "type": "protocol"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "infection_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "vancomycin",
+        "target": "formulary_entry_form_003",
+        "relation": "documented_in"
+      },
+      {
+        "source": "vancomycin",
+        "target": "hospital_pharmacopeia",
+        "relation": "documented_in"
+      },
+      {
+        "source": "vancomycin",
+        "target": "icu",
+        "relation": "administered_in"
+      },
+      {
+        "source": "vancomycin",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "vancomycin",
+        "target": "infection_prevention_bundle",
+        "relation": "documented_in"
+      },
+      {
+        "source": "vancomycin",
+        "target": "medication_reconciliation",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "FORM-006",
+    "entities": [
+      {
+        "name": "metformin",
+        "type": "medication"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "handoff_sbar",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "metformin",
+        "target": "icu",
+        "relation": "administered_in"
+      },
+      {
+        "source": "metformin",
+        "target": "er",
+        "relation": "administered_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "FORM-007",
+    "entities": [
+      {
+        "name": "furosemide",
+        "type": "medication"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "fall_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "furosemide",
+        "target": "icu",
+        "relation": "administered_in"
+      },
+      {
+        "source": "furosemide",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "furosemide",
+        "target": "fall_prevention_bundle",
+        "relation": "documented_in"
+      },
+      {
+        "source": "furosemide",
+        "target": "medication_reconciliation",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "FORM-008",
+    "entities": [
+      {
+        "name": "lisinopril",
+        "type": "medication"
+      },
+      {
+        "name": "formulary_entry_form_008",
+        "type": "protocol"
+      },
+      {
+        "name": "hospital_pharmacopeia",
+        "type": "protocol"
+      },
+      {
+        "name": "current_hospital_formulary",
+        "type": "protocol"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "fall_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "lisinopril",
+        "target": "formulary_entry_form_008",
+        "relation": "documented_in"
+      },
+      {
+        "source": "lisinopril",
+        "target": "hospital_pharmacopeia",
+        "relation": "documented_in"
+      },
+      {
+        "source": "lisinopril",
+        "target": "current_hospital_formulary",
+        "relation": "documented_in"
+      },
+      {
+        "source": "lisinopril",
+        "target": "icu",
+        "relation": "administered_in"
+      },
+      {
+        "source": "lisinopril",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "lisinopril",
+        "target": "fall_prevention_bundle",
+        "relation": "documented_in"
+      },
+      {
+        "source": "lisinopril",
+        "target": "medication_reconciliation",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "PROT-001",
+    "entities": [
+      {
+        "name": "prot_001_medication_reconciliation",
+        "type": "protocol"
+      },
+      {
+        "name": "pediatrics",
+        "type": "department"
+      },
+      {
+        "name": "respiratory_therapist",
+        "type": "staff_role"
+      },
+      {
+        "name": "medication_reconciliation_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "electronic_health_record",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "prot_001_medication_reconciliation",
+        "target": "pediatrics",
+        "relation": "administered_in"
+      },
+      {
+        "source": "prot_001_medication_reconciliation",
+        "target": "respiratory_therapist",
+        "relation": "performed_by"
+      },
+      {
+        "source": "prot_001_medication_reconciliation",
+        "target": "electronic_health_record",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "PROT-003",
+    "entities": [
+      {
+        "name": "fall_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "fall_prevention",
+        "type": "incident_type"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "respiratory_therapist",
+        "type": "staff_role"
+      },
+      {
+        "name": "anesthesiologist",
+        "type": "staff_role"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "fall_prevention_bundle",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "fall_prevention_bundle",
+        "target": "respiratory_therapist",
+        "relation": "performed_by"
+      },
+      {
+        "source": "fall_prevention_bundle",
+        "target": "anesthesiologist",
+        "relation": "performed_by"
+      }
+    ]
+  },
+  {
+    "doc_id": "PROT-005",
+    "entities": [
+      {
+        "name": "handoff_sbar",
+        "type": "protocol"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "anesthesiologist",
+        "type": "staff_role"
+      },
+      {
+        "name": "resident_staff",
+        "type": "staff_role"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "handoff_sbar",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "handoff_sbar",
+        "target": "anesthesiologist",
+        "relation": "performed_by"
+      },
+      {
+        "source": "handoff_sbar",
+        "target": "resident_staff",
+        "relation": "performed_by"
+      }
+    ]
+  },
+  {
+    "doc_id": "PROT-006",
+    "entities": [
+      {
+        "name": "prot_006_medication_reconciliation",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation",
+        "type": "incident_type"
+      },
+      {
+        "name": "oncology",
+        "type": "department"
+      },
+      {
+        "name": "pharmacist",
+        "type": "staff_role"
+      },
+      {
+        "name": "registered_nurse",
+        "type": "staff_role"
+      },
+      {
+        "name": "joint_commission_national_patient_safety_goals",
+        "type": "protocol"
+      },
+      {
+        "name": "internal_policy_manual_medication_reconciliation_section",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "medication_reconciliation",
+        "target": "oncology",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "medication_reconciliation",
+        "target": "pharmacist",
+        "relation": "performed_by"
+      },
+      {
+        "source": "medication_reconciliation",
+        "target": "registered_nurse",
+        "relation": "performed_by"
+      },
+      {
+        "source": "prot_006_medication_reconciliation",
+        "target": "joint_commission_national_patient_safety_goals",
+        "relation": "documented_in"
+      },
+      {
+        "source": "prot_006_medication_reconciliation",
+        "target": "internal_policy_manual_medication_reconciliation_section",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "PROT-007",
+    "entities": [
+      {
+        "name": "prot_007_universal_protocol_time_out",
+        "type": "protocol"
+      },
+      {
+        "name": "medical_surgical",
+        "type": "department"
+      },
+      {
+        "name": "respiratory_therapist",
+        "type": "staff_role"
+      },
+      {
+        "name": "pharmacist",
+        "type": "staff_role"
+      },
+      {
+        "name": "universal_protocol_time_out_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "electronic_health_record",
+        "type": "department"
+      },
+      {
+        "name": "joint_commission_national_patient_safety_goals",
+        "type": "protocol"
+      },
+      {
+        "name": "internal_policy_manual",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "prot_007_universal_protocol_time_out",
+        "target": "medical_surgical",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "prot_007_universal_protocol_time_out",
+        "target": "respiratory_therapist",
+        "relation": "performed_by"
+      },
+      {
+        "source": "prot_007_universal_protocol_time_out",
+        "target": "pharmacist",
+        "relation": "performed_by"
+      },
+      {
+        "source": "prot_007_universal_protocol_time_out",
+        "target": "electronic_health_record",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "PROT-008",
+    "entities": [
+      {
+        "name": "prot_008",
+        "type": "protocol"
+      },
+      {
+        "name": "fall_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "resident",
+        "type": "staff_role"
+      },
+      {
+        "name": "resident_staff",
+        "type": "staff_role"
+      },
+      {
+        "name": "temporary_staff",
+        "type": "staff_role"
+      },
+      {
+        "name": "float_staff",
+        "type": "staff_role"
+      },
+      {
+        "name": "joint_commission_national_patient_safety_goals",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "fall_prevention_bundle",
+        "target": "icu",
+        "relation": "administered_in"
+      },
+      {
+        "source": "fall_prevention_bundle",
+        "target": "resident",
+        "relation": "performed_by"
+      },
+      {
+        "source": "fall_prevention_bundle",
+        "target": "resident_staff",
+        "relation": "performed_by"
+      },
+      {
+        "source": "fall_prevention_bundle",
+        "target": "temporary_staff",
+        "relation": "performed_by"
+      },
+      {
+        "source": "fall_prevention_bundle",
+        "target": "float_staff",
+        "relation": "performed_by"
+      },
+      {
+        "source": "fall_prevention_bundle",
+        "target": "joint_commission_national_patient_safety_goals",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "PROT-009",
+    "entities": [
+      {
+        "name": "infection_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "resident",
+        "type": "staff_role"
+      },
+      {
+        "name": "pharmacist",
+        "type": "staff_role"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "infection_prevention_bundle",
+        "target": "icu",
+        "relation": "administered_in"
+      },
+      {
+        "source": "infection_prevention_bundle",
+        "target": "resident",
+        "relation": "performed_by"
+      },
+      {
+        "source": "infection_prevention_bundle",
+        "target": "pharmacist",
+        "relation": "performed_by"
+      }
+    ]
+  },
+  {
+    "doc_id": "PROT-012",
+    "entities": [
+      {
+        "name": "prot_012_universal_protocol_time_out",
+        "type": "protocol"
+      },
+      {
+        "name": "medical_surgical",
+        "type": "department"
+      },
+      {
+        "name": "respiratory_therapist",
+        "type": "staff_role"
+      },
+      {
+        "name": "pharmacist",
+        "type": "staff_role"
+      },
+      {
+        "name": "universal_protocol_time_out_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "joint_commission_national_patient_safety_goals",
+        "type": "protocol"
+      },
+      {
+        "name": "internal_policy_manual",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "prot_012_universal_protocol_time_out",
+        "target": "medical_surgical",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "prot_012_universal_protocol_time_out",
+        "target": "respiratory_therapist",
+        "relation": "performed_by"
+      },
+      {
+        "source": "prot_012_universal_protocol_time_out",
+        "target": "pharmacist",
+        "relation": "performed_by"
+      },
+      {
+        "source": "prot_012_universal_protocol_time_out",
+        "target": "universal_protocol_time_out_bundle",
+        "relation": "documented_in"
+      },
+      {
+        "source": "prot_012_universal_protocol_time_out",
+        "target": "joint_commission_national_patient_safety_goals",
+        "relation": "documented_in"
+      },
+      {
+        "source": "prot_012_universal_protocol_time_out",
+        "target": "internal_policy_manual",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "PROT-011",
+    "entities": [
+      {
+        "name": "prot_011",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation",
+        "type": "incident_type"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "resident_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "medication_reconciliation",
+        "target": "prot_011",
+        "relation": "documented_in"
+      },
+      {
+        "source": "medication_reconciliation",
+        "target": "icu",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "medication_reconciliation",
+        "target": "resident_physician",
+        "relation": "performed_by"
+      },
+      {
+        "source": "medication_reconciliation",
+        "target": "attending_physician",
+        "relation": "performed_by"
+      }
+    ]
+  },
+  {
+    "doc_id": "PROT-004",
+    "entities": [
+      {
+        "name": "infection_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "anesthesiologist",
+        "type": "staff_role"
+      },
+      {
+        "name": "registered_nurse",
+        "type": "staff_role"
+      },
+      {
+        "name": "joint_commission_national_patient_safety_goals",
+        "type": "protocol"
+      },
+      {
+        "name": "internal_policy_manual",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "infection_prevention_bundle",
+        "target": "icu",
+        "relation": "administered_in"
+      },
+      {
+        "source": "infection_prevention_bundle",
+        "target": "anesthesiologist",
+        "relation": "performed_by"
+      },
+      {
+        "source": "infection_prevention_bundle",
+        "target": "registered_nurse",
+        "relation": "performed_by"
+      },
+      {
+        "source": "infection_prevention_bundle",
+        "target": "joint_commission_national_patient_safety_goals",
+        "relation": "documented_in"
+      },
+      {
+        "source": "infection_prevention_bundle",
+        "target": "internal_policy_manual",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "FORM-002",
+    "entities": [
+      {
+        "name": "insulin",
+        "type": "medication"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "handoff_sbar",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "insulin",
+        "target": "icu",
+        "relation": "administered_in"
+      },
+      {
+        "source": "insulin",
+        "target": "er",
+        "relation": "administered_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-001",
+    "entities": [
+      {
+        "name": "dosage_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "oncology",
+        "type": "department"
+      },
+      {
+        "name": "insulin",
+        "type": "medication"
+      },
+      {
+        "name": "infection_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "knowledge_gap",
+        "type": "root_cause"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "oncology_staff",
+        "type": "staff_role"
+      },
+      {
+        "name": "incomplete_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "fall_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_workflow",
+        "type": "protocol"
+      },
+      {
+        "name": "sbar",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "dosage_error",
+        "target": "oncology",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "insulin",
+        "target": "dosage_error",
+        "relation": "administered_in"
+      },
+      {
+        "source": "dosage_error",
+        "target": "infection_prevention_bundle",
+        "relation": "violates"
+      },
+      {
+        "source": "dosage_error",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "dosage_error",
+        "target": "knowledge_gap",
+        "relation": "caused_by"
+      },
+      {
+        "source": "dosage_error",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "miscommunication_handoff",
+        "target": "incomplete_handoff",
+        "relation": "caused_by"
+      }
+    ]
+  },
+  {
+    "doc_id": "AER-044",
+    "entities": [
+      {
+        "name": "vancomycin",
+        "type": "medication"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "medication_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "registered_nurse",
+        "type": "staff_role"
+      },
+      {
+        "name": "attending_physician",
+        "type": "staff_role"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "standing_order",
+        "type": "protocol"
+      },
+      {
+        "name": "fall_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "aer_044",
+        "type": "incident_type"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "medication_error",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "vancomycin",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "medication_error",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "medication_error",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "medication_error",
+        "target": "aer_044",
+        "relation": "documented_in"
+      },
+      {
+        "source": "vancomycin",
+        "target": "standing_order",
+        "relation": "documented_in"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "standing_order",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-002",
+    "entities": [
+      {
+        "name": "wrong_site_surgery",
+        "type": "incident_type"
+      },
+      {
+        "name": "pediatrics",
+        "type": "department"
+      },
+      {
+        "name": "metformin",
+        "type": "medication"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "universal_protocol_time_out",
+        "type": "protocol"
+      },
+      {
+        "name": "sbar_training",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_workflow",
+        "type": "protocol"
+      },
+      {
+        "name": "sbar",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "wrong_site_surgery",
+        "target": "pediatrics",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "metformin",
+        "target": "wrong_site_surgery",
+        "relation": "administered_in"
+      },
+      {
+        "source": "wrong_site_surgery",
+        "target": "universal_protocol_time_out",
+        "relation": "violates"
+      },
+      {
+        "source": "wrong_site_surgery",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "sbar_training",
+        "target": "pediatrics",
+        "relation": "documented_in"
+      },
+      {
+        "source": "medication_reconciliation_workflow",
+        "target": "metformin",
+        "relation": "documented_in"
+      },
+      {
+        "source": "sbar",
+        "target": "pediatrics",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "FORM-004",
+    "entities": [
+      {
+        "name": "morphine",
+        "type": "medication"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "infection_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "morphine",
+        "target": "icu",
+        "relation": "administered_in"
+      },
+      {
+        "source": "morphine",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "morphine",
+        "target": "infection_prevention_bundle",
+        "relation": "documented_in"
+      },
+      {
+        "source": "morphine",
+        "target": "medication_reconciliation",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "PROT-002",
+    "entities": [
+      {
+        "name": "universal_protocol_time_out",
+        "type": "protocol"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "registered_nurse",
+        "type": "staff_role"
+      },
+      {
+        "name": "respiratory_therapist",
+        "type": "staff_role"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "universal_protocol_time_out",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "universal_protocol_time_out",
+        "target": "registered_nurse",
+        "relation": "performed_by"
+      },
+      {
+        "source": "universal_protocol_time_out",
+        "target": "respiratory_therapist",
+        "relation": "performed_by"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-007",
+    "entities": [
+      {
+        "name": "dosage_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "medical_surgical",
+        "type": "department"
+      },
+      {
+        "name": "insulin",
+        "type": "medication"
+      },
+      {
+        "name": "infection_prevention_bundle_protocol",
+        "type": "protocol"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "incomplete_documentation",
+        "type": "root_cause"
+      },
+      {
+        "name": "equipment_failure",
+        "type": "root_cause"
+      },
+      {
+        "name": "sbar",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "dosage_error",
+        "target": "medical_surgical",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "dosage_error",
+        "relation": "caused_by"
+      },
+      {
+        "source": "incomplete_documentation",
+        "target": "dosage_error",
+        "relation": "caused_by"
+      },
+      {
+        "source": "equipment_failure",
+        "target": "dosage_error",
+        "relation": "caused_by"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-003",
+    "entities": [
+      {
+        "name": "hospital_acquired_infection",
+        "type": "incident_type"
+      },
+      {
+        "name": "pediatrics",
+        "type": "department"
+      },
+      {
+        "name": "insulin",
+        "type": "medication"
+      },
+      {
+        "name": "universal_protocol_time_out",
+        "type": "protocol"
+      },
+      {
+        "name": "knowledge_gap",
+        "type": "root_cause"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "infection_prevention_bundle_training",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_workflow",
+        "type": "protocol"
+      },
+      {
+        "name": "sbar",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "hospital_acquired_infection",
+        "target": "pediatrics",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "hospital_acquired_infection",
+        "target": "universal_protocol_time_out",
+        "relation": "documented_in"
+      },
+      {
+        "source": "hospital_acquired_infection",
+        "target": "knowledge_gap",
+        "relation": "caused_by"
+      },
+      {
+        "source": "hospital_acquired_infection",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "hospital_acquired_infection",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "infection_prevention_bundle_training",
+        "target": "pediatrics",
+        "relation": "administered_in"
+      },
+      {
+        "source": "medication_reconciliation_workflow",
+        "target": "insulin",
+        "relation": "documented_in"
+      },
+      {
+        "source": "sbar",
+        "target": "pediatrics",
+        "relation": "administered_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-008",
+    "entities": [
+      {
+        "name": "patient_fall",
+        "type": "incident_type"
+      },
+      {
+        "name": "or",
+        "type": "department"
+      },
+      {
+        "name": "cefazolin",
+        "type": "medication"
+      },
+      {
+        "name": "medication_reconciliation_protocol",
+        "type": "protocol"
+      },
+      {
+        "name": "incomplete_documentation",
+        "type": "root_cause"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "infection_prevention_bundle_training",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_workflow",
+        "type": "protocol"
+      },
+      {
+        "name": "sbar",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "patient_fall",
+        "target": "or",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "cefazolin",
+        "target": "or",
+        "relation": "administered_in"
+      },
+      {
+        "source": "patient_fall",
+        "target": "medication_reconciliation_protocol",
+        "relation": "violates"
+      },
+      {
+        "source": "incomplete_documentation",
+        "target": "patient_fall",
+        "relation": "caused_by"
+      },
+      {
+        "source": "inadequate_staffing",
+        "target": "patient_fall",
+        "relation": "caused_by"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-010",
+    "entities": [
+      {
+        "name": "specimen_mislabeling",
+        "type": "incident_type"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "cefazolin",
+        "type": "medication"
+      },
+      {
+        "name": "infection_prevention_bundle_protocol",
+        "type": "protocol"
+      },
+      {
+        "name": "knowledge_gap",
+        "type": "root_cause"
+      },
+      {
+        "name": "alarm_fatigue",
+        "type": "root_cause"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "specimen_mislabeling",
+        "target": "icu",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "specimen_mislabeling",
+        "target": "knowledge_gap",
+        "relation": "caused_by"
+      },
+      {
+        "source": "specimen_mislabeling",
+        "target": "alarm_fatigue",
+        "relation": "caused_by"
+      },
+      {
+        "source": "specimen_mislabeling",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "specimen_mislabeling",
+        "target": "infection_prevention_bundle_protocol",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-005",
+    "entities": [
+      {
+        "name": "insulin",
+        "type": "medication"
+      },
+      {
+        "name": "oncology",
+        "type": "department"
+      },
+      {
+        "name": "dosage_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "knowledge_gap",
+        "type": "root_cause"
+      },
+      {
+        "name": "incomplete_documentation",
+        "type": "root_cause"
+      },
+      {
+        "name": "alarm_fatigue",
+        "type": "root_cause"
+      },
+      {
+        "name": "medication_reconciliation_protocol",
+        "type": "protocol"
+      },
+      {
+        "name": "universal_protocol_time_out",
+        "type": "protocol"
+      },
+      {
+        "name": "sbar",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "dosage_error",
+        "target": "oncology",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "insulin",
+        "target": "dosage_error",
+        "relation": "administered_in"
+      },
+      {
+        "source": "dosage_error",
+        "target": "medication_reconciliation_protocol",
+        "relation": "documented_in"
+      },
+      {
+        "source": "knowledge_gap",
+        "target": "dosage_error",
+        "relation": "caused_by"
+      },
+      {
+        "source": "incomplete_documentation",
+        "target": "dosage_error",
+        "relation": "caused_by"
+      },
+      {
+        "source": "alarm_fatigue",
+        "target": "dosage_error",
+        "relation": "caused_by"
+      },
+      {
+        "source": "universal_protocol_time_out",
+        "target": "oncology",
+        "relation": "documented_in"
+      },
+      {
+        "source": "medication_reconciliation_protocol",
+        "target": "insulin",
+        "relation": "documented_in"
+      },
+      {
+        "source": "sbar",
+        "target": "oncology",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-011",
+    "entities": [
+      {
+        "name": "delayed_treatment",
+        "type": "incident_type"
+      },
+      {
+        "name": "medical_surgical",
+        "type": "department"
+      },
+      {
+        "name": "insulin",
+        "type": "medication"
+      },
+      {
+        "name": "universal_protocol_time_out",
+        "type": "protocol"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "fall_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_workflow",
+        "type": "protocol"
+      },
+      {
+        "name": "sbar",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "delayed_treatment",
+        "target": "medical_surgical",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "delayed_treatment",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "delayed_treatment",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "delayed_treatment",
+        "target": "universal_protocol_time_out",
+        "relation": "violates"
+      },
+      {
+        "source": "insulin",
+        "target": "medical_surgical",
+        "relation": "administered_in"
+      },
+      {
+        "source": "insulin",
+        "target": "medication_reconciliation_workflow",
+        "relation": "documented_in"
+      },
+      {
+        "source": "fall_prevention_bundle",
+        "target": "medical_surgical",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-004",
+    "entities": [
+      {
+        "name": "diagnostic_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "pediatrics",
+        "type": "department"
+      },
+      {
+        "name": "morphine",
+        "type": "medication"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "infection_prevention_bundle_protocol",
+        "type": "protocol"
+      },
+      {
+        "name": "universal_protocol_time_out",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_workflow",
+        "type": "protocol"
+      },
+      {
+        "name": "structured_handoff_using_sbar",
+        "type": "protocol"
+      },
+      {
+        "name": "pediatrics_staff",
+        "type": "staff_role"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "diagnostic_error",
+        "target": "pediatrics",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "diagnostic_error",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "diagnostic_error",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "morphine",
+        "target": "pediatrics",
+        "relation": "administered_in"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "infection_prevention_bundle_protocol",
+        "relation": "violates"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "universal_protocol_time_out",
+        "relation": "violates"
+      },
+      {
+        "source": "miscommunication_handoff",
+        "target": "structured_handoff_using_sbar",
+        "relation": "violates"
+      },
+      {
+        "source": "morphine",
+        "target": "medication_reconciliation_workflow",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-013",
+    "entities": [
+      {
+        "name": "diagnostic_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "heparin",
+        "type": "medication"
+      },
+      {
+        "name": "rca_team",
+        "type": "staff_role"
+      },
+      {
+        "name": "five_whys_technique",
+        "type": "protocol"
+      },
+      {
+        "name": "universal_protocol_time_out_protocol",
+        "type": "protocol"
+      },
+      {
+        "name": "knowledge_gap",
+        "type": "root_cause"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "infection_prevention_bundle_training",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_workflow",
+        "type": "protocol"
+      },
+      {
+        "name": "sbar",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "diagnostic_error",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "heparin",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "rca_team",
+        "target": "diagnostic_error",
+        "relation": "performed_by"
+      },
+      {
+        "source": "rca_team",
+        "target": "five_whys_technique",
+        "relation": "performed_by"
+      },
+      {
+        "source": "diagnostic_error",
+        "target": "knowledge_gap",
+        "relation": "caused_by"
+      },
+      {
+        "source": "diagnostic_error",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "infection_prevention_bundle_training",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "heparin",
+        "target": "medication_reconciliation_workflow",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-016",
+    "entities": [
+      {
+        "name": "delayed_treatment",
+        "type": "incident_type"
+      },
+      {
+        "name": "pediatrics",
+        "type": "department"
+      },
+      {
+        "name": "cefazolin",
+        "type": "medication"
+      },
+      {
+        "name": "infection_prevention_bundle_protocol",
+        "type": "protocol"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "sbar",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "delayed_treatment",
+        "target": "pediatrics",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "cefazolin",
+        "target": "delayed_treatment",
+        "relation": "administered_in"
+      },
+      {
+        "source": "delayed_treatment",
+        "target": "infection_prevention_bundle_protocol",
+        "relation": "violates"
+      },
+      {
+        "source": "delayed_treatment",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "delayed_treatment",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "infection_prevention_bundle_protocol",
+        "target": "pediatrics",
+        "relation": "documented_in"
+      },
+      {
+        "source": "cefazolin",
+        "target": "medication_reconciliation_workflow",
+        "relation": "documented_in"
+      },
+      {
+        "source": "sbar",
+        "target": "pediatrics",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-018",
+    "entities": [
+      {
+        "name": "diagnostic_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "or",
+        "type": "department"
+      },
+      {
+        "name": "warfarin",
+        "type": "medication"
+      },
+      {
+        "name": "handoff_sbar",
+        "type": "protocol"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "medication_reconciliation",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "diagnostic_error",
+        "target": "or",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "diagnostic_error",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "diagnostic_error",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "handoff_sbar",
+        "relation": "violates"
+      },
+      {
+        "source": "warfarin",
+        "target": "or",
+        "relation": "administered_in"
+      },
+      {
+        "source": "warfarin",
+        "target": "medication_reconciliation",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-020",
+    "entities": [
+      {
+        "name": "hospital_acquired_infection",
+        "type": "incident_type"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "insulin",
+        "type": "medication"
+      },
+      {
+        "name": "fall_prevention_bundle_protocol",
+        "type": "protocol"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "infection_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_workflow",
+        "type": "protocol"
+      },
+      {
+        "name": "sbar",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "hospital_acquired_infection",
+        "target": "icu",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "hospital_acquired_infection",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "hospital_acquired_infection",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "infection_prevention_bundle",
+        "relation": "violates"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "medication_reconciliation_workflow",
+        "relation": "violates"
+      },
+      {
+        "source": "miscommunication_handoff",
+        "target": "sbar",
+        "relation": "violates"
+      },
+      {
+        "source": "insulin",
+        "target": "icu",
+        "relation": "administered_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-014",
+    "entities": [
+      {
+        "name": "wrong_site_surgery",
+        "type": "incident_type"
+      },
+      {
+        "name": "radiology",
+        "type": "department"
+      },
+      {
+        "name": "insulin",
+        "type": "medication"
+      },
+      {
+        "name": "sbar_protocol",
+        "type": "protocol"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "wrong_site_surgery",
+        "target": "radiology",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "wrong_site_surgery",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "wrong_site_surgery",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "wrong_site_surgery",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "sbar_protocol",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-019",
+    "entities": [
+      {
+        "name": "medication_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "or",
+        "type": "department"
+      },
+      {
+        "name": "heparin",
+        "type": "medication"
+      },
+      {
+        "name": "infection_prevention_bundle_protocol",
+        "type": "protocol"
+      },
+      {
+        "name": "incomplete_documentation",
+        "type": "root_cause"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "rca_team",
+        "type": "staff_role"
+      },
+      {
+        "name": "universal_protocol_time_out_training",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_workflow",
+        "type": "protocol"
+      },
+      {
+        "name": "sbar",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "medication_error",
+        "target": "or",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "heparin",
+        "target": "medication_error",
+        "relation": "administered_in"
+      },
+      {
+        "source": "medication_error",
+        "target": "incomplete_documentation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "medication_error",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "medication_error",
+        "target": "infection_prevention_bundle_protocol",
+        "relation": "violates"
+      },
+      {
+        "source": "medication_error",
+        "target": "rca_team",
+        "relation": "performed_by"
+      },
+      {
+        "source": "universal_protocol_time_out_training",
+        "target": "medication_error",
+        "relation": "documented_in"
+      },
+      {
+        "source": "medication_reconciliation_workflow",
+        "target": "medication_error",
+        "relation": "documented_in"
+      },
+      {
+        "source": "sbar",
+        "target": "medication_error",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-012",
+    "entities": [
+      {
+        "name": "specimen_mislabeling",
+        "type": "incident_type"
+      },
+      {
+        "name": "medical_surgical",
+        "type": "department"
+      },
+      {
+        "name": "furosemide",
+        "type": "medication"
+      },
+      {
+        "name": "fall_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "universal_protocol_time_out",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation",
+        "type": "protocol"
+      },
+      {
+        "name": "sbar",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "specimen_mislabeling",
+        "target": "medical_surgical",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "furosemide",
+        "target": "medical_surgical",
+        "relation": "administered_in"
+      },
+      {
+        "source": "specimen_mislabeling",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "specimen_mislabeling",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "specimen_mislabeling",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "universal_protocol_time_out",
+        "target": "medical_surgical",
+        "relation": "administered_in"
+      },
+      {
+        "source": "furosemide",
+        "target": "medication_reconciliation",
+        "relation": "violates"
+      },
+      {
+        "source": "sbar",
+        "target": "medical_surgical",
+        "relation": "administered_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-023",
+    "entities": [
+      {
+        "name": "wrong_site_surgery",
+        "type": "incident_type"
+      },
+      {
+        "name": "cardiology",
+        "type": "department"
+      },
+      {
+        "name": "metformin",
+        "type": "medication"
+      },
+      {
+        "name": "medication_reconciliation_protocol",
+        "type": "protocol"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "handoff_sbar_training",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_workflow",
+        "type": "protocol"
+      },
+      {
+        "name": "structured_handoff_sbar",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "wrong_site_surgery",
+        "target": "cardiology",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "wrong_site_surgery",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "wrong_site_surgery",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "medication_reconciliation_protocol",
+        "relation": "violates"
+      },
+      {
+        "source": "metformin",
+        "target": "medication_reconciliation_workflow",
+        "relation": "documented_in"
+      },
+      {
+        "source": "cardiology",
+        "target": "handoff_sbar_training",
+        "relation": "documented_in"
+      },
+      {
+        "source": "cardiology",
+        "target": "structured_handoff_sbar",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-025",
+    "entities": [
+      {
+        "name": "vancomycin",
+        "type": "medication"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "dosage_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "equipment_failure",
+        "type": "root_cause"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "universal_protocol_time_out",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_workflow",
+        "type": "protocol"
+      },
+      {
+        "name": "structured_handoff_sbar",
+        "type": "protocol"
+      },
+      {
+        "name": "er_staff",
+        "type": "staff_role"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "dosage_error",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "dosage_error",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "dosage_error",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "dosage_error",
+        "target": "equipment_failure",
+        "relation": "caused_by"
+      },
+      {
+        "source": "dosage_error",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "dosage_error",
+        "target": "universal_protocol_time_out",
+        "relation": "violates"
+      },
+      {
+        "source": "vancomycin",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "medication_reconciliation_workflow",
+        "target": "er",
+        "relation": "documented_in"
+      },
+      {
+        "source": "medication_reconciliation_workflow",
+        "target": "vancomycin",
+        "relation": "documented_in"
+      },
+      {
+        "source": "structured_handoff_sbar",
+        "target": "er_staff",
+        "relation": "performed_by"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-009",
+    "entities": [
+      {
+        "name": "wrong_site_surgery",
+        "type": "incident_type"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "insulin",
+        "type": "medication"
+      },
+      {
+        "name": "medication_reconciliation_protocol",
+        "type": "protocol"
+      },
+      {
+        "name": "knowledge_gap",
+        "type": "root_cause"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "infection_prevention_bundle_training",
+        "type": "protocol"
+      },
+      {
+        "name": "sbar",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "wrong_site_surgery",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "insulin",
+        "target": "wrong_site_surgery",
+        "relation": "administered_in"
+      },
+      {
+        "source": "wrong_site_surgery",
+        "target": "medication_reconciliation_protocol",
+        "relation": "violates"
+      },
+      {
+        "source": "knowledge_gap",
+        "target": "wrong_site_surgery",
+        "relation": "caused_by"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "wrong_site_surgery",
+        "relation": "caused_by"
+      },
+      {
+        "source": "inadequate_staffing",
+        "target": "wrong_site_surgery",
+        "relation": "caused_by"
+      },
+      {
+        "source": "medication_reconciliation_protocol",
+        "target": "insulin",
+        "relation": "documented_in"
+      },
+      {
+        "source": "infection_prevention_bundle_training",
+        "target": "er",
+        "relation": "documented_in"
+      },
+      {
+        "source": "sbar",
+        "target": "er",
+        "relation": "documented_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-022",
+    "entities": [
+      {
+        "name": "patient_fall",
+        "type": "incident_type"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "insulin",
+        "type": "medication"
+      },
+      {
+        "name": "five_whys_technique",
+        "type": "protocol"
+      },
+      {
+        "name": "universal_protocol_timeout",
+        "type": "protocol"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "incomplete_documentation",
+        "type": "root_cause"
+      },
+      {
+        "name": "medication_reconciliation_training",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_workflow",
+        "type": "protocol"
+      },
+      {
+        "name": "sbar",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "patient_fall",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "patient_fall",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "patient_fall",
+        "target": "incomplete_documentation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "medication_reconciliation_training",
+        "target": "er",
+        "relation": "administered_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-021",
+    "entities": [
+      {
+        "name": "delayed_treatment",
+        "type": "incident_type"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "lisinopril",
+        "type": "medication"
+      },
+      {
+        "name": "sbar_protocol",
+        "type": "protocol"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "medication_reconciliation_training",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation_workflow",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "delayed_treatment",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "delayed_treatment",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "delayed_treatment",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "sbar_protocol",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-024",
+    "entities": [
+      {
+        "name": "warfarin",
+        "type": "medication"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "specimen_mislabeling",
+        "type": "incident_type"
+      },
+      {
+        "name": "medication_reconciliation_protocol",
+        "type": "protocol"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "alarm_fatigue",
+        "type": "root_cause"
+      },
+      {
+        "name": "variability_in_er_staff_to_patient_ratios",
+        "type": "root_cause"
+      },
+      {
+        "name": "incomplete_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "universal_protocol_time_out_training",
+        "type": "protocol"
+      },
+      {
+        "name": "sbar",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "specimen_mislabeling",
+        "target": "er",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "specimen_mislabeling",
+        "target": "medication_reconciliation_protocol",
+        "relation": "violates"
+      },
+      {
+        "source": "warfarin",
+        "target": "medication_reconciliation_protocol",
+        "relation": "documented_in"
+      },
+      {
+        "source": "specimen_mislabeling",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "specimen_mislabeling",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "specimen_mislabeling",
+        "target": "alarm_fatigue",
+        "relation": "caused_by"
+      },
+      {
+        "source": "specimen_mislabeling",
+        "target": "variability_in_er_staff_to_patient_ratios",
+        "relation": "caused_by"
+      },
+      {
+        "source": "specimen_mislabeling",
+        "target": "incomplete_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "universal_protocol_time_out_training",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "miscommunication_handoff",
+        "target": "sbar",
+        "relation": "violates"
+      },
+      {
+        "source": "incomplete_handoff",
+        "target": "sbar",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-015",
+    "entities": [
+      {
+        "name": "medication_error",
+        "type": "incident_type"
+      },
+      {
+        "name": "or",
+        "type": "department"
+      },
+      {
+        "name": "cefazolin",
+        "type": "medication"
+      },
+      {
+        "name": "sbar_protocol",
+        "type": "protocol"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "medication_error",
+        "target": "or",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "cefazolin",
+        "target": "medication_error",
+        "relation": "administered_in"
+      },
+      {
+        "source": "medication_error",
+        "target": "protocol_deviation",
+        "relation": "caused_by"
+      },
+      {
+        "source": "medication_error",
+        "target": "sbar_protocol",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-017",
+    "entities": [
+      {
+        "name": "pressure_injury",
+        "type": "incident_type"
+      },
+      {
+        "name": "pediatrics",
+        "type": "department"
+      },
+      {
+        "name": "vancomycin",
+        "type": "medication"
+      },
+      {
+        "name": "infection_prevention_bundle_protocol",
+        "type": "protocol"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "protocol_deviation",
+        "type": "root_cause"
+      },
+      {
+        "name": "rca_017",
+        "type": "protocol"
+      },
+      {
+        "name": "sbar",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "pressure_injury",
+        "target": "pediatrics",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "pressure_injury",
+        "target": "rca_017",
+        "relation": "documented_in"
+      },
+      {
+        "source": "miscommunication_handoff",
+        "target": "pressure_injury",
+        "relation": "caused_by"
+      },
+      {
+        "source": "protocol_deviation",
+        "target": "pressure_injury",
+        "relation": "caused_by"
+      },
+      {
+        "source": "pressure_injury",
+        "target": "infection_prevention_bundle_protocol",
+        "relation": "violates"
+      },
+      {
+        "source": "vancomycin",
+        "target": "pediatrics",
+        "relation": "administered_in"
+      }
+    ]
+  },
+  {
+    "doc_id": "RCA-006",
+    "entities": [
+      {
+        "name": "hospital_acquired_infection",
+        "type": "incident_type"
+      },
+      {
+        "name": "oncology",
+        "type": "department"
+      },
+      {
+        "name": "heparin",
+        "type": "medication"
+      },
+      {
+        "name": "medication_reconciliation_protocol",
+        "type": "protocol"
+      },
+      {
+        "name": "miscommunication_handoff",
+        "type": "root_cause"
+      },
+      {
+        "name": "inadequate_staffing",
+        "type": "root_cause"
+      },
+      {
+        "name": "universal_protocol_time_out",
+        "type": "protocol"
+      },
+      {
+        "name": "structured_handoff_sbar",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "hospital_acquired_infection",
+        "target": "oncology",
+        "relation": "occurred_in"
+      },
+      {
+        "source": "heparin",
+        "target": "hospital_acquired_infection",
+        "relation": "administered_in"
+      },
+      {
+        "source": "hospital_acquired_infection",
+        "target": "medication_reconciliation_protocol",
+        "relation": "documented_in"
+      },
+      {
+        "source": "hospital_acquired_infection",
+        "target": "miscommunication_handoff",
+        "relation": "caused_by"
+      },
+      {
+        "source": "hospital_acquired_infection",
+        "target": "inadequate_staffing",
+        "relation": "caused_by"
+      },
+      {
+        "source": "universal_protocol_time_out",
+        "target": "oncology",
+        "relation": "documented_in"
+      },
+      {
+        "source": "heparin",
+        "target": "medication_reconciliation_protocol",
+        "relation": "documented_in"
+      },
+      {
+        "source": "miscommunication_handoff",
+        "target": "structured_handoff_sbar",
+        "relation": "violates"
+      }
+    ]
+  },
+  {
+    "doc_id": "FORM-005",
+    "entities": [
+      {
+        "name": "warfarin",
+        "type": "medication"
+      },
+      {
+        "name": "icu",
+        "type": "department"
+      },
+      {
+        "name": "er",
+        "type": "department"
+      },
+      {
+        "name": "infection_prevention_bundle",
+        "type": "protocol"
+      },
+      {
+        "name": "medication_reconciliation",
+        "type": "protocol"
+      },
+      {
+        "name": "formulary_entry_form_005",
+        "type": "protocol"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "warfarin",
+        "target": "icu",
+        "relation": "administered_in"
+      },
+      {
+        "source": "warfarin",
+        "target": "er",
+        "relation": "administered_in"
+      },
+      {
+        "source": "warfarin",
+        "target": "formulary_entry_form_005",
+        "relation": "documented_in"
+      }
+    ]
+  }
+]

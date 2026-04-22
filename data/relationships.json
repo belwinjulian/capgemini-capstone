@@ -1,0 +1,4333 @@
+[
+  {
+    "source": "medication_error",
+    "target": "icu",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-001"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "respiratory_therapist",
+    "target": "adverse_event",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-001"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "warfarin",
+    "target": "standing_order",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-001",
+      "AER-019",
+      "AER-021",
+      "AER-052"
+    ],
+    "weight": 4
+  },
+  {
+    "source": "respiratory_therapist",
+    "target": "medication_error",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-001"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_error",
+    "target": "inadequate_staffing",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-001",
+      "AER-006",
+      "AER-020",
+      "AER-044"
+    ],
+    "weight": 4
+  },
+  {
+    "source": "warfarin",
+    "target": "icu",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-001",
+      "AER-039",
+      "FORM-005"
+    ],
+    "weight": 3
+  },
+  {
+    "source": "adverse_event",
+    "target": "er",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-008",
+      "AER-018"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "dosage_error",
+    "target": "er",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-008",
+      "AER-012",
+      "AER-026",
+      "RCA-025"
+    ],
+    "weight": 4
+  },
+  {
+    "source": "cefazolin",
+    "target": "er",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-008",
+      "AER-017"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "dosage_error",
+    "target": "protocol_deviation",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-008",
+      "AER-012",
+      "RCA-001",
+      "RCA-025"
+    ],
+    "weight": 4
+  },
+  {
+    "source": "dosage_error",
+    "target": "incomplete_documentation",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-008",
+      "AER-012"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "dosage_error",
+    "target": "standing_order",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-002",
+      "AER-008",
+      "AER-039"
+    ],
+    "weight": 3
+  },
+  {
+    "source": "protocol_deviation",
+    "target": "standing_order",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-008",
+      "AER-010",
+      "AER-012",
+      "AER-014",
+      "AER-044",
+      "AER-049",
+      "AER-054"
+    ],
+    "weight": 7
+  },
+  {
+    "source": "diagnostic_error",
+    "target": "er",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-005",
+      "AER-007",
+      "AER-017",
+      "AER-040",
+      "RCA-013"
+    ],
+    "weight": 5
+  },
+  {
+    "source": "morphine",
+    "target": "er",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-007",
+      "FORM-004"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "anesthesiologist",
+    "target": "diagnostic_error",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-007"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "inadequate_staffing",
+    "target": "diagnostic_error",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-007"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "miscommunication_handoff",
+    "target": "diagnostic_error",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-005",
+      "AER-007"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "diagnostic_error",
+    "target": "standing_order",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-007",
+      "AER-040"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "diagnostic_error",
+    "target": "medication_reconciliation_steps",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-007"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "morphine_administration_workflow",
+    "target": "er",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-007"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "diagnostic_error",
+    "target": "icu",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-009"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "pharmacist",
+    "target": "diagnostic_error",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-009"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "insulin",
+    "target": "icu",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-009",
+      "FORM-002",
+      "RCA-020"
+    ],
+    "weight": 3
+  },
+  {
+    "source": "insulin",
+    "target": "standing_order",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-003",
+      "AER-009",
+      "AER-025",
+      "AER-043"
+    ],
+    "weight": 4
+  },
+  {
+    "source": "diagnostic_error",
+    "target": "incomplete_documentation",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-009"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "diagnostic_error",
+    "target": "inadequate_staffing",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-009",
+      "AER-017",
+      "RCA-013",
+      "RCA-018"
+    ],
+    "weight": 4
+  },
+  {
+    "source": "dosage_error",
+    "target": "pediatrics",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-002",
+      "AER-031"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "metformin",
+    "target": "pediatrics",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-002"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "dosage_error",
+    "target": "anesthesiologist",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-002"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "dosage_error",
+    "target": "inadequate_staffing",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-002",
+      "AER-015",
+      "AER-021",
+      "RCA-025"
+    ],
+    "weight": 4
+  },
+  {
+    "source": "dosage_error",
+    "target": "miscommunication_handoff",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-002",
+      "AER-026",
+      "RCA-001",
+      "RCA-025"
+    ],
+    "weight": 4
+  },
+  {
+    "source": "metformin_administration_workflow",
+    "target": "metformin",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-002"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "metformin_administration_workflow",
+    "target": "pediatrics",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-002"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "registered_nurse",
+    "target": "diagnostic_error",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-005"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "heparin",
+    "target": "standing_order",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-005",
+      "AER-034"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "heparin_administration_workflow",
+    "target": "er",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-005"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "diagnostic_error",
+    "target": "rca_review",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-005"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "diagnostic_error",
+    "target": "medication_administration_record",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-005"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "hospital_acquired_infection",
+    "target": "pediatrics",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-004",
+      "RCA-003"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "vancomycin",
+    "target": "hospital_acquired_infection",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-004",
+      "AER-038"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "registered_nurse",
+    "target": "hospital_acquired_infection",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-004"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "vancomycin",
+    "target": "standing_order",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-004",
+      "AER-014",
+      "AER-016",
+      "AER-024",
+      "AER-038",
+      "AER-044"
+    ],
+    "weight": 6
+  },
+  {
+    "source": "registered_nurse",
+    "target": "adverse_event",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-004"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "attending_physician",
+    "target": "adverse_event",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-004"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "miscommunication_handoff",
+    "target": "adverse_event",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-004"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "miscommunication_handoff",
+    "target": "hospital_acquired_infection",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-004"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "adverse_event",
+    "target": "rca_review",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-004"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "vancomycin_administration_workflow",
+    "target": "pediatrics",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-004"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_error",
+    "target": "er",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-006",
+      "AER-044",
+      "AER-053"
+    ],
+    "weight": 3
+  },
+  {
+    "source": "warfarin",
+    "target": "standing_order",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-006"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_error",
+    "target": "protocol_deviation",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-003",
+      "AER-006",
+      "AER-044",
+      "AER-053",
+      "RCA-015",
+      "RCA-019"
+    ],
+    "weight": 6
+  },
+  {
+    "source": "medication_error",
+    "target": "adverse_event_report",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-006"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_error",
+    "target": "standing_order",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-006",
+      "AER-020"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "pressure_injury",
+    "target": "radiology",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-011"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "pressure_injury",
+    "target": "warfarin",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-011"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "pressure_injury",
+    "target": "attending_physician",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-011",
+      "AER-042"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "warfarin",
+    "target": "radiology",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-011"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "inadequate_staffing",
+    "target": "pressure_injury",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-011"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "miscommunication_handoff",
+    "target": "pressure_injury",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-011",
+      "AER-046",
+      "RCA-017"
+    ],
+    "weight": 3
+  },
+  {
+    "source": "hospital_acquired_infection",
+    "target": "icu",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-013",
+      "AER-038",
+      "RCA-020"
+    ],
+    "weight": 3
+  },
+  {
+    "source": "vancomycin",
+    "target": "icu",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-013",
+      "FORM-003"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "hospital_acquired_infection",
+    "target": "attending_physician",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-013"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "hospital_acquired_infection",
+    "target": "miscommunication_handoff",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-013",
+      "AER-033",
+      "RCA-003",
+      "RCA-006",
+      "RCA-020"
+    ],
+    "weight": 5
+  },
+  {
+    "source": "hospital_acquired_infection",
+    "target": "equipment_failure",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-013"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "adverse_event_report",
+    "target": "rca_review",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-013"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "vancomycin",
+    "target": "er",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-012",
+      "AER-044",
+      "FORM-003",
+      "RCA-025"
+    ],
+    "weight": 4
+  },
+  {
+    "source": "cefazolin",
+    "target": "standing_order",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-015",
+      "AER-017"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "diagnostic_error",
+    "target": "registered_nurse",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-017"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "diagnostic_error",
+    "target": "protocol_deviation",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-017",
+      "RCA-004",
+      "RCA-018"
+    ],
+    "weight": 3
+  },
+  {
+    "source": "protocol_deviation",
+    "target": "universal_protocol_time_out_steps",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-017",
+      "AER-049"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "delayed_treatment",
+    "target": "pediatrics",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-014",
+      "RCA-016"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "vancomycin",
+    "target": "pediatrics",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-014",
+      "RCA-017"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "pharmacist",
+    "target": "delayed_treatment",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-014"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "attending_physician",
+    "target": "delayed_treatment",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-014",
+      "AER-054"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "delayed_treatment",
+    "target": "protocol_deviation",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-014",
+      "AER-049",
+      "RCA-011",
+      "RCA-021"
+    ],
+    "weight": 4
+  },
+  {
+    "source": "delayed_treatment",
+    "target": "inadequate_staffing",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-014",
+      "AER-036",
+      "AER-045",
+      "AER-049",
+      "RCA-011",
+      "RCA-016",
+      "RCA-021"
+    ],
+    "weight": 7
+  },
+  {
+    "source": "dosage_error",
+    "target": "icu",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-015",
+      "AER-021",
+      "AER-039"
+    ],
+    "weight": 3
+  },
+  {
+    "source": "cefazolin",
+    "target": "icu",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-015"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "attending_physician",
+    "target": "dosage_error",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-015"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "dosage_error",
+    "target": "alarm_fatigue",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-015"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "cefazolin",
+    "target": "cefazolin_administration_workflow",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-015"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "specimen_mislabeling",
+    "target": "or",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-016"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "vancomycin",
+    "target": "or",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-016"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "specimen_mislabeling",
+    "target": "inadequate_staffing",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-016",
+      "RCA-012",
+      "RCA-024"
+    ],
+    "weight": 3
+  },
+  {
+    "source": "specimen_mislabeling",
+    "target": "knowledge_gap",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-016",
+      "RCA-010"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "vancomycin",
+    "target": "mar",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-016"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "specimen_mislabeling",
+    "target": "standing_order",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-016"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "specimen_mislabeling",
+    "target": "mar",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-016"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "wrong_site_surgery",
+    "target": "er",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-019",
+      "RCA-009"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "warfarin",
+    "target": "er",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-019",
+      "AER-053",
+      "FORM-005"
+    ],
+    "weight": 3
+  },
+  {
+    "source": "wrong_site_surgery",
+    "target": "inadequate_staffing",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-019",
+      "AER-035",
+      "RCA-014",
+      "RCA-023"
+    ],
+    "weight": 4
+  },
+  {
+    "source": "wrong_site_surgery",
+    "target": "alarm_fatigue",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-019",
+      "AER-035"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "wrong_site_surgery",
+    "target": "rca_review",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-019",
+      "AER-030"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "wrong_site_surgery",
+    "target": "standing_order",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-019"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "pressure_injury",
+    "target": "er",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-018",
+      "AER-046"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "adverse_event",
+    "target": "attending_physician",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-018"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_discrepancy",
+    "target": "attending_physician",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-018"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "lisinopril",
+    "target": "standing_order",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-018",
+      "AER-049"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "medication_discrepancy",
+    "target": "incomplete_documentation",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-018"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_discrepancy",
+    "target": "knowledge_gap",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-018"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "lisinopril_administration_workflow",
+    "target": "er",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-018"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "pressure_injury",
+    "target": "medication_discrepancy",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-018"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "lisinopril",
+    "target": "er",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-018",
+      "AER-049",
+      "FORM-008"
+    ],
+    "weight": 3
+  },
+  {
+    "source": "medication_discrepancy",
+    "target": "er",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-018"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_error",
+    "target": "medical_surgical",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-003",
+      "AER-020",
+      "AER-022"
+    ],
+    "weight": 3
+  },
+  {
+    "source": "insulin",
+    "target": "medical_surgical",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-003",
+      "AER-020",
+      "RCA-011"
+    ],
+    "weight": 3
+  },
+  {
+    "source": "registered_nurse",
+    "target": "medication_error",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-020",
+      "AER-053"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "medication_error",
+    "target": "miscommunication_handoff",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-003",
+      "AER-020"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "medication_error",
+    "target": "universal_protocol_time_out",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-020"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "dosage_error",
+    "target": "warfarin",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-021"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "dosage_error",
+    "target": "respiratory_therapist",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-021"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "dosage_error",
+    "target": "sentinel_event",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-021"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "dosage_error",
+    "target": "rca_review",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-021",
+      "AER-031"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "warfarin_administration_workflow",
+    "target": "icu",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-021"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "warfarin_administration_workflow",
+    "target": "dosage_error",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-021"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "handoff_sbar_steps",
+    "target": "dosage_error",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-021"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "wrong_site_surgery",
+    "target": "cardiology",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-010",
+      "AER-048",
+      "RCA-023"
+    ],
+    "weight": 3
+  },
+  {
+    "source": "adverse_event",
+    "target": "cardiology",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-010"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "warfarin",
+    "target": "cardiology",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-010"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "wrong_site_surgery",
+    "target": "protocol_deviation",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-010",
+      "RCA-002",
+      "RCA-014",
+      "RCA-023"
+    ],
+    "weight": 4
+  },
+  {
+    "source": "wrong_site_surgery",
+    "target": "miscommunication_handoff",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-010",
+      "RCA-014"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "patient_fall",
+    "target": "icu",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-024"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "vancomycin",
+    "target": "patient_fall",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-024"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "attending_physician",
+    "target": "patient_fall",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-024",
+      "AER-050"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "attending_physician",
+    "target": "medication_reconciliation_steps",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-024"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "equipment_failure",
+    "target": "patient_fall",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-024"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "knowledge_gap",
+    "target": "patient_fall",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-023",
+      "AER-024"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "patient_fall",
+    "target": "rca_review",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-024",
+      "AER-050",
+      "AER-051"
+    ],
+    "weight": 3
+  },
+  {
+    "source": "vancomycin_administration_workflow",
+    "target": "icu",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-024",
+      "AER-038"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "vancomycin_administration_workflow",
+    "target": "vancomycin",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-024",
+      "AER-038"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "protocol_deviation",
+    "target": "handoff_sbar_steps",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-003",
+      "AER-022"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "pressure_injury",
+    "target": "medical_surgical",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-022"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "metformin",
+    "target": "medical_surgical",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-022"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "metformin",
+    "target": "standing_order",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-022",
+      "AER-028",
+      "AER-036"
+    ],
+    "weight": 3
+  },
+  {
+    "source": "attending_physician",
+    "target": "medication_error",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-022"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "protocol_deviation",
+    "target": "medication_error",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-022"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "miscommunication_handoff",
+    "target": "medication_error",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-022"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "dosage_error",
+    "target": "vancomycin",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-031"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "dosage_error",
+    "target": "rn",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-031"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "inadequate_staffing",
+    "target": "dosage_error",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-031",
+      "AER-039"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "protocol_deviation",
+    "target": "dosage_error",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-031",
+      "RCA-007"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "protocol_deviation",
+    "target": "universal_protocol_time_out",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-031",
+      "RCA-004"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "dosage_error",
+    "target": "universal_protocol_time_out",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-031"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "patient_fall",
+    "target": "medical_surgical",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-032",
+      "AER-050"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "morphine",
+    "target": "patient_fall",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-032"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "resident",
+    "target": "patient_fall",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-032"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "inadequate_staffing",
+    "target": "patient_fall",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-032",
+      "RCA-008"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "protocol_deviation",
+    "target": "patient_fall",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-023",
+      "AER-032"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "patient_fall",
+    "target": "pediatrics",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-025",
+      "AER-055"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "insulin",
+    "target": "pediatrics",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-025"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_discrepancy",
+    "target": "rn",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-025"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_discrepancy",
+    "target": "medication_administration_record",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-025",
+      "AER-041"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "medication_discrepancy",
+    "target": "miscommunication_handoff",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-025",
+      "AER-041"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "medication_discrepancy",
+    "target": "inadequate_staffing",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-025",
+      "AER-041"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "insulin_administration_workflow",
+    "target": "pediatrics",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-025"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "diagnostic_error",
+    "target": "or",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-028",
+      "RCA-018"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "metformin",
+    "target": "or",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-028"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "resident",
+    "target": "diagnostic_error",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-028"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "incomplete_documentation",
+    "target": "diagnostic_error",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-028"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "metformin_administration_workflow",
+    "target": "or",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-028"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "delayed_treatment",
+    "target": "icu",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-029",
+      "AER-054"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "delayed_treatment",
+    "target": "heparin",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-029"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "delayed_treatment",
+    "target": "respiratory_therapist",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-029",
+      "AER-049"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "medication_administration_discrepancy",
+    "target": "icu",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-029"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_administration_discrepancy",
+    "target": "heparin",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-029"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_administration_discrepancy",
+    "target": "respiratory_therapist",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-029"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "heparin",
+    "target": "standing_order",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-029",
+      "AER-037",
+      "AER-042",
+      "AER-046",
+      "AER-050",
+      "AER-051"
+    ],
+    "weight": 6
+  },
+  {
+    "source": "delayed_treatment",
+    "target": "miscommunication_handoff",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-029",
+      "RCA-016"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "medication_administration_discrepancy",
+    "target": "miscommunication_handoff",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-029",
+      "AER-037"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "wrong_site_surgery",
+    "target": "or",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-030"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "morphine",
+    "target": "or",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-030"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "resident",
+    "target": "wrong_site_surgery",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-030"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "morphine",
+    "target": "standing_order",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-023",
+      "AER-030",
+      "AER-045"
+    ],
+    "weight": 3
+  },
+  {
+    "source": "miscommunication_handoff",
+    "target": "wrong_site_surgery",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-030"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "inadequate_staffing",
+    "target": "wrong_site_surgery",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-030",
+      "AER-048",
+      "RCA-009"
+    ],
+    "weight": 3
+  },
+  {
+    "source": "infection_prevention_bundle_steps",
+    "target": "wrong_site_surgery",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-030"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "pressure_injury",
+    "target": "pediatrics",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-034",
+      "RCA-017"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "pressure_injury",
+    "target": "heparin",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-034",
+      "AER-037",
+      "AER-046"
+    ],
+    "weight": 3
+  },
+  {
+    "source": "pressure_injury",
+    "target": "registered_nurse",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-034"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "pressure_injury",
+    "target": "equipment_failure",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-034"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "pressure_injury",
+    "target": "protocol_deviation",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-034"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "protocol_deviation",
+    "target": "medication_administration_record",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-034"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "heparin",
+    "target": "dosage_error",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-026"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "dosage_error",
+    "target": "knowledge_gap",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-026",
+      "RCA-001"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "adverse_event_report_aer_026",
+    "target": "er",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-026"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "adverse_event_report_aer_026",
+    "target": "dosage_error",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-026"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "adverse_event_report_aer_026",
+    "target": "rca_review",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-026"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "heparin_administration_workflow",
+    "target": "er",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-026",
+      "AER-046"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "dosage_error",
+    "target": "heparin_administration_workflow",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-026"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "standard_infection_prevention_bundle_steps",
+    "target": "adverse_event_report_aer_026",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-026"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "anesthesiologist",
+    "target": "adverse_event_report_aer_026",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-026"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "attending_physician",
+    "target": "adverse_event_report_aer_026",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-026"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "delayed_treatment",
+    "target": "er",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-036",
+      "AER-049",
+      "RCA-021"
+    ],
+    "weight": 3
+  },
+  {
+    "source": "medication_dose_discrepancy",
+    "target": "er",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-036"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "metformin",
+    "target": "er",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-036",
+      "FORM-006"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "medication_dose_discrepancy",
+    "target": "registered_nurse",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-036"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "delayed_treatment",
+    "target": "alarm_fatigue",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-036"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_dose_discrepancy",
+    "target": "inadequate_staffing",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-036"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_dose_discrepancy",
+    "target": "alarm_fatigue",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-036"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_dose_discrepancy",
+    "target": "standing_order",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-036"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "metformin",
+    "target": "metformin_administration_workflow",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-036"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "resident",
+    "target": "hospital_acquired_infection",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-038"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "hospital_acquired_infection",
+    "target": "medication_administration_record",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-038"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "protocol_deviation",
+    "target": "hospital_acquired_infection",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-038"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "alarm_fatigue",
+    "target": "hospital_acquired_infection",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-038"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "hospital_acquired_infection",
+    "target": "rca_review",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-038"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_reconciliation_steps",
+    "target": "hospital_acquired_infection",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-038"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "patient_fall",
+    "target": "radiology",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-023"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "morphine",
+    "target": "radiology",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-023",
+      "AER-045"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "morphine",
+    "target": "patient_fall",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-023"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "respiratory_therapist",
+    "target": "patient_fall",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-023"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "hospital_acquired_infection",
+    "target": "or",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-033"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "insulin",
+    "target": "or",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-033"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "hospital_acquired_infection",
+    "target": "aer_033",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-033"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "sentinel",
+    "target": "aer_033",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-033"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "resident",
+    "target": "universal_protocol_time_out_steps",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-033"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "heparin",
+    "target": "er",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-040",
+      "AER-046",
+      "FORM-001",
+      "RCA-013"
+    ],
+    "weight": 4
+  },
+  {
+    "source": "diagnostic_error",
+    "target": "pharmacist",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-040"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "diagnostic_error",
+    "target": "miscommunication_handoff",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-040",
+      "RCA-004"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "diagnostic_error",
+    "target": "alarm_fatigue",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-040"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "diagnostic_error",
+    "target": "handoff_sbar_steps",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-040"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "wrong_site_surgery",
+    "target": "medical_surgical",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-035"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "morphine",
+    "target": "medical_surgical",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-035"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "registered_nurse",
+    "target": "medication_reconciliation_steps",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-035"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "delayed_treatment",
+    "target": "radiology",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-045"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "anesthesiologist",
+    "target": "delayed_treatment",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-045",
+      "AER-054"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "morphine",
+    "target": "medication_administration_record",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-045"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "delayed_treatment",
+    "target": "knowledge_gap",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-045"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "morphine_administration_workflow",
+    "target": "radiology",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-045"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "anesthesiologist",
+    "target": "dosage_error",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-039"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "miscommunication_handoff",
+    "target": "dosage_error",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-039"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "pressure_injury",
+    "target": "cardiology",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-041"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_discrepancy",
+    "target": "cardiology",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-041"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "oxycodone",
+    "target": "cardiology",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-041"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_discrepancy",
+    "target": "registered_nurse",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-041"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "oxycodone",
+    "target": "standing_order",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-041"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "oxycodone",
+    "target": "oxycodone_administration_workflow",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-041"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "heparin",
+    "target": "medical_surgical",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-050"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "miscommunication_handoff",
+    "target": "patient_fall",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-050"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "patient_fall",
+    "target": "adverse_event_report",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-050",
+      "AER-055"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "heparin_administration_workflow",
+    "target": "medical_surgical",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-050"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "vancomycin",
+    "target": "wrong_site_surgery",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-048"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "attending_physician",
+    "target": "wrong_site_surgery",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-048"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "vancomycin",
+    "target": "standing_order",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-048"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "vancomycin_administration_workflow",
+    "target": "cardiology",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-048"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "attending_physician",
+    "target": "pressure_injury",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-046"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "pressure_injury",
+    "target": "sentinel",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-046"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "pressure_injury",
+    "target": "rca_review",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-046"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "pressure_injury",
+    "target": "or",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-037"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "pressure_injury",
+    "target": "pharmacist",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-037"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_administration_discrepancy",
+    "target": "pharmacist",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-037"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "heparin_administration_workflow",
+    "target": "or",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-037"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "delayed_treatment",
+    "target": "medical_surgical",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-052",
+      "RCA-011"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "warfarin",
+    "target": "delayed_treatment",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-052"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "respiratory_therapist",
+    "target": "delayed_treatment",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-052"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "miscommunication_handoff",
+    "target": "delayed_treatment",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-052"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "inadequate_staffing",
+    "target": "delayed_treatment",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-052",
+      "AER-054"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "warfarin_administration_workflow",
+    "target": "medical_surgical",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-052"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "patient_fall",
+    "target": "oncology",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-051"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "heparin",
+    "target": "oncology",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-051"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "patient_fall",
+    "target": "resident",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-051"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "patient_fall",
+    "target": "miscommunication_handoff",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-051",
+      "AER-055"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "heparin_administration_workflow",
+    "target": "oncology",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-051"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_error",
+    "target": "alarm_fatigue",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-053"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "warfarin",
+    "target": "standing_order",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-053"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "heparin",
+    "target": "icu",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-042",
+      "FORM-001"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "heparin",
+    "target": "handoff_sbar",
+    "relation": "documented_in",
+    "doc_ids": [
+      "FORM-001"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "heparin",
+    "target": "medication_reconciliation",
+    "relation": "documented_in",
+    "doc_ids": [
+      "FORM-001"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "morphine",
+    "target": "icu",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-054",
+      "FORM-004"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "protocol_deviation",
+    "target": "delayed_treatment",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-054"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "protocol_deviation",
+    "target": "morphine_administration_workflow",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-054"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "patient_fall",
+    "target": "morphine",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-055"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "pharmacist",
+    "target": "patient_fall",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-055"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "morphine",
+    "target": "pediatrics",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-055",
+      "RCA-004"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "morphine",
+    "target": "standing_order",
+    "relation": "violates",
+    "doc_ids": [
+      "AER-055"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "patient_fall",
+    "target": "alarm_fatigue",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-055"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "morphine_administration_workflow",
+    "target": "pediatrics",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-055"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "fall_prevention_bundle",
+    "target": "pediatrics",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-055"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "pressure_injury",
+    "target": "icu",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-042"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "pressure_injury",
+    "target": "miscommunication_handoff",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-042"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "adverse_event",
+    "target": "oncology",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-043"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "hospital_acquired_infection",
+    "target": "oncology",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "AER-043",
+      "RCA-006"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "insulin",
+    "target": "hospital_acquired_infection",
+    "relation": "administered_in",
+    "doc_ids": [
+      "AER-043"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "anesthesiologist",
+    "target": "adverse_event",
+    "relation": "performed_by",
+    "doc_ids": [
+      "AER-043"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_reconciliation_steps",
+    "target": "adverse_event",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-043"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "inadequate_staffing",
+    "target": "hospital_acquired_infection",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-043"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "incomplete_documentation",
+    "target": "hospital_acquired_infection",
+    "relation": "caused_by",
+    "doc_ids": [
+      "AER-043"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "insulin_administration_workflow",
+    "target": "oncology",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-043"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "vancomycin",
+    "target": "formulary_entry_form_003",
+    "relation": "documented_in",
+    "doc_ids": [
+      "FORM-003"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "vancomycin",
+    "target": "hospital_pharmacopeia",
+    "relation": "documented_in",
+    "doc_ids": [
+      "FORM-003"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "vancomycin",
+    "target": "infection_prevention_bundle",
+    "relation": "documented_in",
+    "doc_ids": [
+      "FORM-003"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "vancomycin",
+    "target": "medication_reconciliation",
+    "relation": "documented_in",
+    "doc_ids": [
+      "FORM-003"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "metformin",
+    "target": "icu",
+    "relation": "administered_in",
+    "doc_ids": [
+      "FORM-006"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "furosemide",
+    "target": "icu",
+    "relation": "administered_in",
+    "doc_ids": [
+      "FORM-007"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "furosemide",
+    "target": "er",
+    "relation": "administered_in",
+    "doc_ids": [
+      "FORM-007"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "furosemide",
+    "target": "fall_prevention_bundle",
+    "relation": "documented_in",
+    "doc_ids": [
+      "FORM-007"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "furosemide",
+    "target": "medication_reconciliation",
+    "relation": "documented_in",
+    "doc_ids": [
+      "FORM-007"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "lisinopril",
+    "target": "formulary_entry_form_008",
+    "relation": "documented_in",
+    "doc_ids": [
+      "FORM-008"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "lisinopril",
+    "target": "hospital_pharmacopeia",
+    "relation": "documented_in",
+    "doc_ids": [
+      "FORM-008"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "lisinopril",
+    "target": "current_hospital_formulary",
+    "relation": "documented_in",
+    "doc_ids": [
+      "FORM-008"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "lisinopril",
+    "target": "icu",
+    "relation": "administered_in",
+    "doc_ids": [
+      "FORM-008"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "lisinopril",
+    "target": "fall_prevention_bundle",
+    "relation": "documented_in",
+    "doc_ids": [
+      "FORM-008"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "lisinopril",
+    "target": "medication_reconciliation",
+    "relation": "documented_in",
+    "doc_ids": [
+      "FORM-008"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "prot_001_medication_reconciliation",
+    "target": "pediatrics",
+    "relation": "administered_in",
+    "doc_ids": [
+      "PROT-001"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "prot_001_medication_reconciliation",
+    "target": "respiratory_therapist",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-001"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "prot_001_medication_reconciliation",
+    "target": "electronic_health_record",
+    "relation": "documented_in",
+    "doc_ids": [
+      "PROT-001"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "fall_prevention_bundle",
+    "target": "er",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "PROT-003"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "fall_prevention_bundle",
+    "target": "respiratory_therapist",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-003"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "fall_prevention_bundle",
+    "target": "anesthesiologist",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-003"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "handoff_sbar",
+    "target": "er",
+    "relation": "administered_in",
+    "doc_ids": [
+      "PROT-005"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "handoff_sbar",
+    "target": "anesthesiologist",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-005"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "handoff_sbar",
+    "target": "resident_staff",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-005"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_reconciliation",
+    "target": "oncology",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "PROT-006"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_reconciliation",
+    "target": "pharmacist",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-006"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_reconciliation",
+    "target": "registered_nurse",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-006"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "prot_006_medication_reconciliation",
+    "target": "joint_commission_national_patient_safety_goals",
+    "relation": "documented_in",
+    "doc_ids": [
+      "PROT-006"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "prot_006_medication_reconciliation",
+    "target": "internal_policy_manual_medication_reconciliation_section",
+    "relation": "documented_in",
+    "doc_ids": [
+      "PROT-006"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "prot_007_universal_protocol_time_out",
+    "target": "medical_surgical",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "PROT-007"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "prot_007_universal_protocol_time_out",
+    "target": "respiratory_therapist",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-007"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "prot_007_universal_protocol_time_out",
+    "target": "pharmacist",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-007"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "prot_007_universal_protocol_time_out",
+    "target": "electronic_health_record",
+    "relation": "documented_in",
+    "doc_ids": [
+      "PROT-007"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "fall_prevention_bundle",
+    "target": "icu",
+    "relation": "administered_in",
+    "doc_ids": [
+      "PROT-008"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "fall_prevention_bundle",
+    "target": "resident",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-008"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "fall_prevention_bundle",
+    "target": "resident_staff",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-008"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "fall_prevention_bundle",
+    "target": "temporary_staff",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-008"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "fall_prevention_bundle",
+    "target": "float_staff",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-008"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "fall_prevention_bundle",
+    "target": "joint_commission_national_patient_safety_goals",
+    "relation": "documented_in",
+    "doc_ids": [
+      "PROT-008"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "infection_prevention_bundle",
+    "target": "icu",
+    "relation": "administered_in",
+    "doc_ids": [
+      "PROT-004",
+      "PROT-009"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "infection_prevention_bundle",
+    "target": "resident",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-009"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "infection_prevention_bundle",
+    "target": "pharmacist",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-009"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "prot_012_universal_protocol_time_out",
+    "target": "medical_surgical",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "PROT-012"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "prot_012_universal_protocol_time_out",
+    "target": "respiratory_therapist",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-012"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "prot_012_universal_protocol_time_out",
+    "target": "pharmacist",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-012"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "prot_012_universal_protocol_time_out",
+    "target": "universal_protocol_time_out_bundle",
+    "relation": "documented_in",
+    "doc_ids": [
+      "PROT-012"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "prot_012_universal_protocol_time_out",
+    "target": "joint_commission_national_patient_safety_goals",
+    "relation": "documented_in",
+    "doc_ids": [
+      "PROT-012"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "prot_012_universal_protocol_time_out",
+    "target": "internal_policy_manual",
+    "relation": "documented_in",
+    "doc_ids": [
+      "PROT-012"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_reconciliation",
+    "target": "prot_011",
+    "relation": "documented_in",
+    "doc_ids": [
+      "PROT-011"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_reconciliation",
+    "target": "icu",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "PROT-011"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_reconciliation",
+    "target": "resident_physician",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-011"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_reconciliation",
+    "target": "attending_physician",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-011"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "infection_prevention_bundle",
+    "target": "anesthesiologist",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-004"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "infection_prevention_bundle",
+    "target": "registered_nurse",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-004"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "infection_prevention_bundle",
+    "target": "joint_commission_national_patient_safety_goals",
+    "relation": "documented_in",
+    "doc_ids": [
+      "PROT-004"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "infection_prevention_bundle",
+    "target": "internal_policy_manual",
+    "relation": "documented_in",
+    "doc_ids": [
+      "PROT-004"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "insulin",
+    "target": "er",
+    "relation": "administered_in",
+    "doc_ids": [
+      "FORM-002"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "dosage_error",
+    "target": "oncology",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "RCA-001",
+      "RCA-005"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "insulin",
+    "target": "dosage_error",
+    "relation": "administered_in",
+    "doc_ids": [
+      "RCA-001",
+      "RCA-005"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "dosage_error",
+    "target": "infection_prevention_bundle",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-001"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "miscommunication_handoff",
+    "target": "incomplete_handoff",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-001"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_error",
+    "target": "aer_044",
+    "relation": "documented_in",
+    "doc_ids": [
+      "AER-044"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "wrong_site_surgery",
+    "target": "pediatrics",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "RCA-002"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "metformin",
+    "target": "wrong_site_surgery",
+    "relation": "administered_in",
+    "doc_ids": [
+      "RCA-002"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "wrong_site_surgery",
+    "target": "universal_protocol_time_out",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-002"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "sbar_training",
+    "target": "pediatrics",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-002"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_reconciliation_workflow",
+    "target": "metformin",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-002"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "sbar",
+    "target": "pediatrics",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-002",
+      "RCA-016"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "morphine",
+    "target": "infection_prevention_bundle",
+    "relation": "documented_in",
+    "doc_ids": [
+      "FORM-004"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "morphine",
+    "target": "medication_reconciliation",
+    "relation": "documented_in",
+    "doc_ids": [
+      "FORM-004"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "universal_protocol_time_out",
+    "target": "er",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "PROT-002"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "universal_protocol_time_out",
+    "target": "registered_nurse",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-002"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "universal_protocol_time_out",
+    "target": "respiratory_therapist",
+    "relation": "performed_by",
+    "doc_ids": [
+      "PROT-002"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "dosage_error",
+    "target": "medical_surgical",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "RCA-007"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "incomplete_documentation",
+    "target": "dosage_error",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-005",
+      "RCA-007"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "equipment_failure",
+    "target": "dosage_error",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-007"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "hospital_acquired_infection",
+    "target": "universal_protocol_time_out",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-003"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "hospital_acquired_infection",
+    "target": "knowledge_gap",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-003"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "hospital_acquired_infection",
+    "target": "inadequate_staffing",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-003",
+      "RCA-006"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "infection_prevention_bundle_training",
+    "target": "pediatrics",
+    "relation": "administered_in",
+    "doc_ids": [
+      "RCA-003"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_reconciliation_workflow",
+    "target": "insulin",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-003"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "sbar",
+    "target": "pediatrics",
+    "relation": "administered_in",
+    "doc_ids": [
+      "RCA-003"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "patient_fall",
+    "target": "or",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "RCA-008"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "cefazolin",
+    "target": "or",
+    "relation": "administered_in",
+    "doc_ids": [
+      "RCA-008"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "patient_fall",
+    "target": "medication_reconciliation_protocol",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-008"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "incomplete_documentation",
+    "target": "patient_fall",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-008"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "specimen_mislabeling",
+    "target": "icu",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "RCA-010"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "specimen_mislabeling",
+    "target": "alarm_fatigue",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-010",
+      "RCA-024"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "specimen_mislabeling",
+    "target": "miscommunication_handoff",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-010",
+      "RCA-012",
+      "RCA-024"
+    ],
+    "weight": 3
+  },
+  {
+    "source": "specimen_mislabeling",
+    "target": "infection_prevention_bundle_protocol",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-010"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "dosage_error",
+    "target": "medication_reconciliation_protocol",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-005"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "knowledge_gap",
+    "target": "dosage_error",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-005"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "alarm_fatigue",
+    "target": "dosage_error",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-005"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "universal_protocol_time_out",
+    "target": "oncology",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-005",
+      "RCA-006"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "medication_reconciliation_protocol",
+    "target": "insulin",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-005",
+      "RCA-009"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "sbar",
+    "target": "oncology",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-005"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "delayed_treatment",
+    "target": "universal_protocol_time_out",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-011"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "insulin",
+    "target": "medication_reconciliation_workflow",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-011"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "fall_prevention_bundle",
+    "target": "medical_surgical",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-011"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "diagnostic_error",
+    "target": "pediatrics",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "RCA-004"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "protocol_deviation",
+    "target": "infection_prevention_bundle_protocol",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-004"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "miscommunication_handoff",
+    "target": "structured_handoff_using_sbar",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-004"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "morphine",
+    "target": "medication_reconciliation_workflow",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-004"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "rca_team",
+    "target": "diagnostic_error",
+    "relation": "performed_by",
+    "doc_ids": [
+      "RCA-013"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "rca_team",
+    "target": "five_whys_technique",
+    "relation": "performed_by",
+    "doc_ids": [
+      "RCA-013"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "diagnostic_error",
+    "target": "knowledge_gap",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-013"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "infection_prevention_bundle_training",
+    "target": "er",
+    "relation": "administered_in",
+    "doc_ids": [
+      "RCA-013"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "heparin",
+    "target": "medication_reconciliation_workflow",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-013"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "cefazolin",
+    "target": "delayed_treatment",
+    "relation": "administered_in",
+    "doc_ids": [
+      "RCA-016"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "delayed_treatment",
+    "target": "infection_prevention_bundle_protocol",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-016"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "infection_prevention_bundle_protocol",
+    "target": "pediatrics",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-016"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "cefazolin",
+    "target": "medication_reconciliation_workflow",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-016"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "protocol_deviation",
+    "target": "handoff_sbar",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-018"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "warfarin",
+    "target": "or",
+    "relation": "administered_in",
+    "doc_ids": [
+      "RCA-018"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "warfarin",
+    "target": "medication_reconciliation",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-018"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "hospital_acquired_infection",
+    "target": "protocol_deviation",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-020"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "protocol_deviation",
+    "target": "infection_prevention_bundle",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-020"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "protocol_deviation",
+    "target": "medication_reconciliation_workflow",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-020"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "miscommunication_handoff",
+    "target": "sbar",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-020",
+      "RCA-024"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "wrong_site_surgery",
+    "target": "radiology",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "RCA-014"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "protocol_deviation",
+    "target": "sbar_protocol",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-014",
+      "RCA-021"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "medication_error",
+    "target": "or",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "RCA-015",
+      "RCA-019"
+    ],
+    "weight": 2
+  },
+  {
+    "source": "heparin",
+    "target": "medication_error",
+    "relation": "administered_in",
+    "doc_ids": [
+      "RCA-019"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_error",
+    "target": "incomplete_documentation",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-019"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_error",
+    "target": "infection_prevention_bundle_protocol",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-019"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_error",
+    "target": "rca_team",
+    "relation": "performed_by",
+    "doc_ids": [
+      "RCA-019"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "universal_protocol_time_out_training",
+    "target": "medication_error",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-019"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_reconciliation_workflow",
+    "target": "medication_error",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-019"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "sbar",
+    "target": "medication_error",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-019"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "specimen_mislabeling",
+    "target": "medical_surgical",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "RCA-012"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "furosemide",
+    "target": "medical_surgical",
+    "relation": "administered_in",
+    "doc_ids": [
+      "RCA-012"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "specimen_mislabeling",
+    "target": "protocol_deviation",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-012"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "universal_protocol_time_out",
+    "target": "medical_surgical",
+    "relation": "administered_in",
+    "doc_ids": [
+      "RCA-012"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "furosemide",
+    "target": "medication_reconciliation",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-012"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "sbar",
+    "target": "medical_surgical",
+    "relation": "administered_in",
+    "doc_ids": [
+      "RCA-012"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "protocol_deviation",
+    "target": "medication_reconciliation_protocol",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-023"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "metformin",
+    "target": "medication_reconciliation_workflow",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-023"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "cardiology",
+    "target": "handoff_sbar_training",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-023"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "cardiology",
+    "target": "structured_handoff_sbar",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-023"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "dosage_error",
+    "target": "equipment_failure",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-025"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "dosage_error",
+    "target": "universal_protocol_time_out",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-025"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_reconciliation_workflow",
+    "target": "er",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-025"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_reconciliation_workflow",
+    "target": "vancomycin",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-025"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "structured_handoff_sbar",
+    "target": "er_staff",
+    "relation": "performed_by",
+    "doc_ids": [
+      "RCA-025"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "insulin",
+    "target": "wrong_site_surgery",
+    "relation": "administered_in",
+    "doc_ids": [
+      "RCA-009"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "wrong_site_surgery",
+    "target": "medication_reconciliation_protocol",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-009"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "knowledge_gap",
+    "target": "wrong_site_surgery",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-009"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "protocol_deviation",
+    "target": "wrong_site_surgery",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-009"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "infection_prevention_bundle_training",
+    "target": "er",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-009"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "sbar",
+    "target": "er",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-009"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "patient_fall",
+    "target": "er",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "RCA-022"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "patient_fall",
+    "target": "inadequate_staffing",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-022"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "patient_fall",
+    "target": "incomplete_documentation",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-022"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_reconciliation_training",
+    "target": "er",
+    "relation": "administered_in",
+    "doc_ids": [
+      "RCA-022"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "specimen_mislabeling",
+    "target": "er",
+    "relation": "occurred_in",
+    "doc_ids": [
+      "RCA-024"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "specimen_mislabeling",
+    "target": "medication_reconciliation_protocol",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-024"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "warfarin",
+    "target": "medication_reconciliation_protocol",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-024"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "specimen_mislabeling",
+    "target": "variability_in_er_staff_to_patient_ratios",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-024"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "specimen_mislabeling",
+    "target": "incomplete_handoff",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-024"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "universal_protocol_time_out_training",
+    "target": "er",
+    "relation": "administered_in",
+    "doc_ids": [
+      "RCA-024"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "incomplete_handoff",
+    "target": "sbar",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-024"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "cefazolin",
+    "target": "medication_error",
+    "relation": "administered_in",
+    "doc_ids": [
+      "RCA-015"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "medication_error",
+    "target": "sbar_protocol",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-015"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "pressure_injury",
+    "target": "rca_017",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-017"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "protocol_deviation",
+    "target": "pressure_injury",
+    "relation": "caused_by",
+    "doc_ids": [
+      "RCA-017"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "pressure_injury",
+    "target": "infection_prevention_bundle_protocol",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-017"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "heparin",
+    "target": "hospital_acquired_infection",
+    "relation": "administered_in",
+    "doc_ids": [
+      "RCA-006"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "hospital_acquired_infection",
+    "target": "medication_reconciliation_protocol",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-006"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "heparin",
+    "target": "medication_reconciliation_protocol",
+    "relation": "documented_in",
+    "doc_ids": [
+      "RCA-006"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "miscommunication_handoff",
+    "target": "structured_handoff_sbar",
+    "relation": "violates",
+    "doc_ids": [
+      "RCA-006"
+    ],
+    "weight": 1
+  },
+  {
+    "source": "warfarin",
+    "target": "formulary_entry_form_005",
+    "relation": "documented_in",
+    "doc_ids": [
+      "FORM-005"
+    ],
+    "weight": 1
+  }
+]

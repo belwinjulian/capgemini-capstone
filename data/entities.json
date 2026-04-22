@@ -1,0 +1,1604 @@
+[
+  {
+    "name": "warfarin",
+    "type": "medication",
+    "doc_ids": [
+      "AER-001",
+      "AER-006",
+      "AER-010",
+      "AER-011",
+      "AER-019",
+      "AER-021",
+      "AER-039",
+      "AER-052",
+      "AER-053",
+      "FORM-005",
+      "RCA-018",
+      "RCA-024"
+    ]
+  },
+  {
+    "name": "icu",
+    "type": "department",
+    "doc_ids": [
+      "AER-001",
+      "AER-009",
+      "AER-013",
+      "AER-015",
+      "AER-021",
+      "AER-024",
+      "AER-029",
+      "AER-038",
+      "AER-039",
+      "AER-042",
+      "AER-054",
+      "FORM-001",
+      "FORM-002",
+      "FORM-003",
+      "FORM-004",
+      "FORM-005",
+      "FORM-006",
+      "FORM-007",
+      "FORM-008",
+      "PROT-004",
+      "PROT-008",
+      "PROT-009",
+      "PROT-011",
+      "RCA-010",
+      "RCA-020"
+    ]
+  },
+  {
+    "name": "medication_error",
+    "type": "incident_type",
+    "doc_ids": [
+      "AER-001",
+      "AER-003",
+      "AER-006",
+      "AER-020",
+      "AER-022",
+      "AER-044",
+      "AER-053",
+      "RCA-015",
+      "RCA-019"
+    ]
+  },
+  {
+    "name": "adverse_event",
+    "type": "incident_type",
+    "doc_ids": [
+      "AER-001",
+      "AER-004",
+      "AER-008",
+      "AER-010",
+      "AER-018",
+      "AER-043",
+      "AER-053",
+      "AER-054"
+    ]
+  },
+  {
+    "name": "respiratory_therapist",
+    "type": "staff_role",
+    "doc_ids": [
+      "AER-001",
+      "AER-006",
+      "AER-021",
+      "AER-023",
+      "AER-029",
+      "AER-049",
+      "AER-052",
+      "PROT-001",
+      "PROT-002",
+      "PROT-003",
+      "PROT-007",
+      "PROT-012"
+    ]
+  },
+  {
+    "name": "attending_physician",
+    "type": "staff_role",
+    "doc_ids": [
+      "AER-001",
+      "AER-002",
+      "AER-003",
+      "AER-004",
+      "AER-005",
+      "AER-006",
+      "AER-007",
+      "AER-008",
+      "AER-009",
+      "AER-010",
+      "AER-011",
+      "AER-012",
+      "AER-013",
+      "AER-014",
+      "AER-015",
+      "AER-016",
+      "AER-017",
+      "AER-018",
+      "AER-019",
+      "AER-020",
+      "AER-021",
+      "AER-022",
+      "AER-023",
+      "AER-024",
+      "AER-025",
+      "AER-026",
+      "AER-028",
+      "AER-029",
+      "AER-030",
+      "AER-031",
+      "AER-032",
+      "AER-033",
+      "AER-034",
+      "AER-035",
+      "AER-036",
+      "AER-037",
+      "AER-038",
+      "AER-039",
+      "AER-040",
+      "AER-041",
+      "AER-042",
+      "AER-043",
+      "AER-044",
+      "AER-045",
+      "AER-046",
+      "AER-048",
+      "AER-049",
+      "AER-050",
+      "AER-051",
+      "AER-052",
+      "AER-053",
+      "AER-054",
+      "AER-055",
+      "PROT-011"
+    ]
+  },
+  {
+    "name": "standing_order",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-001",
+      "AER-002",
+      "AER-003",
+      "AER-004",
+      "AER-005",
+      "AER-006",
+      "AER-007",
+      "AER-008",
+      "AER-009",
+      "AER-010",
+      "AER-012",
+      "AER-013",
+      "AER-014",
+      "AER-015",
+      "AER-016",
+      "AER-017",
+      "AER-018",
+      "AER-019",
+      "AER-020",
+      "AER-021",
+      "AER-022",
+      "AER-023",
+      "AER-024",
+      "AER-025",
+      "AER-028",
+      "AER-029",
+      "AER-030",
+      "AER-034",
+      "AER-035",
+      "AER-036",
+      "AER-037",
+      "AER-038",
+      "AER-039",
+      "AER-040",
+      "AER-041",
+      "AER-042",
+      "AER-043",
+      "AER-044",
+      "AER-045",
+      "AER-046",
+      "AER-048",
+      "AER-049",
+      "AER-050",
+      "AER-051",
+      "AER-052",
+      "AER-053",
+      "AER-054",
+      "AER-055"
+    ]
+  },
+  {
+    "name": "universal_protocol_time_out_steps",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-001",
+      "AER-017",
+      "AER-033",
+      "AER-049"
+    ]
+  },
+  {
+    "name": "inadequate_staffing",
+    "type": "root_cause",
+    "doc_ids": [
+      "AER-001",
+      "AER-002",
+      "AER-006",
+      "AER-007",
+      "AER-009",
+      "AER-011",
+      "AER-014",
+      "AER-015",
+      "AER-016",
+      "AER-017",
+      "AER-019",
+      "AER-020",
+      "AER-021",
+      "AER-025",
+      "AER-030",
+      "AER-031",
+      "AER-032",
+      "AER-035",
+      "AER-036",
+      "AER-039",
+      "AER-041",
+      "AER-043",
+      "AER-044",
+      "AER-045",
+      "AER-048",
+      "AER-049",
+      "AER-052",
+      "AER-054",
+      "RCA-003",
+      "RCA-006",
+      "RCA-008",
+      "RCA-009",
+      "RCA-011",
+      "RCA-012",
+      "RCA-013",
+      "RCA-014",
+      "RCA-016",
+      "RCA-018",
+      "RCA-021",
+      "RCA-022",
+      "RCA-023",
+      "RCA-024",
+      "RCA-025"
+    ]
+  },
+  {
+    "name": "er",
+    "type": "department",
+    "doc_ids": [
+      "AER-005",
+      "AER-006",
+      "AER-007",
+      "AER-008",
+      "AER-012",
+      "AER-017",
+      "AER-018",
+      "AER-019",
+      "AER-026",
+      "AER-036",
+      "AER-040",
+      "AER-044",
+      "AER-046",
+      "AER-049",
+      "AER-053",
+      "FORM-001",
+      "FORM-002",
+      "FORM-003",
+      "FORM-004",
+      "FORM-005",
+      "FORM-006",
+      "FORM-007",
+      "FORM-008",
+      "PROT-002",
+      "PROT-003",
+      "PROT-005",
+      "RCA-009",
+      "RCA-013",
+      "RCA-021",
+      "RCA-022",
+      "RCA-024",
+      "RCA-025"
+    ]
+  },
+  {
+    "name": "dosage_error",
+    "type": "incident_type",
+    "doc_ids": [
+      "AER-002",
+      "AER-008",
+      "AER-012",
+      "AER-015",
+      "AER-021",
+      "AER-026",
+      "AER-031",
+      "AER-039",
+      "RCA-001",
+      "RCA-005",
+      "RCA-007",
+      "RCA-025"
+    ]
+  },
+  {
+    "name": "cefazolin",
+    "type": "medication",
+    "doc_ids": [
+      "AER-008",
+      "AER-015",
+      "AER-017",
+      "RCA-008",
+      "RCA-010",
+      "RCA-015",
+      "RCA-016"
+    ]
+  },
+  {
+    "name": "fall_prevention_bundle",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-008",
+      "AER-009",
+      "AER-018",
+      "AER-023",
+      "AER-037",
+      "AER-039",
+      "AER-044",
+      "AER-053",
+      "AER-055",
+      "FORM-007",
+      "FORM-008",
+      "PROT-003",
+      "PROT-008",
+      "RCA-001",
+      "RCA-011",
+      "RCA-012"
+    ]
+  },
+  {
+    "name": "protocol_deviation",
+    "type": "root_cause",
+    "doc_ids": [
+      "AER-003",
+      "AER-006",
+      "AER-008",
+      "AER-010",
+      "AER-012",
+      "AER-014",
+      "AER-017",
+      "AER-022",
+      "AER-023",
+      "AER-031",
+      "AER-032",
+      "AER-034",
+      "AER-038",
+      "AER-044",
+      "AER-049",
+      "AER-053",
+      "AER-054",
+      "RCA-001",
+      "RCA-002",
+      "RCA-004",
+      "RCA-007",
+      "RCA-009",
+      "RCA-011",
+      "RCA-012",
+      "RCA-014",
+      "RCA-015",
+      "RCA-017",
+      "RCA-018",
+      "RCA-019",
+      "RCA-020",
+      "RCA-021",
+      "RCA-023",
+      "RCA-025"
+    ]
+  },
+  {
+    "name": "incomplete_documentation",
+    "type": "root_cause",
+    "doc_ids": [
+      "AER-008",
+      "AER-009",
+      "AER-012",
+      "AER-018",
+      "AER-028",
+      "AER-043",
+      "RCA-005",
+      "RCA-007",
+      "RCA-008",
+      "RCA-019",
+      "RCA-022"
+    ]
+  },
+  {
+    "name": "morphine",
+    "type": "medication",
+    "doc_ids": [
+      "AER-007",
+      "AER-023",
+      "AER-030",
+      "AER-032",
+      "AER-035",
+      "AER-045",
+      "AER-054",
+      "AER-055",
+      "FORM-004",
+      "RCA-004"
+    ]
+  },
+  {
+    "name": "diagnostic_error",
+    "type": "incident_type",
+    "doc_ids": [
+      "AER-005",
+      "AER-007",
+      "AER-009",
+      "AER-017",
+      "AER-028",
+      "AER-040",
+      "RCA-004",
+      "RCA-013",
+      "RCA-018"
+    ]
+  },
+  {
+    "name": "anesthesiologist",
+    "type": "staff_role",
+    "doc_ids": [
+      "AER-002",
+      "AER-003",
+      "AER-007",
+      "AER-010",
+      "AER-016",
+      "AER-026",
+      "AER-039",
+      "AER-043",
+      "AER-045",
+      "AER-054",
+      "PROT-003",
+      "PROT-004",
+      "PROT-005"
+    ]
+  },
+  {
+    "name": "miscommunication_handoff",
+    "type": "root_cause",
+    "doc_ids": [
+      "AER-002",
+      "AER-003",
+      "AER-004",
+      "AER-005",
+      "AER-007",
+      "AER-010",
+      "AER-011",
+      "AER-013",
+      "AER-020",
+      "AER-022",
+      "AER-025",
+      "AER-026",
+      "AER-029",
+      "AER-030",
+      "AER-033",
+      "AER-037",
+      "AER-039",
+      "AER-040",
+      "AER-041",
+      "AER-042",
+      "AER-046",
+      "AER-050",
+      "AER-051",
+      "AER-052",
+      "AER-055",
+      "RCA-001",
+      "RCA-003",
+      "RCA-004",
+      "RCA-006",
+      "RCA-010",
+      "RCA-012",
+      "RCA-014",
+      "RCA-016",
+      "RCA-017",
+      "RCA-020",
+      "RCA-024",
+      "RCA-025"
+    ]
+  },
+  {
+    "name": "medication_reconciliation_steps",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-002",
+      "AER-007",
+      "AER-016",
+      "AER-024",
+      "AER-034",
+      "AER-035",
+      "AER-038",
+      "AER-041",
+      "AER-043",
+      "AER-045",
+      "AER-046",
+      "AER-052",
+      "AER-054"
+    ]
+  },
+  {
+    "name": "morphine_administration_workflow",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-007",
+      "AER-030",
+      "AER-035",
+      "AER-045",
+      "AER-054",
+      "AER-055"
+    ]
+  },
+  {
+    "name": "insulin",
+    "type": "medication",
+    "doc_ids": [
+      "AER-003",
+      "AER-009",
+      "AER-020",
+      "AER-025",
+      "AER-033",
+      "AER-043",
+      "FORM-002",
+      "RCA-001",
+      "RCA-003",
+      "RCA-005",
+      "RCA-007",
+      "RCA-009",
+      "RCA-011",
+      "RCA-014",
+      "RCA-020",
+      "RCA-022"
+    ]
+  },
+  {
+    "name": "pharmacist",
+    "type": "staff_role",
+    "doc_ids": [
+      "AER-009",
+      "AER-014",
+      "AER-019",
+      "AER-037",
+      "AER-040",
+      "AER-055",
+      "PROT-006",
+      "PROT-007",
+      "PROT-009",
+      "PROT-012"
+    ]
+  },
+  {
+    "name": "metformin",
+    "type": "medication",
+    "doc_ids": [
+      "AER-002",
+      "AER-022",
+      "AER-028",
+      "AER-036",
+      "FORM-006",
+      "RCA-002",
+      "RCA-023"
+    ]
+  },
+  {
+    "name": "pediatrics",
+    "type": "department",
+    "doc_ids": [
+      "AER-002",
+      "AER-004",
+      "AER-014",
+      "AER-025",
+      "AER-031",
+      "AER-034",
+      "AER-055",
+      "PROT-001",
+      "RCA-002",
+      "RCA-003",
+      "RCA-004",
+      "RCA-016",
+      "RCA-017"
+    ]
+  },
+  {
+    "name": "metformin_administration_workflow",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-002",
+      "AER-028",
+      "AER-036"
+    ]
+  },
+  {
+    "name": "heparin",
+    "type": "medication",
+    "doc_ids": [
+      "AER-005",
+      "AER-026",
+      "AER-029",
+      "AER-034",
+      "AER-037",
+      "AER-040",
+      "AER-042",
+      "AER-046",
+      "AER-050",
+      "AER-051",
+      "FORM-001",
+      "RCA-006",
+      "RCA-013",
+      "RCA-019"
+    ]
+  },
+  {
+    "name": "registered_nurse",
+    "type": "staff_role",
+    "doc_ids": [
+      "AER-004",
+      "AER-005",
+      "AER-017",
+      "AER-020",
+      "AER-034",
+      "AER-035",
+      "AER-036",
+      "AER-041",
+      "AER-044",
+      "AER-053",
+      "PROT-002",
+      "PROT-004",
+      "PROT-006"
+    ]
+  },
+  {
+    "name": "medication_administration_record",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-005",
+      "AER-025",
+      "AER-034",
+      "AER-038",
+      "AER-041",
+      "AER-045",
+      "AER-046",
+      "AER-051"
+    ]
+  },
+  {
+    "name": "heparin_administration_workflow",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-005",
+      "AER-026",
+      "AER-034",
+      "AER-037",
+      "AER-042",
+      "AER-046",
+      "AER-050",
+      "AER-051"
+    ]
+  },
+  {
+    "name": "rca_review",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-004",
+      "AER-005",
+      "AER-013",
+      "AER-016",
+      "AER-019",
+      "AER-021",
+      "AER-024",
+      "AER-026",
+      "AER-030",
+      "AER-031",
+      "AER-035",
+      "AER-038",
+      "AER-042",
+      "AER-046",
+      "AER-050",
+      "AER-051"
+    ]
+  },
+  {
+    "name": "hospital_acquired_infection",
+    "type": "incident_type",
+    "doc_ids": [
+      "AER-004",
+      "AER-013",
+      "AER-033",
+      "AER-038",
+      "AER-043",
+      "RCA-003",
+      "RCA-006",
+      "RCA-020"
+    ]
+  },
+  {
+    "name": "vancomycin",
+    "type": "medication",
+    "doc_ids": [
+      "AER-004",
+      "AER-012",
+      "AER-013",
+      "AER-014",
+      "AER-016",
+      "AER-024",
+      "AER-031",
+      "AER-038",
+      "AER-044",
+      "AER-048",
+      "FORM-003",
+      "RCA-017",
+      "RCA-025"
+    ]
+  },
+  {
+    "name": "infection_prevention_bundle",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-004",
+      "AER-010",
+      "AER-012",
+      "AER-032",
+      "FORM-003",
+      "FORM-004",
+      "FORM-005",
+      "PROT-004",
+      "PROT-009",
+      "RCA-001",
+      "RCA-020"
+    ]
+  },
+  {
+    "name": "vancomycin_administration_workflow",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-004",
+      "AER-013",
+      "AER-016",
+      "AER-024",
+      "AER-038",
+      "AER-048"
+    ]
+  },
+  {
+    "name": "adverse_event_report",
+    "type": "incident_type",
+    "doc_ids": [
+      "AER-006",
+      "AER-013",
+      "AER-050",
+      "AER-055"
+    ]
+  },
+  {
+    "name": "radiology",
+    "type": "department",
+    "doc_ids": [
+      "AER-011",
+      "AER-023",
+      "AER-045",
+      "RCA-014"
+    ]
+  },
+  {
+    "name": "pressure_injury",
+    "type": "incident_type",
+    "doc_ids": [
+      "AER-011",
+      "AER-018",
+      "AER-022",
+      "AER-034",
+      "AER-037",
+      "AER-041",
+      "AER-042",
+      "AER-046",
+      "RCA-017"
+    ]
+  },
+  {
+    "name": "universal_protocol_time_out",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-011",
+      "AER-020",
+      "AER-029",
+      "AER-031",
+      "PROT-002",
+      "RCA-002",
+      "RCA-003",
+      "RCA-004",
+      "RCA-005",
+      "RCA-006",
+      "RCA-011",
+      "RCA-012",
+      "RCA-025"
+    ]
+  },
+  {
+    "name": "equipment_failure",
+    "type": "root_cause",
+    "doc_ids": [
+      "AER-013",
+      "AER-024",
+      "AER-034",
+      "RCA-007",
+      "RCA-025"
+    ]
+  },
+  {
+    "name": "sbar_steps",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-013"
+    ]
+  },
+  {
+    "name": "delayed_treatment",
+    "type": "incident_type",
+    "doc_ids": [
+      "AER-014",
+      "AER-029",
+      "AER-036",
+      "AER-045",
+      "AER-049",
+      "AER-052",
+      "AER-054",
+      "RCA-011",
+      "RCA-016",
+      "RCA-021"
+    ]
+  },
+  {
+    "name": "sbar",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-014",
+      "AER-019",
+      "RCA-001",
+      "RCA-002",
+      "RCA-003",
+      "RCA-005",
+      "RCA-007",
+      "RCA-008",
+      "RCA-009",
+      "RCA-011",
+      "RCA-012",
+      "RCA-013",
+      "RCA-016",
+      "RCA-017",
+      "RCA-019",
+      "RCA-020",
+      "RCA-022",
+      "RCA-024"
+    ]
+  },
+  {
+    "name": "alarm_fatigue",
+    "type": "root_cause",
+    "doc_ids": [
+      "AER-015",
+      "AER-019",
+      "AER-035",
+      "AER-036",
+      "AER-038",
+      "AER-040",
+      "AER-053",
+      "AER-055",
+      "RCA-005",
+      "RCA-010",
+      "RCA-024"
+    ]
+  },
+  {
+    "name": "standard_infection_prevention_bundle",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-015"
+    ]
+  },
+  {
+    "name": "cefazolin_administration_workflow",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-015"
+    ]
+  },
+  {
+    "name": "or",
+    "type": "department",
+    "doc_ids": [
+      "AER-016",
+      "AER-028",
+      "AER-030",
+      "AER-033",
+      "AER-037",
+      "RCA-008",
+      "RCA-015",
+      "RCA-018",
+      "RCA-019"
+    ]
+  },
+  {
+    "name": "specimen_mislabeling",
+    "type": "incident_type",
+    "doc_ids": [
+      "AER-016",
+      "RCA-010",
+      "RCA-012",
+      "RCA-024"
+    ]
+  },
+  {
+    "name": "mar",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-016"
+    ]
+  },
+  {
+    "name": "knowledge_gap",
+    "type": "root_cause",
+    "doc_ids": [
+      "AER-016",
+      "AER-018",
+      "AER-023",
+      "AER-024",
+      "AER-026",
+      "AER-045",
+      "RCA-001",
+      "RCA-003",
+      "RCA-005",
+      "RCA-009",
+      "RCA-010",
+      "RCA-013"
+    ]
+  },
+  {
+    "name": "wrong_site_surgery",
+    "type": "incident_type",
+    "doc_ids": [
+      "AER-010",
+      "AER-019",
+      "AER-030",
+      "AER-035",
+      "AER-048",
+      "RCA-002",
+      "RCA-009",
+      "RCA-014",
+      "RCA-023"
+    ]
+  },
+  {
+    "name": "lisinopril",
+    "type": "medication",
+    "doc_ids": [
+      "AER-018",
+      "AER-049",
+      "FORM-008",
+      "RCA-021"
+    ]
+  },
+  {
+    "name": "medication_discrepancy",
+    "type": "incident_type",
+    "doc_ids": [
+      "AER-018",
+      "AER-025",
+      "AER-041"
+    ]
+  },
+  {
+    "name": "lisinopril_administration_workflow",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-018"
+    ]
+  },
+  {
+    "name": "medical_surgical",
+    "type": "department",
+    "doc_ids": [
+      "AER-003",
+      "AER-020",
+      "AER-022",
+      "AER-032",
+      "AER-035",
+      "AER-050",
+      "AER-052",
+      "PROT-007",
+      "PROT-012",
+      "RCA-007",
+      "RCA-011",
+      "RCA-012"
+    ]
+  },
+  {
+    "name": "sentinel_event",
+    "type": "incident_type",
+    "doc_ids": [
+      "AER-021",
+      "AER-028",
+      "AER-043"
+    ]
+  },
+  {
+    "name": "handoff_sbar_steps",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-003",
+      "AER-021",
+      "AER-022",
+      "AER-040",
+      "AER-042"
+    ]
+  },
+  {
+    "name": "warfarin_administration_workflow",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-021",
+      "AER-052"
+    ]
+  },
+  {
+    "name": "cardiology",
+    "type": "department",
+    "doc_ids": [
+      "AER-010",
+      "AER-041",
+      "AER-048",
+      "RCA-023"
+    ]
+  },
+  {
+    "name": "patient_fall",
+    "type": "incident_type",
+    "doc_ids": [
+      "AER-023",
+      "AER-024",
+      "AER-025",
+      "AER-032",
+      "AER-050",
+      "AER-051",
+      "AER-055",
+      "RCA-008",
+      "RCA-022"
+    ]
+  },
+  {
+    "name": "rn",
+    "type": "staff_role",
+    "doc_ids": [
+      "AER-025",
+      "AER-031"
+    ]
+  },
+  {
+    "name": "resident",
+    "type": "staff_role",
+    "doc_ids": [
+      "AER-028",
+      "AER-030",
+      "AER-032",
+      "AER-033",
+      "AER-038",
+      "AER-051",
+      "PROT-008",
+      "PROT-009"
+    ]
+  },
+  {
+    "name": "medication_reconciliation_protocol",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-025",
+      "RCA-005",
+      "RCA-006",
+      "RCA-008",
+      "RCA-009",
+      "RCA-023",
+      "RCA-024"
+    ]
+  },
+  {
+    "name": "insulin_administration_workflow",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-025",
+      "AER-033",
+      "AER-043"
+    ]
+  },
+  {
+    "name": "medication_administration_discrepancy",
+    "type": "incident_type",
+    "doc_ids": [
+      "AER-029",
+      "AER-037"
+    ]
+  },
+  {
+    "name": "infection_prevention_bundle_steps",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-030"
+    ]
+  },
+  {
+    "name": "adverse_event_report_aer_026",
+    "type": "incident_type",
+    "doc_ids": [
+      "AER-026"
+    ]
+  },
+  {
+    "name": "standard_infection_prevention_bundle_steps",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-026"
+    ]
+  },
+  {
+    "name": "medication_dose_discrepancy",
+    "type": "incident_type",
+    "doc_ids": [
+      "AER-036"
+    ]
+  },
+  {
+    "name": "handoff_sbar",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-036",
+      "FORM-001",
+      "FORM-002",
+      "FORM-006",
+      "PROT-005",
+      "RCA-018"
+    ]
+  },
+  {
+    "name": "aer_033",
+    "type": "incident_type",
+    "doc_ids": [
+      "AER-033"
+    ]
+  },
+  {
+    "name": "sentinel",
+    "type": "incident_type",
+    "doc_ids": [
+      "AER-033",
+      "AER-046",
+      "AER-055"
+    ]
+  },
+  {
+    "name": "oxycodone",
+    "type": "medication",
+    "doc_ids": [
+      "AER-041"
+    ]
+  },
+  {
+    "name": "oxycodone_administration_workflow",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-041"
+    ]
+  },
+  {
+    "name": "oncology",
+    "type": "department",
+    "doc_ids": [
+      "AER-043",
+      "AER-051",
+      "PROT-006",
+      "RCA-001",
+      "RCA-005",
+      "RCA-006"
+    ]
+  },
+  {
+    "name": "standard_medication_reconciliation_steps",
+    "type": "protocol",
+    "doc_ids": [
+      "AER-051"
+    ]
+  },
+  {
+    "name": "medication_reconciliation",
+    "type": "protocol",
+    "doc_ids": [
+      "FORM-001",
+      "FORM-002",
+      "FORM-003",
+      "FORM-004",
+      "FORM-005",
+      "FORM-006",
+      "FORM-007",
+      "FORM-008",
+      "RCA-012",
+      "RCA-018"
+    ]
+  },
+  {
+    "name": "formulary_entry_form_003",
+    "type": "protocol",
+    "doc_ids": [
+      "FORM-003"
+    ]
+  },
+  {
+    "name": "hospital_pharmacopeia",
+    "type": "protocol",
+    "doc_ids": [
+      "FORM-003",
+      "FORM-008"
+    ]
+  },
+  {
+    "name": "furosemide",
+    "type": "medication",
+    "doc_ids": [
+      "FORM-007",
+      "RCA-012"
+    ]
+  },
+  {
+    "name": "formulary_entry_form_008",
+    "type": "protocol",
+    "doc_ids": [
+      "FORM-008"
+    ]
+  },
+  {
+    "name": "current_hospital_formulary",
+    "type": "protocol",
+    "doc_ids": [
+      "FORM-008"
+    ]
+  },
+  {
+    "name": "prot_001_medication_reconciliation",
+    "type": "protocol",
+    "doc_ids": [
+      "PROT-001"
+    ]
+  },
+  {
+    "name": "medication_reconciliation_bundle",
+    "type": "protocol",
+    "doc_ids": [
+      "PROT-001"
+    ]
+  },
+  {
+    "name": "electronic_health_record",
+    "type": "protocol",
+    "doc_ids": [
+      "PROT-001"
+    ]
+  },
+  {
+    "name": "fall_prevention",
+    "type": "incident_type",
+    "doc_ids": [
+      "PROT-003"
+    ]
+  },
+  {
+    "name": "resident_staff",
+    "type": "staff_role",
+    "doc_ids": [
+      "PROT-005",
+      "PROT-008"
+    ]
+  },
+  {
+    "name": "prot_006_medication_reconciliation",
+    "type": "protocol",
+    "doc_ids": [
+      "PROT-006"
+    ]
+  },
+  {
+    "name": "medication_reconciliation",
+    "type": "incident_type",
+    "doc_ids": [
+      "PROT-006",
+      "PROT-011"
+    ]
+  },
+  {
+    "name": "joint_commission_national_patient_safety_goals",
+    "type": "protocol",
+    "doc_ids": [
+      "PROT-004",
+      "PROT-006",
+      "PROT-007",
+      "PROT-008",
+      "PROT-012"
+    ]
+  },
+  {
+    "name": "internal_policy_manual_medication_reconciliation_section",
+    "type": "protocol",
+    "doc_ids": [
+      "PROT-006"
+    ]
+  },
+  {
+    "name": "prot_007_universal_protocol_time_out",
+    "type": "protocol",
+    "doc_ids": [
+      "PROT-007"
+    ]
+  },
+  {
+    "name": "universal_protocol_time_out_bundle",
+    "type": "protocol",
+    "doc_ids": [
+      "PROT-007",
+      "PROT-012"
+    ]
+  },
+  {
+    "name": "electronic_health_record",
+    "type": "department",
+    "doc_ids": [
+      "PROT-007"
+    ]
+  },
+  {
+    "name": "internal_policy_manual",
+    "type": "protocol",
+    "doc_ids": [
+      "PROT-004",
+      "PROT-007",
+      "PROT-012"
+    ]
+  },
+  {
+    "name": "prot_008",
+    "type": "protocol",
+    "doc_ids": [
+      "PROT-008"
+    ]
+  },
+  {
+    "name": "temporary_staff",
+    "type": "staff_role",
+    "doc_ids": [
+      "PROT-008"
+    ]
+  },
+  {
+    "name": "float_staff",
+    "type": "staff_role",
+    "doc_ids": [
+      "PROT-008"
+    ]
+  },
+  {
+    "name": "prot_012_universal_protocol_time_out",
+    "type": "protocol",
+    "doc_ids": [
+      "PROT-012"
+    ]
+  },
+  {
+    "name": "prot_011",
+    "type": "protocol",
+    "doc_ids": [
+      "PROT-011"
+    ]
+  },
+  {
+    "name": "resident_physician",
+    "type": "staff_role",
+    "doc_ids": [
+      "PROT-011"
+    ]
+  },
+  {
+    "name": "oncology_staff",
+    "type": "staff_role",
+    "doc_ids": [
+      "RCA-001"
+    ]
+  },
+  {
+    "name": "incomplete_handoff",
+    "type": "root_cause",
+    "doc_ids": [
+      "RCA-001",
+      "RCA-024"
+    ]
+  },
+  {
+    "name": "medication_reconciliation_workflow",
+    "type": "protocol",
+    "doc_ids": [
+      "RCA-001",
+      "RCA-002",
+      "RCA-003",
+      "RCA-004",
+      "RCA-008",
+      "RCA-011",
+      "RCA-013",
+      "RCA-016",
+      "RCA-019",
+      "RCA-020",
+      "RCA-021",
+      "RCA-022",
+      "RCA-023",
+      "RCA-025"
+    ]
+  },
+  {
+    "name": "aer_044",
+    "type": "incident_type",
+    "doc_ids": [
+      "AER-044"
+    ]
+  },
+  {
+    "name": "sbar_training",
+    "type": "protocol",
+    "doc_ids": [
+      "RCA-002"
+    ]
+  },
+  {
+    "name": "infection_prevention_bundle_protocol",
+    "type": "protocol",
+    "doc_ids": [
+      "RCA-004",
+      "RCA-007",
+      "RCA-010",
+      "RCA-016",
+      "RCA-017",
+      "RCA-019"
+    ]
+  },
+  {
+    "name": "infection_prevention_bundle_training",
+    "type": "protocol",
+    "doc_ids": [
+      "RCA-003",
+      "RCA-008",
+      "RCA-009",
+      "RCA-013"
+    ]
+  },
+  {
+    "name": "structured_handoff_using_sbar",
+    "type": "protocol",
+    "doc_ids": [
+      "RCA-004"
+    ]
+  },
+  {
+    "name": "pediatrics_staff",
+    "type": "staff_role",
+    "doc_ids": [
+      "RCA-004"
+    ]
+  },
+  {
+    "name": "rca_team",
+    "type": "staff_role",
+    "doc_ids": [
+      "RCA-013",
+      "RCA-019"
+    ]
+  },
+  {
+    "name": "five_whys_technique",
+    "type": "protocol",
+    "doc_ids": [
+      "RCA-013",
+      "RCA-022"
+    ]
+  },
+  {
+    "name": "universal_protocol_time_out_protocol",
+    "type": "protocol",
+    "doc_ids": [
+      "RCA-013"
+    ]
+  },
+  {
+    "name": "fall_prevention_bundle_protocol",
+    "type": "protocol",
+    "doc_ids": [
+      "RCA-020"
+    ]
+  },
+  {
+    "name": "sbar_protocol",
+    "type": "protocol",
+    "doc_ids": [
+      "RCA-014",
+      "RCA-015",
+      "RCA-021"
+    ]
+  },
+  {
+    "name": "universal_protocol_time_out_training",
+    "type": "protocol",
+    "doc_ids": [
+      "RCA-019",
+      "RCA-024"
+    ]
+  },
+  {
+    "name": "handoff_sbar_training",
+    "type": "protocol",
+    "doc_ids": [
+      "RCA-023"
+    ]
+  },
+  {
+    "name": "structured_handoff_sbar",
+    "type": "protocol",
+    "doc_ids": [
+      "RCA-006",
+      "RCA-023",
+      "RCA-025"
+    ]
+  },
+  {
+    "name": "er_staff",
+    "type": "staff_role",
+    "doc_ids": [
+      "RCA-025"
+    ]
+  },
+  {
+    "name": "universal_protocol_timeout",
+    "type": "protocol",
+    "doc_ids": [
+      "RCA-022"
+    ]
+  },
+  {
+    "name": "medication_reconciliation_training",
+    "type": "protocol",
+    "doc_ids": [
+      "RCA-021",
+      "RCA-022"
+    ]
+  },
+  {
+    "name": "variability_in_er_staff_to_patient_ratios",
+    "type": "root_cause",
+    "doc_ids": [
+      "RCA-024"
+    ]
+  },
+  {
+    "name": "rca_017",
+    "type": "protocol",
+    "doc_ids": [
+      "RCA-017"
+    ]
+  },
+  {
+    "name": "formulary_entry_form_005",
+    "type": "protocol",
+    "doc_ids": [
+      "FORM-005"
+    ]
+  }
+]

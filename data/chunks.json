@@ -1,0 +1,932 @@
+[
+  {
+    "chunk_id": "AER-001#0",
+    "doc_id": "AER-001",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-001\nDate of event: 2025-05-06\nSeverity: serious\nDepartment: ICU\n\nSUMMARY\nA medication error occurred in the ICU involving the medication warfarin. The event was first identified by a respiratory therapist during routine patient assessment. Initial investigation indicates the event was classified as serious.\n\nNARRATIVE\nThe patient was receiving warfarin per the standing order when the respiratory therapist noted a discrepancy between the charted dose and the medication administration record. The respiratory therapist escalated the concern to the attending physician. Standard universal protocol time out steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift."
+  },
+  {
+    "chunk_id": "AER-001#1",
+    "doc_id": "AER-001",
+    "chunk_index": 1,
+    "text": "otocol time out steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- inadequate staffing\n\nFOLLOW-UP\nCase referred for RCA review. Warfarin administration workflow in the ICU will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-002#0",
+    "doc_id": "AER-002",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-002\nDate of event: 2025-01-17\nSeverity: sentinel\nDepartment: PEDIATRICS\n\nSUMMARY\nA dosage error occurred in the PEDIATRICS involving the medication metformin. The event was first identified by a anesthesiologist during routine patient assessment. Initial investigation indicates the event was classified as sentinel.\n\nNARRATIVE\nThe patient was receiving metformin per the standing order when the anesthesiologist noted a discrepancy between the charted dose and the medication administration record. The anesthesiologist escalated the concern to the attending physician. Standard medication reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift."
+  },
+  {
+    "chunk_id": "AER-002#1",
+    "doc_id": "AER-002",
+    "chunk_index": 1,
+    "text": "reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- miscommunication handoff\n\nFOLLOW-UP\nCase referred for RCA review. Metformin administration workflow in the PEDIATRICS will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-003#0",
+    "doc_id": "AER-003",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-003\nDate of event: 2025-11-29\nSeverity: moderate\nDepartment: MEDICAL-SURGICAL\n\nSUMMARY\nA medication error occurred in the MEDICAL-SURGICAL involving the medication insulin. The event was first identified by a anesthesiologist during routine patient assessment. Initial investigation indicates the event was classified as moderate.\n\nNARRATIVE\nThe patient was receiving insulin per the standing order when the anesthesiologist noted a discrepancy between the charted dose and the medication administration record. The anesthesiologist escalated the concern to the attending physician. Standard handoff sbar steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift."
+  },
+  {
+    "chunk_id": "AER-003#1",
+    "doc_id": "AER-003",
+    "chunk_index": 1,
+    "text": "rd handoff sbar steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- protocol deviation\n- miscommunication handoff\n\nFOLLOW-UP\nCase referred for RCA review. Insulin administration workflow in the MEDICAL-SURGICAL will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-004#0",
+    "doc_id": "AER-004",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-004\nDate of event: 2025-12-24\nSeverity: moderate\nDepartment: PEDIATRICS\n\nSUMMARY\nA hospital acquired infection occurred in the PEDIATRICS involving the medication vancomycin. The event was first identified by a registered nurse during routine patient assessment. Initial investigation indicates the event was classified as moderate.\n\nNARRATIVE\nThe patient was receiving vancomycin per the standing order when the registered nurse noted a discrepancy between the charted dose and the medication administration record. The registered nurse escalated the concern to the attending physician. Standard infection prevention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift."
+  },
+  {
+    "chunk_id": "AER-004#1",
+    "doc_id": "AER-004",
+    "chunk_index": 1,
+    "text": "evention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- miscommunication handoff\n\nFOLLOW-UP\nCase referred for RCA review. Vancomycin administration workflow in the PEDIATRICS will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-005#0",
+    "doc_id": "AER-005",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-005\nDate of event: 2025-07-14\nSeverity: minor\nDepartment: ER\n\nSUMMARY\nA diagnostic error occurred in the ER involving the medication heparin. The event was first identified by a registered nurse during routine patient assessment. Initial investigation indicates the event was classified as minor.\n\nNARRATIVE\nThe patient was receiving heparin per the standing order when the registered nurse noted a discrepancy between the charted dose and the medication administration record. The registered nurse escalated the concern to the attending physician. Standard medication reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- miscommunication handoff"
+  },
+  {
+    "chunk_id": "AER-005#1",
+    "doc_id": "AER-005",
+    "chunk_index": 1,
+    "text": "atient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- miscommunication handoff\n\nFOLLOW-UP\nCase referred for RCA review. Heparin administration workflow in the ER will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-006#0",
+    "doc_id": "AER-006",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-006\nDate of event: 2025-10-02\nSeverity: sentinel\nDepartment: ER\n\nSUMMARY\nA medication error occurred in the ER involving the medication warfarin. The event was first identified by a respiratory therapist during routine patient assessment. Initial investigation indicates the event was classified as sentinel.\n\nNARRATIVE\nThe patient was receiving warfarin per the standing order when the respiratory therapist noted a discrepancy between the charted dose and the medication administration record. The respiratory therapist escalated the concern to the attending physician. Standard medication reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift."
+  },
+  {
+    "chunk_id": "AER-006#1",
+    "doc_id": "AER-006",
+    "chunk_index": 1,
+    "text": "reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- protocol deviation\n- inadequate staffing\n\nFOLLOW-UP\nCase referred for RCA review. Warfarin administration workflow in the ER will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-007#0",
+    "doc_id": "AER-007",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-007\nDate of event: 2025-12-27\nSeverity: moderate\nDepartment: ER\n\nSUMMARY\nA diagnostic error occurred in the ER involving the medication morphine. The event was first identified by a anesthesiologist during routine patient assessment. Initial investigation indicates the event was classified as moderate.\n\nNARRATIVE\nThe patient was receiving morphine per the standing order when the anesthesiologist noted a discrepancy between the charted dose and the medication administration record. The anesthesiologist escalated the concern to the attending physician. Standard medication reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- miscommunication handoff"
+  },
+  {
+    "chunk_id": "AER-007#1",
+    "doc_id": "AER-007",
+    "chunk_index": 1,
+    "text": "the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- miscommunication handoff\n\nFOLLOW-UP\nCase referred for RCA review. Morphine administration workflow in the ER will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-008#0",
+    "doc_id": "AER-008",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-008\nDate of event: 2025-07-14\nSeverity: minor\nDepartment: ER\n\nSUMMARY\nA dosage error occurred in the ER involving the medication cefazolin. The event was first identified by a attending physician during routine patient assessment. Initial investigation indicates the event was classified as minor.\n\nNARRATIVE\nThe patient was receiving cefazolin per the standing order when the attending physician noted a discrepancy between the charted dose and the medication administration record. The attending physician escalated the concern to the attending physician. Standard fall prevention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- protocol deviation\n- incomplete documentation"
+  },
+  {
+    "chunk_id": "AER-008#1",
+    "doc_id": "AER-008",
+    "chunk_index": 1,
+    "text": " the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- protocol deviation\n- incomplete documentation\n\nFOLLOW-UP\nCase referred for RCA review. Cefazolin administration workflow in the ER will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-009#0",
+    "doc_id": "AER-009",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-009\nDate of event: 2025-12-10\nSeverity: moderate\nDepartment: ICU\n\nSUMMARY\nA diagnostic error occurred in the ICU involving the medication insulin. The event was first identified by a pharmacist during routine patient assessment. Initial investigation indicates the event was classified as moderate.\n\nNARRATIVE\nThe patient was receiving insulin per the standing order when the pharmacist noted a discrepancy between the charted dose and the medication administration record. The pharmacist escalated the concern to the attending physician. Standard fall prevention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- incomplete documentation\n- inadequate staffing"
+  },
+  {
+    "chunk_id": "AER-009#1",
+    "doc_id": "AER-009",
+    "chunk_index": 1,
+    "text": "the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- incomplete documentation\n- inadequate staffing\n\nFOLLOW-UP\nCase referred for RCA review. Insulin administration workflow in the ICU will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-010#0",
+    "doc_id": "AER-010",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-010\nDate of event: 2025-03-25\nSeverity: moderate\nDepartment: CARDIOLOGY\n\nSUMMARY\nA wrong site surgery occurred in the CARDIOLOGY involving the medication warfarin. The event was first identified by a anesthesiologist during routine patient assessment. Initial investigation indicates the event was classified as moderate.\n\nNARRATIVE\nThe patient was receiving warfarin per the standing order when the anesthesiologist noted a discrepancy between the charted dose and the medication administration record. The anesthesiologist escalated the concern to the attending physician. Standard infection prevention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift."
+  },
+  {
+    "chunk_id": "AER-010#1",
+    "doc_id": "AER-010",
+    "chunk_index": 1,
+    "text": "evention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- protocol deviation\n- miscommunication handoff\n\nFOLLOW-UP\nCase referred for RCA review. Warfarin administration workflow in the CARDIOLOGY will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-011#0",
+    "doc_id": "AER-011",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-011\nDate of event: 2025-01-29\nSeverity: serious\nDepartment: RADIOLOGY\n\nSUMMARY\nA pressure injury occurred in the RADIOLOGY involving the medication warfarin. The event was first identified by a attending physician during routine patient assessment. Initial investigation indicates the event was classified as serious.\n\nNARRATIVE\nThe patient was receiving warfarin per the standing order when the attending physician noted a discrepancy between the charted dose and the medication administration record. The attending physician escalated the concern to the attending physician. Standard universal protocol time out steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift."
+  },
+  {
+    "chunk_id": "AER-011#1",
+    "doc_id": "AER-011",
+    "chunk_index": 1,
+    "text": "otocol time out steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- miscommunication handoff\n\nFOLLOW-UP\nCase referred for RCA review. Warfarin administration workflow in the RADIOLOGY will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-012#0",
+    "doc_id": "AER-012",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-012\nDate of event: 2025-04-19\nSeverity: serious\nDepartment: ER\n\nSUMMARY\nA dosage error occurred in the ER involving the medication vancomycin. The event was first identified by a attending physician during routine patient assessment. Initial investigation indicates the event was classified as serious.\n\nNARRATIVE\nThe patient was receiving vancomycin per the standing order when the attending physician noted a discrepancy between the charted dose and the medication administration record. The attending physician escalated the concern to the attending physician. Standard infection prevention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- protocol deviation\n- incomplete documentation"
+  },
+  {
+    "chunk_id": "AER-012#1",
+    "doc_id": "AER-012",
+    "chunk_index": 1,
+    "text": " the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- protocol deviation\n- incomplete documentation\n\nFOLLOW-UP\nCase referred for RCA review. Vancomycin administration workflow in the ER will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-013#0",
+    "doc_id": "AER-013",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-013\nDate of event: 2025-10-15\nSeverity: moderate\nDepartment: ICU\n\nSUMMARY\nA hospital acquired infection occurred in the ICU involving the medication vancomycin. The event was first identified by a attending physician during routine patient assessment. Initial investigation indicates the event was classified as moderate.\n\nNARRATIVE\nThe patient was receiving vancomycin per the standing order when the attending physician noted a discrepancy between the charted dose and the medication administration record. The attending physician escalated the concern to the attending physician. Standard handoff sbar steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift."
+  },
+  {
+    "chunk_id": "AER-013#1",
+    "doc_id": "AER-013",
+    "chunk_index": 1,
+    "text": "rd handoff sbar steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- equipment failure\n\nFOLLOW-UP\nCase referred for RCA review. Vancomycin administration workflow in the ICU will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-014#0",
+    "doc_id": "AER-014",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-014\nDate of event: 2025-03-12\nSeverity: moderate\nDepartment: PEDIATRICS\n\nSUMMARY\nA delayed treatment occurred in the PEDIATRICS involving the medication vancomycin. The event was first identified by a pharmacist during routine patient assessment. Initial investigation indicates the event was classified as moderate.\n\nNARRATIVE\nThe patient was receiving vancomycin per the standing order when the pharmacist noted a discrepancy between the charted dose and the medication administration record. The pharmacist escalated the concern to the attending physician. Standard handoff sbar steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- protocol deviation\n- inadequate staffing"
+  },
+  {
+    "chunk_id": "AER-014#1",
+    "doc_id": "AER-014",
+    "chunk_index": 1,
+    "text": "fied; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- protocol deviation\n- inadequate staffing\n\nFOLLOW-UP\nCase referred for RCA review. Vancomycin administration workflow in the PEDIATRICS will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-015#0",
+    "doc_id": "AER-015",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-015\nDate of event: 2025-12-15\nSeverity: moderate\nDepartment: ICU\n\nSUMMARY\nA dosage error occurred in the ICU involving the medication cefazolin. The event was first identified by a attending physician during routine patient assessment. Initial investigation indicates the event was classified as moderate.\n\nNARRATIVE\nThe patient was receiving cefazolin per the standing order when the attending physician noted a discrepancy between the charted dose and the medication administration record. The attending physician escalated the concern to the attending physician. Standard infection prevention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- alarm fatigue\n- inadequate staffing"
+  },
+  {
+    "chunk_id": "AER-015#1",
+    "doc_id": "AER-015",
+    "chunk_index": 1,
+    "text": "dentified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- alarm fatigue\n- inadequate staffing\n\nFOLLOW-UP\nCase referred for RCA review. Cefazolin administration workflow in the ICU will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-016#0",
+    "doc_id": "AER-016",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-016\nDate of event: 2025-10-11\nSeverity: serious\nDepartment: OR\n\nSUMMARY\nA specimen mislabeling occurred in the OR involving the medication vancomycin. The event was first identified by a anesthesiologist during routine patient assessment. Initial investigation indicates the event was classified as serious.\n\nNARRATIVE\nThe patient was receiving vancomycin per the standing order when the anesthesiologist noted a discrepancy between the charted dose and the medication administration record. The anesthesiologist escalated the concern to the attending physician. Standard medication reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- knowledge gap"
+  },
+  {
+    "chunk_id": "AER-016#1",
+    "doc_id": "AER-016",
+    "chunk_index": 1,
+    "text": "dentified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- knowledge gap\n\nFOLLOW-UP\nCase referred for RCA review. Vancomycin administration workflow in the OR will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-017#0",
+    "doc_id": "AER-017",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-017\nDate of event: 2025-08-11\nSeverity: serious\nDepartment: ER\n\nSUMMARY\nA diagnostic error occurred in the ER involving the medication cefazolin. The event was first identified by a registered nurse during routine patient assessment. Initial investigation indicates the event was classified as serious.\n\nNARRATIVE\nThe patient was receiving cefazolin per the standing order when the registered nurse noted a discrepancy between the charted dose and the medication administration record. The registered nurse escalated the concern to the attending physician. Standard universal protocol time out steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- protocol deviation\n- inadequate staffing"
+  },
+  {
+    "chunk_id": "AER-017#1",
+    "doc_id": "AER-017",
+    "chunk_index": 1,
+    "text": "fied; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- protocol deviation\n- inadequate staffing\n\nFOLLOW-UP\nCase referred for RCA review. Cefazolin administration workflow in the ER will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-018#0",
+    "doc_id": "AER-018",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-018\nDate of event: 2025-11-17\nSeverity: minor\nDepartment: ER\n\nSUMMARY\nA pressure injury occurred in the ER involving the medication lisinopril. The event was first identified by a attending physician during routine patient assessment. Initial investigation indicates the event was classified as minor.\n\nNARRATIVE\nThe patient was receiving lisinopril per the standing order when the attending physician noted a discrepancy between the charted dose and the medication administration record. The attending physician escalated the concern to the attending physician. Standard fall prevention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- incomplete documentation\n- knowledge gap"
+  },
+  {
+    "chunk_id": "AER-018#1",
+    "doc_id": "AER-018",
+    "chunk_index": 1,
+    "text": "fied; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- incomplete documentation\n- knowledge gap\n\nFOLLOW-UP\nCase referred for RCA review. Lisinopril administration workflow in the ER will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-019#0",
+    "doc_id": "AER-019",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-019\nDate of event: 2025-10-04\nSeverity: moderate\nDepartment: ER\n\nSUMMARY\nA wrong site surgery occurred in the ER involving the medication warfarin. The event was first identified by a pharmacist during routine patient assessment. Initial investigation indicates the event was classified as moderate.\n\nNARRATIVE\nThe patient was receiving warfarin per the standing order when the pharmacist noted a discrepancy between the charted dose and the medication administration record. The pharmacist escalated the concern to the attending physician. Standard handoff sbar steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- alarm fatigue"
+  },
+  {
+    "chunk_id": "AER-019#1",
+    "doc_id": "AER-019",
+    "chunk_index": 1,
+    "text": "dentified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- alarm fatigue\n\nFOLLOW-UP\nCase referred for RCA review. Warfarin administration workflow in the ER will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-020#0",
+    "doc_id": "AER-020",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-020\nDate of event: 2025-06-07\nSeverity: serious\nDepartment: MEDICAL-SURGICAL\n\nSUMMARY\nA medication error occurred in the MEDICAL-SURGICAL involving the medication insulin. The event was first identified by a registered nurse during routine patient assessment. Initial investigation indicates the event was classified as serious.\n\nNARRATIVE\nThe patient was receiving insulin per the standing order when the registered nurse noted a discrepancy between the charted dose and the medication administration record. The registered nurse escalated the concern to the attending physician. Standard universal protocol time out steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift."
+  },
+  {
+    "chunk_id": "AER-020#1",
+    "doc_id": "AER-020",
+    "chunk_index": 1,
+    "text": "otocol time out steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- miscommunication handoff\n\nFOLLOW-UP\nCase referred for RCA review. Insulin administration workflow in the MEDICAL-SURGICAL will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-021#0",
+    "doc_id": "AER-021",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-021\nDate of event: 2025-02-05\nSeverity: sentinel\nDepartment: ICU\n\nSUMMARY\nA dosage error occurred in the ICU involving the medication warfarin. The event was first identified by a respiratory therapist during routine patient assessment. Initial investigation indicates the event was classified as sentinel.\n\nNARRATIVE\nThe patient was receiving warfarin per the standing order when the respiratory therapist noted a discrepancy between the charted dose and the medication administration record. The respiratory therapist escalated the concern to the attending physician. Standard handoff sbar steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- inadequate staffing"
+  },
+  {
+    "chunk_id": "AER-021#1",
+    "doc_id": "AER-021",
+    "chunk_index": 1,
+    "text": "ied; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- inadequate staffing\n\nFOLLOW-UP\nCase referred for RCA review. Warfarin administration workflow in the ICU will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-022#0",
+    "doc_id": "AER-022",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-022\nDate of event: 2025-09-28\nSeverity: serious\nDepartment: MEDICAL-SURGICAL\n\nSUMMARY\nA pressure injury occurred in the MEDICAL-SURGICAL involving the medication metformin. The event was first identified by a attending physician during routine patient assessment. Initial investigation indicates the event was classified as serious.\n\nNARRATIVE\nThe patient was receiving metformin per the standing order when the attending physician noted a discrepancy between the charted dose and the medication administration record. The attending physician escalated the concern to the attending physician. Standard handoff sbar steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift."
+  },
+  {
+    "chunk_id": "AER-022#1",
+    "doc_id": "AER-022",
+    "chunk_index": 1,
+    "text": "rd handoff sbar steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- protocol deviation\n- miscommunication handoff\n\nFOLLOW-UP\nCase referred for RCA review. Metformin administration workflow in the MEDICAL-SURGICAL will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-023#0",
+    "doc_id": "AER-023",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-023\nDate of event: 2025-07-24\nSeverity: serious\nDepartment: RADIOLOGY\n\nSUMMARY\nA patient fall occurred in the RADIOLOGY involving the medication morphine. The event was first identified by a respiratory therapist during routine patient assessment. Initial investigation indicates the event was classified as serious.\n\nNARRATIVE\nThe patient was receiving morphine per the standing order when the respiratory therapist noted a discrepancy between the charted dose and the medication administration record. The respiratory therapist escalated the concern to the attending physician. Standard fall prevention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- protocol deviation\n- knowledge gap"
+  },
+  {
+    "chunk_id": "AER-023#1",
+    "doc_id": "AER-023",
+    "chunk_index": 1,
+    "text": "identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- protocol deviation\n- knowledge gap\n\nFOLLOW-UP\nCase referred for RCA review. Morphine administration workflow in the RADIOLOGY will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-024#0",
+    "doc_id": "AER-024",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-024\nDate of event: 2025-06-23\nSeverity: minor\nDepartment: ICU\n\nSUMMARY\nA patient fall occurred in the ICU involving the medication vancomycin. The event was first identified by a attending physician during routine patient assessment. Initial investigation indicates the event was classified as minor.\n\nNARRATIVE\nThe patient was receiving vancomycin per the standing order when the attending physician noted a discrepancy between the charted dose and the medication administration record. The attending physician escalated the concern to the attending physician. Standard medication reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- equipment failure\n- knowledge gap"
+  },
+  {
+    "chunk_id": "AER-024#1",
+    "doc_id": "AER-024",
+    "chunk_index": 1,
+    "text": " identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- equipment failure\n- knowledge gap\n\nFOLLOW-UP\nCase referred for RCA review. Vancomycin administration workflow in the ICU will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-025#0",
+    "doc_id": "AER-025",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-025\nDate of event: 2025-12-29\nSeverity: minor\nDepartment: PEDIATRICS\n\nSUMMARY\nA patient fall occurred in the PEDIATRICS involving the medication insulin. The event was first identified by a registered nurse during routine patient assessment. Initial investigation indicates the event was classified as minor.\n\nNARRATIVE\nThe patient was receiving insulin per the standing order when the registered nurse noted a discrepancy between the charted dose and the medication administration record. The registered nurse escalated the concern to the attending physician. Standard medication reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- inadequate staffing"
+  },
+  {
+    "chunk_id": "AER-025#1",
+    "doc_id": "AER-025",
+    "chunk_index": 1,
+    "text": "the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- inadequate staffing\n\nFOLLOW-UP\nCase referred for RCA review. Insulin administration workflow in the PEDIATRICS will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-026#0",
+    "doc_id": "AER-026",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-026\nDate of event: 2025-05-23\nSeverity: moderate\nDepartment: ER\n\nSUMMARY\nA dosage error occurred in the ER involving the medication heparin. The event was first identified by a anesthesiologist during routine patient assessment. Initial investigation indicates the event was classified as moderate.\n\nNARRATIVE\nThe patient was receiving heparin per the standing order when the anesthesiologist noted a discrepancy between the charted dose and the medication administration record. The anesthesiologist escalated the concern to the attending physician. Standard infection prevention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- knowledge gap"
+  },
+  {
+    "chunk_id": "AER-026#1",
+    "doc_id": "AER-026",
+    "chunk_index": 1,
+    "text": "fied; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- knowledge gap\n\nFOLLOW-UP\nCase referred for RCA review. Heparin administration workflow in the ER will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-027#0",
+    "doc_id": "AER-027",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-027\nDate of event: 2025-07-28\nSeverity: sentinel\nDepartment: PEDIATRICS\n\nSUMMARY\nA specimen mislabeling occurred in the PEDIATRICS involving the medication heparin. The event was first identified by a attending physician during routine patient assessment. Initial investigation indicates the event was classified as sentinel.\n\nNARRATIVE\nThe patient was receiving heparin per the standing order when the attending physician noted a discrepancy between the charted dose and the medication administration record. The attending physician escalated the concern to the attending physician. Standard universal protocol time out steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift."
+  },
+  {
+    "chunk_id": "AER-027#1",
+    "doc_id": "AER-027",
+    "chunk_index": 1,
+    "text": "otocol time out steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- inadequate staffing\n\nFOLLOW-UP\nCase referred for RCA review. Heparin administration workflow in the PEDIATRICS will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-028#0",
+    "doc_id": "AER-028",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-028\nDate of event: 2025-08-28\nSeverity: sentinel\nDepartment: OR\n\nSUMMARY\nA diagnostic error occurred in the OR involving the medication metformin. The event was first identified by a resident during routine patient assessment. Initial investigation indicates the event was classified as sentinel.\n\nNARRATIVE\nThe patient was receiving metformin per the standing order when the resident noted a discrepancy between the charted dose and the medication administration record. The resident escalated the concern to the attending physician. Standard medication reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- incomplete documentation\n- incomplete documentation"
+  },
+  {
+    "chunk_id": "AER-028#1",
+    "doc_id": "AER-028",
+    "chunk_index": 1,
+    "text": "atient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- incomplete documentation\n- incomplete documentation\n\nFOLLOW-UP\nCase referred for RCA review. Metformin administration workflow in the OR will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-029#0",
+    "doc_id": "AER-029",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-029\nDate of event: 2025-02-25\nSeverity: serious\nDepartment: ICU\n\nSUMMARY\nA delayed treatment occurred in the ICU involving the medication heparin. The event was first identified by a respiratory therapist during routine patient assessment. Initial investigation indicates the event was classified as serious.\n\nNARRATIVE\nThe patient was receiving heparin per the standing order when the respiratory therapist noted a discrepancy between the charted dose and the medication administration record. The respiratory therapist escalated the concern to the attending physician. Standard universal protocol time out steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift."
+  },
+  {
+    "chunk_id": "AER-029#1",
+    "doc_id": "AER-029",
+    "chunk_index": 1,
+    "text": "otocol time out steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- miscommunication handoff\n\nFOLLOW-UP\nCase referred for RCA review. Heparin administration workflow in the ICU will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-030#0",
+    "doc_id": "AER-030",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-030\nDate of event: 2025-05-23\nSeverity: moderate\nDepartment: OR\n\nSUMMARY\nA wrong site surgery occurred in the OR involving the medication morphine. The event was first identified by a resident during routine patient assessment. Initial investigation indicates the event was classified as moderate.\n\nNARRATIVE\nThe patient was receiving morphine per the standing order when the resident noted a discrepancy between the charted dose and the medication administration record. The resident escalated the concern to the attending physician. Standard infection prevention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- inadequate staffing"
+  },
+  {
+    "chunk_id": "AER-030#1",
+    "doc_id": "AER-030",
+    "chunk_index": 1,
+    "text": "the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- inadequate staffing\n\nFOLLOW-UP\nCase referred for RCA review. Morphine administration workflow in the OR will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-031#0",
+    "doc_id": "AER-031",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-031\nDate of event: 2025-02-17\nSeverity: minor\nDepartment: PEDIATRICS\n\nSUMMARY\nA dosage error occurred in the PEDIATRICS involving the medication vancomycin. The event was first identified by a registered nurse during routine patient assessment. Initial investigation indicates the event was classified as minor.\n\nNARRATIVE\nThe patient was receiving vancomycin per the standing order when the registered nurse noted a discrepancy between the charted dose and the medication administration record. The registered nurse escalated the concern to the attending physician. Standard universal protocol time out steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- protocol deviation"
+  },
+  {
+    "chunk_id": "AER-031#1",
+    "doc_id": "AER-031",
+    "chunk_index": 1,
+    "text": "fied; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- protocol deviation\n\nFOLLOW-UP\nCase referred for RCA review. Vancomycin administration workflow in the PEDIATRICS will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-032#0",
+    "doc_id": "AER-032",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-032\nDate of event: 2025-03-26\nSeverity: minor\nDepartment: MEDICAL-SURGICAL\n\nSUMMARY\nA patient fall occurred in the MEDICAL-SURGICAL involving the medication morphine. The event was first identified by a resident during routine patient assessment. Initial investigation indicates the event was classified as minor.\n\nNARRATIVE\nThe patient was receiving morphine per the standing order when the resident noted a discrepancy between the charted dose and the medication administration record. The resident escalated the concern to the attending physician. Standard infection prevention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- protocol deviation"
+  },
+  {
+    "chunk_id": "AER-032#1",
+    "doc_id": "AER-032",
+    "chunk_index": 1,
+    "text": "fied; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- protocol deviation\n\nFOLLOW-UP\nCase referred for RCA review. Morphine administration workflow in the MEDICAL-SURGICAL will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-033#0",
+    "doc_id": "AER-033",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-033\nDate of event: 2025-03-21\nSeverity: sentinel\nDepartment: OR\n\nSUMMARY\nA hospital acquired infection occurred in the OR involving the medication insulin. The event was first identified by a resident during routine patient assessment. Initial investigation indicates the event was classified as sentinel.\n\nNARRATIVE\nThe patient was receiving insulin per the standing order when the resident noted a discrepancy between the charted dose and the medication administration record. The resident escalated the concern to the attending physician. Standard universal protocol time out steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- miscommunication handoff"
+  },
+  {
+    "chunk_id": "AER-033#1",
+    "doc_id": "AER-033",
+    "chunk_index": 1,
+    "text": "atient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- miscommunication handoff\n\nFOLLOW-UP\nCase referred for RCA review. Insulin administration workflow in the OR will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-034#0",
+    "doc_id": "AER-034",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-034\nDate of event: 2025-01-30\nSeverity: serious\nDepartment: PEDIATRICS\n\nSUMMARY\nA pressure injury occurred in the PEDIATRICS involving the medication heparin. The event was first identified by a registered nurse during routine patient assessment. Initial investigation indicates the event was classified as serious.\n\nNARRATIVE\nThe patient was receiving heparin per the standing order when the registered nurse noted a discrepancy between the charted dose and the medication administration record. The registered nurse escalated the concern to the attending physician. Standard medication reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- equipment failure\n- protocol deviation"
+  },
+  {
+    "chunk_id": "AER-034#1",
+    "doc_id": "AER-034",
+    "chunk_index": 1,
+    "text": "tified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- equipment failure\n- protocol deviation\n\nFOLLOW-UP\nCase referred for RCA review. Heparin administration workflow in the PEDIATRICS will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-035#0",
+    "doc_id": "AER-035",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-035\nDate of event: 2025-04-06\nSeverity: minor\nDepartment: MEDICAL-SURGICAL\n\nSUMMARY\nA wrong site surgery occurred in the MEDICAL-SURGICAL involving the medication morphine. The event was first identified by a registered nurse during routine patient assessment. Initial investigation indicates the event was classified as minor.\n\nNARRATIVE\nThe patient was receiving morphine per the standing order when the registered nurse noted a discrepancy between the charted dose and the medication administration record. The registered nurse escalated the concern to the attending physician. Standard medication reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift."
+  },
+  {
+    "chunk_id": "AER-035#1",
+    "doc_id": "AER-035",
+    "chunk_index": 1,
+    "text": "reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- alarm fatigue\n- inadequate staffing\n\nFOLLOW-UP\nCase referred for RCA review. Morphine administration workflow in the MEDICAL-SURGICAL will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-036#0",
+    "doc_id": "AER-036",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-036\nDate of event: 2025-10-24\nSeverity: moderate\nDepartment: ER\n\nSUMMARY\nA delayed treatment occurred in the ER involving the medication metformin. The event was first identified by a registered nurse during routine patient assessment. Initial investigation indicates the event was classified as moderate.\n\nNARRATIVE\nThe patient was receiving metformin per the standing order when the registered nurse noted a discrepancy between the charted dose and the medication administration record. The registered nurse escalated the concern to the attending physician. Standard handoff sbar steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- alarm fatigue"
+  },
+  {
+    "chunk_id": "AER-036#1",
+    "doc_id": "AER-036",
+    "chunk_index": 1,
+    "text": "dentified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- alarm fatigue\n\nFOLLOW-UP\nCase referred for RCA review. Metformin administration workflow in the ER will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-037#0",
+    "doc_id": "AER-037",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-037\nDate of event: 2025-04-15\nSeverity: serious\nDepartment: OR\n\nSUMMARY\nA pressure injury occurred in the OR involving the medication heparin. The event was first identified by a pharmacist during routine patient assessment. Initial investigation indicates the event was classified as serious.\n\nNARRATIVE\nThe patient was receiving heparin per the standing order when the pharmacist noted a discrepancy between the charted dose and the medication administration record. The pharmacist escalated the concern to the attending physician. Standard fall prevention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- miscommunication handoff"
+  },
+  {
+    "chunk_id": "AER-037#1",
+    "doc_id": "AER-037",
+    "chunk_index": 1,
+    "text": "atient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- miscommunication handoff\n\nFOLLOW-UP\nCase referred for RCA review. Heparin administration workflow in the OR will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-038#0",
+    "doc_id": "AER-038",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-038\nDate of event: 2025-02-07\nSeverity: serious\nDepartment: ICU\n\nSUMMARY\nA hospital acquired infection occurred in the ICU involving the medication vancomycin. The event was first identified by a resident during routine patient assessment. Initial investigation indicates the event was classified as serious.\n\nNARRATIVE\nThe patient was receiving vancomycin per the standing order when the resident noted a discrepancy between the charted dose and the medication administration record. The resident escalated the concern to the attending physician. Standard medication reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- protocol deviation\n- alarm fatigue"
+  },
+  {
+    "chunk_id": "AER-038#1",
+    "doc_id": "AER-038",
+    "chunk_index": 1,
+    "text": "identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- protocol deviation\n- alarm fatigue\n\nFOLLOW-UP\nCase referred for RCA review. Vancomycin administration workflow in the ICU will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-039#0",
+    "doc_id": "AER-039",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-039\nDate of event: 2025-09-17\nSeverity: moderate\nDepartment: ICU\n\nSUMMARY\nA dosage error occurred in the ICU involving the medication warfarin. The event was first identified by a anesthesiologist during routine patient assessment. Initial investigation indicates the event was classified as moderate.\n\nNARRATIVE\nThe patient was receiving warfarin per the standing order when the anesthesiologist noted a discrepancy between the charted dose and the medication administration record. The anesthesiologist escalated the concern to the attending physician. Standard fall prevention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- miscommunication handoff"
+  },
+  {
+    "chunk_id": "AER-039#1",
+    "doc_id": "AER-039",
+    "chunk_index": 1,
+    "text": "the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- miscommunication handoff\n\nFOLLOW-UP\nCase referred for RCA review. Warfarin administration workflow in the ICU will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-040#0",
+    "doc_id": "AER-040",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-040\nDate of event: 2025-08-13\nSeverity: moderate\nDepartment: ER\n\nSUMMARY\nA diagnostic error occurred in the ER involving the medication heparin. The event was first identified by a pharmacist during routine patient assessment. Initial investigation indicates the event was classified as moderate.\n\nNARRATIVE\nThe patient was receiving heparin per the standing order when the pharmacist noted a discrepancy between the charted dose and the medication administration record. The pharmacist escalated the concern to the attending physician. Standard handoff sbar steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- alarm fatigue"
+  },
+  {
+    "chunk_id": "AER-040#1",
+    "doc_id": "AER-040",
+    "chunk_index": 1,
+    "text": "fied; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- alarm fatigue\n\nFOLLOW-UP\nCase referred for RCA review. Heparin administration workflow in the ER will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-041#0",
+    "doc_id": "AER-041",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-041\nDate of event: 2025-12-06\nSeverity: serious\nDepartment: CARDIOLOGY\n\nSUMMARY\nA pressure injury occurred in the CARDIOLOGY involving the medication oxycodone. The event was first identified by a registered nurse during routine patient assessment. Initial investigation indicates the event was classified as serious.\n\nNARRATIVE\nThe patient was receiving oxycodone per the standing order when the registered nurse noted a discrepancy between the charted dose and the medication administration record. The registered nurse escalated the concern to the attending physician. Standard medication reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift."
+  },
+  {
+    "chunk_id": "AER-041#1",
+    "doc_id": "AER-041",
+    "chunk_index": 1,
+    "text": "reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- miscommunication handoff\n\nFOLLOW-UP\nCase referred for RCA review. Oxycodone administration workflow in the CARDIOLOGY will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-042#0",
+    "doc_id": "AER-042",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-042\nDate of event: 2025-05-25\nSeverity: serious\nDepartment: ICU\n\nSUMMARY\nA pressure injury occurred in the ICU involving the medication heparin. The event was first identified by a attending physician during routine patient assessment. Initial investigation indicates the event was classified as serious.\n\nNARRATIVE\nThe patient was receiving heparin per the standing order when the attending physician noted a discrepancy between the charted dose and the medication administration record. The attending physician escalated the concern to the attending physician. Standard handoff sbar steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- miscommunication handoff"
+  },
+  {
+    "chunk_id": "AER-042#1",
+    "doc_id": "AER-042",
+    "chunk_index": 1,
+    "text": "atient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- miscommunication handoff\n\nFOLLOW-UP\nCase referred for RCA review. Heparin administration workflow in the ICU will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-043#0",
+    "doc_id": "AER-043",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-043\nDate of event: 2025-05-09\nSeverity: sentinel\nDepartment: ONCOLOGY\n\nSUMMARY\nA hospital acquired infection occurred in the ONCOLOGY involving the medication insulin. The event was first identified by a anesthesiologist during routine patient assessment. Initial investigation indicates the event was classified as sentinel.\n\nNARRATIVE\nThe patient was receiving insulin per the standing order when the anesthesiologist noted a discrepancy between the charted dose and the medication administration record. The anesthesiologist escalated the concern to the attending physician. Standard medication reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift."
+  },
+  {
+    "chunk_id": "AER-043#1",
+    "doc_id": "AER-043",
+    "chunk_index": 1,
+    "text": "reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- incomplete documentation\n\nFOLLOW-UP\nCase referred for RCA review. Insulin administration workflow in the ONCOLOGY will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-044#0",
+    "doc_id": "AER-044",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-044\nDate of event: 2025-03-08\nSeverity: serious\nDepartment: ER\n\nSUMMARY\nA medication error occurred in the ER involving the medication vancomycin. The event was first identified by a registered nurse during routine patient assessment. Initial investigation indicates the event was classified as serious.\n\nNARRATIVE\nThe patient was receiving vancomycin per the standing order when the registered nurse noted a discrepancy between the charted dose and the medication administration record. The registered nurse escalated the concern to the attending physician. Standard fall prevention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- protocol deviation"
+  },
+  {
+    "chunk_id": "AER-044#1",
+    "doc_id": "AER-044",
+    "chunk_index": 1,
+    "text": "fied; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- protocol deviation\n\nFOLLOW-UP\nCase referred for RCA review. Vancomycin administration workflow in the ER will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-045#0",
+    "doc_id": "AER-045",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-045\nDate of event: 2025-02-27\nSeverity: minor\nDepartment: RADIOLOGY\n\nSUMMARY\nA delayed treatment occurred in the RADIOLOGY involving the medication morphine. The event was first identified by a anesthesiologist during routine patient assessment. Initial investigation indicates the event was classified as minor.\n\nNARRATIVE\nThe patient was receiving morphine per the standing order when the anesthesiologist noted a discrepancy between the charted dose and the medication administration record. The anesthesiologist escalated the concern to the attending physician. Standard medication reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- knowledge gap"
+  },
+  {
+    "chunk_id": "AER-045#1",
+    "doc_id": "AER-045",
+    "chunk_index": 1,
+    "text": "dentified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- knowledge gap\n\nFOLLOW-UP\nCase referred for RCA review. Morphine administration workflow in the RADIOLOGY will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-046#0",
+    "doc_id": "AER-046",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-046\nDate of event: 2025-03-07\nSeverity: sentinel\nDepartment: ER\n\nSUMMARY\nA pressure injury occurred in the ER involving the medication heparin. The event was first identified by a attending physician during routine patient assessment. Initial investigation indicates the event was classified as sentinel.\n\nNARRATIVE\nThe patient was receiving heparin per the standing order when the attending physician noted a discrepancy between the charted dose and the medication administration record. The attending physician escalated the concern to the attending physician. Standard medication reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift."
+  },
+  {
+    "chunk_id": "AER-046#1",
+    "doc_id": "AER-046",
+    "chunk_index": 1,
+    "text": "reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- miscommunication handoff\n\nFOLLOW-UP\nCase referred for RCA review. Heparin administration workflow in the ER will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-047#0",
+    "doc_id": "AER-047",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-047\nDate of event: 2025-12-08\nSeverity: moderate\nDepartment: ICU\n\nSUMMARY\nA diagnostic error occurred in the ICU involving the medication oxycodone. The event was first identified by a attending physician during routine patient assessment. Initial investigation indicates the event was classified as moderate.\n\nNARRATIVE\nThe patient was receiving oxycodone per the standing order when the attending physician noted a discrepancy between the charted dose and the medication administration record. The attending physician escalated the concern to the attending physician. Standard medication reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- knowledge gap"
+  },
+  {
+    "chunk_id": "AER-047#1",
+    "doc_id": "AER-047",
+    "chunk_index": 1,
+    "text": "fied; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- knowledge gap\n\nFOLLOW-UP\nCase referred for RCA review. Oxycodone administration workflow in the ICU will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-048#0",
+    "doc_id": "AER-048",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-048\nDate of event: 2025-04-01\nSeverity: moderate\nDepartment: CARDIOLOGY\n\nSUMMARY\nA wrong site surgery occurred in the CARDIOLOGY involving the medication vancomycin. The event was first identified by a attending physician during routine patient assessment. Initial investigation indicates the event was classified as moderate.\n\nNARRATIVE\nThe patient was receiving vancomycin per the standing order when the attending physician noted a discrepancy between the charted dose and the medication administration record. The attending physician escalated the concern to the attending physician. Standard infection prevention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift."
+  },
+  {
+    "chunk_id": "AER-048#1",
+    "doc_id": "AER-048",
+    "chunk_index": 1,
+    "text": "evention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- inadequate staffing\n\nFOLLOW-UP\nCase referred for RCA review. Vancomycin administration workflow in the CARDIOLOGY will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-049#0",
+    "doc_id": "AER-049",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-049\nDate of event: 2025-05-17\nSeverity: moderate\nDepartment: ER\n\nSUMMARY\nA delayed treatment occurred in the ER involving the medication lisinopril. The event was first identified by a respiratory therapist during routine patient assessment. Initial investigation indicates the event was classified as moderate.\n\nNARRATIVE\nThe patient was receiving lisinopril per the standing order when the respiratory therapist noted a discrepancy between the charted dose and the medication administration record. The respiratory therapist escalated the concern to the attending physician. Standard universal protocol time out steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift."
+  },
+  {
+    "chunk_id": "AER-049#1",
+    "doc_id": "AER-049",
+    "chunk_index": 1,
+    "text": "otocol time out steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- inadequate staffing\n- protocol deviation\n\nFOLLOW-UP\nCase referred for RCA review. Lisinopril administration workflow in the ER will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-050#0",
+    "doc_id": "AER-050",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-050\nDate of event: 2025-06-29\nSeverity: sentinel\nDepartment: MEDICAL-SURGICAL\n\nSUMMARY\nA patient fall occurred in the MEDICAL-SURGICAL involving the medication heparin. The event was first identified by a attending physician during routine patient assessment. Initial investigation indicates the event was classified as sentinel.\n\nNARRATIVE\nThe patient was receiving heparin per the standing order when the attending physician noted a discrepancy between the charted dose and the medication administration record. The attending physician escalated the concern to the attending physician. Standard fall prevention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift."
+  },
+  {
+    "chunk_id": "AER-050#1",
+    "doc_id": "AER-050",
+    "chunk_index": 1,
+    "text": "evention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- miscommunication handoff\n\nFOLLOW-UP\nCase referred for RCA review. Heparin administration workflow in the MEDICAL-SURGICAL will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-051#0",
+    "doc_id": "AER-051",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-051\nDate of event: 2025-05-23\nSeverity: serious\nDepartment: ONCOLOGY\n\nSUMMARY\nA patient fall occurred in the ONCOLOGY involving the medication heparin. The event was first identified by a resident during routine patient assessment. Initial investigation indicates the event was classified as serious.\n\nNARRATIVE\nThe patient was receiving heparin per the standing order when the resident noted a discrepancy between the charted dose and the medication administration record. The resident escalated the concern to the attending physician. Standard medication reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- miscommunication handoff"
+  },
+  {
+    "chunk_id": "AER-051#1",
+    "doc_id": "AER-051",
+    "chunk_index": 1,
+    "text": "atient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- miscommunication handoff\n\nFOLLOW-UP\nCase referred for RCA review. Heparin administration workflow in the ONCOLOGY will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-052#0",
+    "doc_id": "AER-052",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-052\nDate of event: 2025-01-15\nSeverity: serious\nDepartment: MEDICAL-SURGICAL\n\nSUMMARY\nA delayed treatment occurred in the MEDICAL-SURGICAL involving the medication warfarin. The event was first identified by a respiratory therapist during routine patient assessment. Initial investigation indicates the event was classified as serious.\n\nNARRATIVE\nThe patient was receiving warfarin per the standing order when the respiratory therapist noted a discrepancy between the charted dose and the medication administration record. The respiratory therapist escalated the concern to the attending physician. Standard medication reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift."
+  },
+  {
+    "chunk_id": "AER-052#1",
+    "doc_id": "AER-052",
+    "chunk_index": 1,
+    "text": "reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- miscommunication handoff\n- inadequate staffing\n\nFOLLOW-UP\nCase referred for RCA review. Warfarin administration workflow in the MEDICAL-SURGICAL will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-053#0",
+    "doc_id": "AER-053",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-053\nDate of event: 2025-06-26\nSeverity: sentinel\nDepartment: ER\n\nSUMMARY\nA medication error occurred in the ER involving the medication warfarin. The event was first identified by a registered nurse during routine patient assessment. Initial investigation indicates the event was classified as sentinel.\n\nNARRATIVE\nThe patient was receiving warfarin per the standing order when the registered nurse noted a discrepancy between the charted dose and the medication administration record. The registered nurse escalated the concern to the attending physician. Standard fall prevention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- protocol deviation\n- alarm fatigue"
+  },
+  {
+    "chunk_id": "AER-053#1",
+    "doc_id": "AER-053",
+    "chunk_index": 1,
+    "text": "identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- protocol deviation\n- alarm fatigue\n\nFOLLOW-UP\nCase referred for RCA review. Warfarin administration workflow in the ER will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-054#0",
+    "doc_id": "AER-054",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-054\nDate of event: 2025-05-11\nSeverity: moderate\nDepartment: ICU\n\nSUMMARY\nA delayed treatment occurred in the ICU involving the medication morphine. The event was first identified by a anesthesiologist during routine patient assessment. Initial investigation indicates the event was classified as moderate.\n\nNARRATIVE\nThe patient was receiving morphine per the standing order when the anesthesiologist noted a discrepancy between the charted dose and the medication administration record. The anesthesiologist escalated the concern to the attending physician. Standard medication reconciliation steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- protocol deviation\n- inadequate staffing"
+  },
+  {
+    "chunk_id": "AER-054#1",
+    "doc_id": "AER-054",
+    "chunk_index": 1,
+    "text": "fied; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- protocol deviation\n- inadequate staffing\n\nFOLLOW-UP\nCase referred for RCA review. Morphine administration workflow in the ICU will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "AER-055#0",
+    "doc_id": "AER-055",
+    "chunk_index": 0,
+    "text": "Adverse Event Report AER-055\nDate of event: 2025-02-05\nSeverity: sentinel\nDepartment: PEDIATRICS\n\nSUMMARY\nA patient fall occurred in the PEDIATRICS involving the medication morphine. The event was first identified by a pharmacist during routine patient assessment. Initial investigation indicates the event was classified as sentinel.\n\nNARRATIVE\nThe patient was receiving morphine per the standing order when the pharmacist noted a discrepancy between the charted dose and the medication administration record. The pharmacist escalated the concern to the attending physician. Standard fall prevention bundle steps were reviewed. No permanent harm was identified; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- alarm fatigue\n- miscommunication handoff"
+  },
+  {
+    "chunk_id": "AER-055#1",
+    "doc_id": "AER-055",
+    "chunk_index": 1,
+    "text": "fied; the patient remained stable throughout the shift.\n\nCONTRIBUTING FACTORS\n- alarm fatigue\n- miscommunication handoff\n\nFOLLOW-UP\nCase referred for RCA review. Morphine administration workflow in the PEDIATRICS will be re-audited within 30 days."
+  },
+  {
+    "chunk_id": "FORM-001#0",
+    "doc_id": "FORM-001",
+    "chunk_index": 0,
+    "text": "Formulary Entry FORM-001: Heparin\n\nDRUG CLASS\nRefer to hospital pharmacopeia for heparin classification.\n\nINDICATIONS\nStandard indications per current hospital formulary.\n\nMONITORING PARAMETERS\n- Baseline labs before initiation\n- Trough levels as indicated\n- Re-evaluation of dose every 24-48 hours\n\nHIGH-ALERT STATUS\nHeparin is flagged as a high-alert medication. Independent double-check is required before administration in high-acuity settings such as the ICU and ER.\n\nRELATED PROTOCOLS\n- Handoff Sbar\n- Medication Reconciliation"
+  },
+  {
+    "chunk_id": "FORM-002#0",
+    "doc_id": "FORM-002",
+    "chunk_index": 0,
+    "text": "Formulary Entry FORM-002: Insulin\n\nDRUG CLASS\nRefer to hospital pharmacopeia for insulin classification.\n\nINDICATIONS\nStandard indications per current hospital formulary.\n\nMONITORING PARAMETERS\n- Baseline labs before initiation\n- Trough levels as indicated\n- Re-evaluation of dose every 24-48 hours\n\nHIGH-ALERT STATUS\nInsulin is flagged as a high-alert medication. Independent double-check is required before administration in high-acuity settings such as the ICU and ER.\n\nRELATED PROTOCOLS\n- Handoff Sbar\n- Medication Reconciliation"
+  },
+  {
+    "chunk_id": "FORM-003#0",
+    "doc_id": "FORM-003",
+    "chunk_index": 0,
+    "text": "Formulary Entry FORM-003: Vancomycin\n\nDRUG CLASS\nRefer to hospital pharmacopeia for vancomycin classification.\n\nINDICATIONS\nStandard indications per current hospital formulary.\n\nMONITORING PARAMETERS\n- Baseline labs before initiation\n- Trough levels as indicated\n- Re-evaluation of dose every 24-48 hours\n\nHIGH-ALERT STATUS\nVancomycin is flagged as a high-alert medication. Independent double-check is required before administration in high-acuity settings such as the ICU and ER.\n\nRELATED PROTOCOLS\n- Infection Prevention Bundle\n- Medication Reconciliation"
+  },
+  {
+    "chunk_id": "FORM-004#0",
+    "doc_id": "FORM-004",
+    "chunk_index": 0,
+    "text": "Formulary Entry FORM-004: Morphine\n\nDRUG CLASS\nRefer to hospital pharmacopeia for morphine classification.\n\nINDICATIONS\nStandard indications per current hospital formulary.\n\nMONITORING PARAMETERS\n- Baseline labs before initiation\n- Trough levels as indicated\n- Re-evaluation of dose every 24-48 hours\n\nHIGH-ALERT STATUS\nMorphine is flagged as a high-alert medication. Independent double-check is required before administration in high-acuity settings such as the ICU and ER.\n\nRELATED PROTOCOLS\n- Infection Prevention Bundle\n- Medication Reconciliation"
+  },
+  {
+    "chunk_id": "FORM-005#0",
+    "doc_id": "FORM-005",
+    "chunk_index": 0,
+    "text": "Formulary Entry FORM-005: Warfarin\n\nDRUG CLASS\nRefer to hospital pharmacopeia for warfarin classification.\n\nINDICATIONS\nStandard indications per current hospital formulary.\n\nMONITORING PARAMETERS\n- Baseline labs before initiation\n- Trough levels as indicated\n- Re-evaluation of dose every 24-48 hours\n\nHIGH-ALERT STATUS\nWarfarin is flagged as a high-alert medication. Independent double-check is required before administration in high-acuity settings such as the ICU and ER.\n\nRELATED PROTOCOLS\n- Infection Prevention Bundle\n- Medication Reconciliation"
+  },
+  {
+    "chunk_id": "FORM-006#0",
+    "doc_id": "FORM-006",
+    "chunk_index": 0,
+    "text": "Formulary Entry FORM-006: Metformin\n\nDRUG CLASS\nRefer to hospital pharmacopeia for metformin classification.\n\nINDICATIONS\nStandard indications per current hospital formulary.\n\nMONITORING PARAMETERS\n- Baseline labs before initiation\n- Trough levels as indicated\n- Re-evaluation of dose every 24-48 hours\n\nHIGH-ALERT STATUS\nMetformin is flagged as a high-alert medication. Independent double-check is required before administration in high-acuity settings such as the ICU and ER.\n\nRELATED PROTOCOLS\n- Handoff Sbar\n- Medication Reconciliation"
+  },
+  {
+    "chunk_id": "FORM-007#0",
+    "doc_id": "FORM-007",
+    "chunk_index": 0,
+    "text": "Formulary Entry FORM-007: Furosemide\n\nDRUG CLASS\nRefer to hospital pharmacopeia for furosemide classification.\n\nINDICATIONS\nStandard indications per current hospital formulary.\n\nMONITORING PARAMETERS\n- Baseline labs before initiation\n- Trough levels as indicated\n- Re-evaluation of dose every 24-48 hours\n\nHIGH-ALERT STATUS\nFurosemide is flagged as a high-alert medication. Independent double-check is required before administration in high-acuity settings such as the ICU and ER.\n\nRELATED PROTOCOLS\n- Fall Prevention Bundle\n- Medication Reconciliation"
+  },
+  {
+    "chunk_id": "FORM-008#0",
+    "doc_id": "FORM-008",
+    "chunk_index": 0,
+    "text": "Formulary Entry FORM-008: Lisinopril\n\nDRUG CLASS\nRefer to hospital pharmacopeia for lisinopril classification.\n\nINDICATIONS\nStandard indications per current hospital formulary.\n\nMONITORING PARAMETERS\n- Baseline labs before initiation\n- Trough levels as indicated\n- Re-evaluation of dose every 24-48 hours\n\nHIGH-ALERT STATUS\nLisinopril is flagged as a high-alert medication. Independent double-check is required before administration in high-acuity settings such as the ICU and ER.\n\nRELATED PROTOCOLS\n- Fall Prevention Bundle\n- Medication Reconciliation"
+  },
+  {
+    "chunk_id": "PROT-001#0",
+    "doc_id": "PROT-001",
+    "chunk_index": 0,
+    "text": "Protocol PROT-001: Medication Reconciliation\n\nPURPOSE\nDefines the standard steps for medication reconciliation in the PEDIATRICS and across any unit performing equivalent workflows.\n\nSCOPE\nApplies to all respiratory therapist and respiratory therapist staff, including temporary and float staff.\n\nPROCEDURE\n1. Verify patient identity with two identifiers.\n2. Complete pre-procedure checklist as defined by the medication reconciliation bundle.\n3. Perform required cross-checks before administration or intervention.\n4. Document completion in the electronic health record within 15 minutes.\n\nREFERENCES\n- Joint Commission National Patient Safety Goals\n- Internal policy manual, section on medication reconciliation."
+  },
+  {
+    "chunk_id": "PROT-002#0",
+    "doc_id": "PROT-002",
+    "chunk_index": 0,
+    "text": "Protocol PROT-002: Universal Protocol Time Out\n\nPURPOSE\nDefines the standard steps for universal protocol time out in the ER and across any unit performing equivalent workflows.\n\nSCOPE\nApplies to all registered nurse and respiratory therapist staff, including temporary and float staff.\n\nPROCEDURE\n1. Verify patient identity with two identifiers.\n2. Complete pre-procedure checklist as defined by the universal protocol time out bundle.\n3. Perform required cross-checks before administration or intervention.\n4. Document completion in the electronic health record within 15 minutes.\n\nREFERENCES\n- Joint Commission National Patient Safety Goals\n- Internal policy manual, section on universal protocol time out."
+  },
+  {
+    "chunk_id": "PROT-003#0",
+    "doc_id": "PROT-003",
+    "chunk_index": 0,
+    "text": "Protocol PROT-003: Fall Prevention Bundle\n\nPURPOSE\nDefines the standard steps for fall prevention bundle in the ER and across any unit performing equivalent workflows.\n\nSCOPE\nApplies to all respiratory therapist and anesthesiologist staff, including temporary and float staff.\n\nPROCEDURE\n1. Verify patient identity with two identifiers.\n2. Complete pre-procedure checklist as defined by the fall prevention bundle bundle.\n3. Perform required cross-checks before administration or intervention.\n4. Document completion in the electronic health record within 15 minutes.\n\nREFERENCES\n- Joint Commission National Patient Safety Goals\n- Internal policy manual, section on fall prevention bundle."
+  },
+  {
+    "chunk_id": "PROT-004#0",
+    "doc_id": "PROT-004",
+    "chunk_index": 0,
+    "text": "Protocol PROT-004: Infection Prevention Bundle\n\nPURPOSE\nDefines the standard steps for infection prevention bundle in the ICU and across any unit performing equivalent workflows.\n\nSCOPE\nApplies to all anesthesiologist and registered nurse staff, including temporary and float staff.\n\nPROCEDURE\n1. Verify patient identity with two identifiers.\n2. Complete pre-procedure checklist as defined by the infection prevention bundle bundle.\n3. Perform required cross-checks before administration or intervention.\n4. Document completion in the electronic health record within 15 minutes.\n\nREFERENCES\n- Joint Commission National Patient Safety Goals\n- Internal policy manual, section on infection prevention bundle."
+  },
+  {
+    "chunk_id": "PROT-005#0",
+    "doc_id": "PROT-005",
+    "chunk_index": 0,
+    "text": "Protocol PROT-005: Handoff Sbar\n\nPURPOSE\nDefines the standard steps for handoff sbar in the ER and across any unit performing equivalent workflows.\n\nSCOPE\nApplies to all anesthesiologist and resident staff, including temporary and float staff.\n\nPROCEDURE\n1. Verify patient identity with two identifiers.\n2. Complete pre-procedure checklist as defined by the handoff sbar bundle.\n3. Perform required cross-checks before administration or intervention.\n4. Document completion in the electronic health record within 15 minutes.\n\nREFERENCES\n- Joint Commission National Patient Safety Goals\n- Internal policy manual, section on handoff sbar."
+  },
+  {
+    "chunk_id": "PROT-006#0",
+    "doc_id": "PROT-006",
+    "chunk_index": 0,
+    "text": "Protocol PROT-006: Medication Reconciliation\n\nPURPOSE\nDefines the standard steps for medication reconciliation in the ONCOLOGY and across any unit performing equivalent workflows.\n\nSCOPE\nApplies to all pharmacist and registered nurse staff, including temporary and float staff.\n\nPROCEDURE\n1. Verify patient identity with two identifiers.\n2. Complete pre-procedure checklist as defined by the medication reconciliation bundle.\n3. Perform required cross-checks before administration or intervention.\n4. Document completion in the electronic health record within 15 minutes.\n\nREFERENCES\n- Joint Commission National Patient Safety Goals\n- Internal policy manual, section on medication reconciliation."
+  },
+  {
+    "chunk_id": "PROT-007#0",
+    "doc_id": "PROT-007",
+    "chunk_index": 0,
+    "text": "Protocol PROT-007: Universal Protocol Time Out\n\nPURPOSE\nDefines the standard steps for universal protocol time out in the MEDICAL-SURGICAL and across any unit performing equivalent workflows.\n\nSCOPE\nApplies to all respiratory therapist and pharmacist staff, including temporary and float staff.\n\nPROCEDURE\n1. Verify patient identity with two identifiers.\n2. Complete pre-procedure checklist as defined by the universal protocol time out bundle.\n3. Perform required cross-checks before administration or intervention.\n4. Document completion in the electronic health record within 15 minutes.\n\nREFERENCES\n- Joint Commission National Patient Safety Goals\n- Internal policy manual, section on universal protocol time out."
+  },
+  {
+    "chunk_id": "PROT-008#0",
+    "doc_id": "PROT-008",
+    "chunk_index": 0,
+    "text": "Protocol PROT-008: Fall Prevention Bundle\n\nPURPOSE\nDefines the standard steps for fall prevention bundle in the ICU and across any unit performing equivalent workflows.\n\nSCOPE\nApplies to all resident and resident staff, including temporary and float staff.\n\nPROCEDURE\n1. Verify patient identity with two identifiers.\n2. Complete pre-procedure checklist as defined by the fall prevention bundle bundle.\n3. Perform required cross-checks before administration or intervention.\n4. Document completion in the electronic health record within 15 minutes.\n\nREFERENCES\n- Joint Commission National Patient Safety Goals\n- Internal policy manual, section on fall prevention bundle."
+  },
+  {
+    "chunk_id": "PROT-009#0",
+    "doc_id": "PROT-009",
+    "chunk_index": 0,
+    "text": "Protocol PROT-009: Infection Prevention Bundle\n\nPURPOSE\nDefines the standard steps for infection prevention bundle in the ICU and across any unit performing equivalent workflows.\n\nSCOPE\nApplies to all resident and pharmacist staff, including temporary and float staff.\n\nPROCEDURE\n1. Verify patient identity with two identifiers.\n2. Complete pre-procedure checklist as defined by the infection prevention bundle bundle.\n3. Perform required cross-checks before administration or intervention.\n4. Document completion in the electronic health record within 15 minutes.\n\nREFERENCES\n- Joint Commission National Patient Safety Goals\n- Internal policy manual, section on infection prevention bundle."
+  },
+  {
+    "chunk_id": "PROT-010#0",
+    "doc_id": "PROT-010",
+    "chunk_index": 0,
+    "text": "Protocol PROT-010: Handoff Sbar\n\nPURPOSE\nDefines the standard steps for handoff sbar in the CARDIOLOGY and across any unit performing equivalent workflows.\n\nSCOPE\nApplies to all resident and respiratory therapist staff, including temporary and float staff.\n\nPROCEDURE\n1. Verify patient identity with two identifiers.\n2. Complete pre-procedure checklist as defined by the handoff sbar bundle.\n3. Perform required cross-checks before administration or intervention.\n4. Document completion in the electronic health record within 15 minutes.\n\nREFERENCES\n- Joint Commission National Patient Safety Goals\n- Internal policy manual, section on handoff sbar."
+  },
+  {
+    "chunk_id": "PROT-011#0",
+    "doc_id": "PROT-011",
+    "chunk_index": 0,
+    "text": "Protocol PROT-011: Medication Reconciliation\n\nPURPOSE\nDefines the standard steps for medication reconciliation in the ICU and across any unit performing equivalent workflows.\n\nSCOPE\nApplies to all resident and attending physician staff, including temporary and float staff.\n\nPROCEDURE\n1. Verify patient identity with two identifiers.\n2. Complete pre-procedure checklist as defined by the medication reconciliation bundle.\n3. Perform required cross-checks before administration or intervention.\n4. Document completion in the electronic health record within 15 minutes.\n\nREFERENCES\n- Joint Commission National Patient Safety Goals\n- Internal policy manual, section on medication reconciliation."
+  },
+  {
+    "chunk_id": "PROT-012#0",
+    "doc_id": "PROT-012",
+    "chunk_index": 0,
+    "text": "Protocol PROT-012: Universal Protocol Time Out\n\nPURPOSE\nDefines the standard steps for universal protocol time out in the MEDICAL-SURGICAL and across any unit performing equivalent workflows.\n\nSCOPE\nApplies to all respiratory therapist and pharmacist staff, including temporary and float staff.\n\nPROCEDURE\n1. Verify patient identity with two identifiers.\n2. Complete pre-procedure checklist as defined by the universal protocol time out bundle.\n3. Perform required cross-checks before administration or intervention.\n4. Document completion in the electronic health record within 15 minutes.\n\nREFERENCES\n- Joint Commission National Patient Safety Goals\n- Internal policy manual, section on universal protocol time out."
+  },
+  {
+    "chunk_id": "RCA-001#0",
+    "doc_id": "RCA-001",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-001\nIncident reviewed: dosage error in the ONCOLOGY.\nInvolved medication (where applicable): insulin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the infection prevention bundle protocol.\n\nROOT CAUSES IDENTIFIED\n- miscommunication handoff\n- knowledge gap\n- protocol deviation\n\nCONTRIBUTING FACTORS\n- Variability in ONCOLOGY staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce fall prevention bundle training across ONCOLOGY.\n- Update medication reconciliation workflow for insulin.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-002#0",
+    "doc_id": "RCA-002",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-002\nIncident reviewed: wrong site surgery in the PEDIATRICS.\nInvolved medication (where applicable): metformin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the universal protocol time out protocol.\n\nROOT CAUSES IDENTIFIED\n- protocol deviation\n\nCONTRIBUTING FACTORS\n- Variability in PEDIATRICS staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce handoff sbar training across PEDIATRICS.\n- Update medication reconciliation workflow for metformin.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-003#0",
+    "doc_id": "RCA-003",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-003\nIncident reviewed: hospital acquired infection in the PEDIATRICS.\nInvolved medication (where applicable): insulin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the universal protocol time out protocol.\n\nROOT CAUSES IDENTIFIED\n- knowledge gap\n- inadequate staffing\n- miscommunication handoff\n\nCONTRIBUTING FACTORS\n- Variability in PEDIATRICS staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce infection prevention bundle training across PEDIATRICS.\n- Update medication reconciliation workflow for insulin.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-004#0",
+    "doc_id": "RCA-004",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-004\nIncident reviewed: diagnostic error in the PEDIATRICS.\nInvolved medication (where applicable): morphine.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the infection prevention bundle protocol.\n\nROOT CAUSES IDENTIFIED\n- protocol deviation\n- miscommunication handoff\n\nCONTRIBUTING FACTORS\n- Variability in PEDIATRICS staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce universal protocol time out training across PEDIATRICS.\n- Update medication reconciliation workflow for morphine.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-005#0",
+    "doc_id": "RCA-005",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-005\nIncident reviewed: dosage error in the ONCOLOGY.\nInvolved medication (where applicable): insulin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the medication reconciliation protocol.\n\nROOT CAUSES IDENTIFIED\n- knowledge gap\n- incomplete documentation\n- alarm fatigue\n\nCONTRIBUTING FACTORS\n- Variability in ONCOLOGY staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce universal protocol time out training across ONCOLOGY.\n- Update medication reconciliation workflow for insulin.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-006#0",
+    "doc_id": "RCA-006",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-006\nIncident reviewed: hospital acquired infection in the ONCOLOGY.\nInvolved medication (where applicable): heparin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the medication reconciliation protocol.\n\nROOT CAUSES IDENTIFIED\n- miscommunication handoff\n- inadequate staffing\n\nCONTRIBUTING FACTORS\n- Variability in ONCOLOGY staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce universal protocol time out training across ONCOLOGY.\n- Update medication reconciliation workflow for heparin.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-007#0",
+    "doc_id": "RCA-007",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-007\nIncident reviewed: dosage error in the MEDICAL-SURGICAL.\nInvolved medication (where applicable): insulin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the infection prevention bundle protocol.\n\nROOT CAUSES IDENTIFIED\n- protocol deviation\n- incomplete documentation\n- equipment failure\n\nCONTRIBUTING FACTORS\n- Variability in MEDICAL-SURGICAL staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce infection prevention bundle training across MEDICAL-SURGICAL.\n- Update medication reconciliation workflow for insulin.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-008#0",
+    "doc_id": "RCA-008",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-008\nIncident reviewed: patient fall in the OR.\nInvolved medication (where applicable): cefazolin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the medication reconciliation protocol.\n\nROOT CAUSES IDENTIFIED\n- incomplete documentation\n- inadequate staffing\n\nCONTRIBUTING FACTORS\n- Variability in OR staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce infection prevention bundle training across OR.\n- Update medication reconciliation workflow for cefazolin.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-009#0",
+    "doc_id": "RCA-009",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-009\nIncident reviewed: wrong site surgery in the ER.\nInvolved medication (where applicable): insulin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the medication reconciliation protocol.\n\nROOT CAUSES IDENTIFIED\n- knowledge gap\n- protocol deviation\n- inadequate staffing\n\nCONTRIBUTING FACTORS\n- Variability in ER staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce infection prevention bundle training across ER.\n- Update medication reconciliation workflow for insulin.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-010#0",
+    "doc_id": "RCA-010",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-010\nIncident reviewed: specimen mislabeling in the ICU.\nInvolved medication (where applicable): cefazolin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the infection prevention bundle protocol.\n\nROOT CAUSES IDENTIFIED\n- knowledge gap\n- alarm fatigue\n- miscommunication handoff\n\nCONTRIBUTING FACTORS\n- Variability in ICU staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce handoff sbar training across ICU.\n- Update medication reconciliation workflow for cefazolin.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-011#0",
+    "doc_id": "RCA-011",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-011\nIncident reviewed: delayed treatment in the MEDICAL-SURGICAL.\nInvolved medication (where applicable): insulin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the universal protocol time out protocol.\n\nROOT CAUSES IDENTIFIED\n- protocol deviation\n- inadequate staffing\n\nCONTRIBUTING FACTORS\n- Variability in MEDICAL-SURGICAL staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce fall prevention bundle training across MEDICAL-SURGICAL.\n- Update medication reconciliation workflow for insulin.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-012#0",
+    "doc_id": "RCA-012",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-012\nIncident reviewed: specimen mislabeling in the MEDICAL-SURGICAL.\nInvolved medication (where applicable): furosemide.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the fall prevention bundle protocol.\n\nROOT CAUSES IDENTIFIED\n- miscommunication handoff\n- protocol deviation\n- inadequate staffing\n\nCONTRIBUTING FACTORS\n- Variability in MEDICAL-SURGICAL staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce universal protocol time out training across MEDICAL-SURGICAL.\n- Update medication reconciliation workflow for furosemide.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-013#0",
+    "doc_id": "RCA-013",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-013\nIncident reviewed: diagnostic error in the ER.\nInvolved medication (where applicable): heparin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the universal protocol time out protocol.\n\nROOT CAUSES IDENTIFIED\n- knowledge gap\n- inadequate staffing\n\nCONTRIBUTING FACTORS\n- Variability in ER staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce infection prevention bundle training across ER.\n- Update medication reconciliation workflow for heparin.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-014#0",
+    "doc_id": "RCA-014",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-014\nIncident reviewed: wrong site surgery in the RADIOLOGY.\nInvolved medication (where applicable): insulin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the handoff sbar protocol.\n\nROOT CAUSES IDENTIFIED\n- miscommunication handoff\n- inadequate staffing\n- protocol deviation\n\nCONTRIBUTING FACTORS\n- Variability in RADIOLOGY staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce infection prevention bundle training across RADIOLOGY.\n- Update medication reconciliation workflow for insulin.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-015#0",
+    "doc_id": "RCA-015",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-015\nIncident reviewed: medication error in the OR.\nInvolved medication (where applicable): cefazolin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the handoff sbar protocol.\n\nROOT CAUSES IDENTIFIED\n- protocol deviation\n\nCONTRIBUTING FACTORS\n- Variability in OR staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce medication reconciliation training across OR.\n- Update medication reconciliation workflow for cefazolin.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-016#0",
+    "doc_id": "RCA-016",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-016\nIncident reviewed: delayed treatment in the PEDIATRICS.\nInvolved medication (where applicable): cefazolin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the infection prevention bundle protocol.\n\nROOT CAUSES IDENTIFIED\n- inadequate staffing\n- miscommunication handoff\n\nCONTRIBUTING FACTORS\n- Variability in PEDIATRICS staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce infection prevention bundle training across PEDIATRICS.\n- Update medication reconciliation workflow for cefazolin.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-017#0",
+    "doc_id": "RCA-017",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-017\nIncident reviewed: pressure injury in the PEDIATRICS.\nInvolved medication (where applicable): vancomycin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the infection prevention bundle protocol.\n\nROOT CAUSES IDENTIFIED\n- miscommunication handoff\n- protocol deviation\n\nCONTRIBUTING FACTORS\n- Variability in PEDIATRICS staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce medication reconciliation training across PEDIATRICS.\n- Update medication reconciliation workflow for vancomycin.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-018#0",
+    "doc_id": "RCA-018",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-018\nIncident reviewed: diagnostic error in the OR.\nInvolved medication (where applicable): warfarin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the handoff sbar protocol.\n\nROOT CAUSES IDENTIFIED\n- protocol deviation\n- inadequate staffing\n\nCONTRIBUTING FACTORS\n- Variability in OR staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce medication reconciliation training across OR.\n- Update medication reconciliation workflow for warfarin.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-019#0",
+    "doc_id": "RCA-019",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-019\nIncident reviewed: medication error in the OR.\nInvolved medication (where applicable): heparin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the infection prevention bundle protocol.\n\nROOT CAUSES IDENTIFIED\n- incomplete documentation\n- protocol deviation\n\nCONTRIBUTING FACTORS\n- Variability in OR staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce universal protocol time out training across OR.\n- Update medication reconciliation workflow for heparin.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-020#0",
+    "doc_id": "RCA-020",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-020\nIncident reviewed: hospital acquired infection in the ICU.\nInvolved medication (where applicable): insulin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the fall prevention bundle protocol.\n\nROOT CAUSES IDENTIFIED\n- miscommunication handoff\n- protocol deviation\n\nCONTRIBUTING FACTORS\n- Variability in ICU staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce infection prevention bundle training across ICU.\n- Update medication reconciliation workflow for insulin.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-021#0",
+    "doc_id": "RCA-021",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-021\nIncident reviewed: delayed treatment in the ER.\nInvolved medication (where applicable): lisinopril.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the handoff sbar protocol.\n\nROOT CAUSES IDENTIFIED\n- inadequate staffing\n- protocol deviation\n\nCONTRIBUTING FACTORS\n- Variability in ER staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce medication reconciliation training across ER.\n- Update medication reconciliation workflow for lisinopril.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-022#0",
+    "doc_id": "RCA-022",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-022\nIncident reviewed: patient fall in the ER.\nInvolved medication (where applicable): insulin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the universal protocol time out protocol.\n\nROOT CAUSES IDENTIFIED\n- inadequate staffing\n- incomplete documentation\n\nCONTRIBUTING FACTORS\n- Variability in ER staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce medication reconciliation training across ER.\n- Update medication reconciliation workflow for insulin.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-023#0",
+    "doc_id": "RCA-023",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-023\nIncident reviewed: wrong site surgery in the CARDIOLOGY.\nInvolved medication (where applicable): metformin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the medication reconciliation protocol.\n\nROOT CAUSES IDENTIFIED\n- inadequate staffing\n- protocol deviation\n\nCONTRIBUTING FACTORS\n- Variability in CARDIOLOGY staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce handoff sbar training across CARDIOLOGY.\n- Update medication reconciliation workflow for metformin.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-024#0",
+    "doc_id": "RCA-024",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-024\nIncident reviewed: specimen mislabeling in the ER.\nInvolved medication (where applicable): warfarin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the medication reconciliation protocol.\n\nROOT CAUSES IDENTIFIED\n- miscommunication handoff\n- inadequate staffing\n- alarm fatigue\n\nCONTRIBUTING FACTORS\n- Variability in ER staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce universal protocol time out training across ER.\n- Update medication reconciliation workflow for warfarin.\n- Introduce structured handoff using SBAR for shift changes."
+  },
+  {
+    "chunk_id": "RCA-025#0",
+    "doc_id": "RCA-025",
+    "chunk_index": 0,
+    "text": "Root Cause Analysis RCA-025\nIncident reviewed: dosage error in the ER.\nInvolved medication (where applicable): vancomycin.\n\nMETHODOLOGY\nA multidisciplinary RCA team convened within 72 hours of the event. The team applied the five whys technique and mapped the event timeline against the universal protocol time out protocol.\n\nROOT CAUSES IDENTIFIED\n- inadequate staffing\n- miscommunication handoff\n- equipment failure\n- protocol deviation\n\nCONTRIBUTING FACTORS\n- Variability in ER staff-to-patient ratios during night shift\n- Incomplete handoff from prior shift\n\nACTIONS\n- Reinforce medication reconciliation training across ER.\n- Update medication reconciliation workflow for vancomycin.\n- Introduce structured handoff using SBAR for shift changes."
+  }
+]

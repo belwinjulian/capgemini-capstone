@@ -1,0 +1,5 @@
+{
+  "index_resource_name": "projects/41912934765/locations/us-central1/indexes/623530845088514048",
+  "endpoint_resource_name": "projects/41912934765/locations/us-central1/indexEndpoints/350130681772244992",
+  "deployed_index_id": "patient_safety_v1"
+}

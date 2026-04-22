@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Send } from "lucide-react";
+import { Loader2, Send } from "lucide-react";
 import { Message } from "./Message";
 import { Citations, type Citation } from "./Citations";
 import { GraphPreview, type GraphEdge, type GraphNode } from "./GraphPreview";
@@ -97,6 +97,27 @@ export function ChatInterface() {
 
   const lastAssistant = [...turns].reverse().find((t) => t.role === "assistant");
 
+  function EvidenceSkeleton() {
+    return (
+      <div className="space-y-2">
+        <h3 className="text-xs font-medium text-zinc-700">Sources</h3>
+        <ol className="space-y-2">
+          {[0, 1, 2].map((i) => (
+            <li
+              key={i}
+              className="rounded-md border border-zinc-200 bg-white p-3"
+            >
+              <div className="h-2.5 w-20 rounded bg-zinc-200 animate-pulse" />
+              <div className="mt-2 h-2 w-full rounded bg-zinc-100 animate-pulse" />
+              <div className="mt-1.5 h-2 w-11/12 rounded bg-zinc-100 animate-pulse" />
+              <div className="mt-1.5 h-2 w-4/5 rounded bg-zinc-100 animate-pulse" />
+            </li>
+          ))}
+        </ol>
+      </div>
+    );
+  }
+
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] h-[calc(100vh-49px)]">
       <section className="flex flex-col border-r border-zinc-200">
@@ -142,10 +163,14 @@ export function ChatInterface() {
           <button
             type="submit"
             disabled={loading || !input.trim()}
-            className="rounded-md bg-accent px-4 py-2 text-sm text-white hover:opacity-90 disabled:opacity-40 flex items-center gap-1.5"
+            className="rounded-md bg-accent px-4 py-2 text-sm text-white hover:opacity-90 disabled:opacity-40 flex items-center gap-1.5 transition-opacity"
           >
-            <Send className="h-4 w-4" />
-            {loading ? "…" : "Send"}
+            {loading ? (
+              <Loader2 className="h-4 w-4 animate-spin" />
+            ) : (
+              <Send className="h-4 w-4" />
+            )}
+            Send
           </button>
         </form>
       </section>
@@ -155,6 +180,8 @@ export function ChatInterface() {
         </h2>
         {lastAssistant?.citations?.length ? (
           <Citations citations={lastAssistant.citations} />
+        ) : loading ? (
+          <EvidenceSkeleton />
         ) : (
           <p className="text-xs text-zinc-400">
             Citations appear here after an answer.

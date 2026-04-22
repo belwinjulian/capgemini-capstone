@@ -1,0 +1,33 @@
+.git
+.gitignore
+.gcloudignore
+.env
+.env.*
+!.env.example
+
+# Python
+**/__pycache__
+**/*.pyc
+**/.venv
+**/.ruff_cache
+**/.pytest_cache
+**/.mypy_cache
+
+# Node
+**/node_modules
+**/.next
+**/.turbo
+**/.vercel
+
+# IDE / OS
+.vscode
+.idea
+.DS_Store
+
+# Corpus (ingestion inputs, not runtime)
+corpus/
+
+# Local settings
+.claude/
+CLAUDE.md
+MEMORY.md
