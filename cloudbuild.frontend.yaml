@@ -1,0 +1,11 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - -t
+      - us-central1-docker.pkg.dev/capgemini-capstone-494100/capstone-images/frontend:v1
+      - -f
+      - frontend/Dockerfile
+      - .
+images:
+  - us-central1-docker.pkg.dev/capgemini-capstone-494100/capstone-images/frontend:v1

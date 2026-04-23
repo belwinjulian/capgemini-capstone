@@ -98,13 +98,12 @@ context = repo root.
 ```powershell
 cd $REPO
 
-gcloud builds submit `
-  --tag "us-central1-docker.pkg.dev/capgemini-capstone-494100/capstone-images/backend:v1" `
-  --file backend/Dockerfile `
-  .
+gcloud builds submit --config cloudbuild.backend.yaml .
 ```
 
-First build takes ~5 min.
+First build takes ~5 min. The `cloudbuild.backend.yaml` at the repo
+root tells Cloud Build to use `backend/Dockerfile` while keeping the
+repo root as build context (so `data/` is available).
 
 ## 4. Deploy the backend to Cloud Run
 
@@ -147,10 +146,7 @@ If you get a 401/403, re-check the IAM bindings in step 2.
 ```powershell
 cd $REPO
 
-gcloud builds submit `
-  --tag "us-central1-docker.pkg.dev/capgemini-capstone-494100/capstone-images/frontend:v1" `
-  --file frontend/Dockerfile `
-  .
+gcloud builds submit --config cloudbuild.frontend.yaml .
 ```
 
 ## 6. Deploy the frontend to Cloud Run
